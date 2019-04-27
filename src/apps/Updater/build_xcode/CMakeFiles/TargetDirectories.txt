@@ -1,3 +1,3 @@
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/Karabiner-Elements.dir
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/ALL_BUILD.dir
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/btwise/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/Karabiner-Elements.dir
+/Users/btwise/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/ALL_BUILD.dir
+/Users/btwise/Karabiner-Elements/src/apps/Updater/build_xcode/CMakeFiles/ZERO_CHECK.dir

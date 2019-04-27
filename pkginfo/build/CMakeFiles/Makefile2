@@ -59,10 +59,10 @@ RM = /usr/local/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/btwise/我的仓库/Karabiner-Elements/pkginfo
+CMAKE_SOURCE_DIR = /Users/btwise/Karabiner-Elements/pkginfo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/btwise/我的仓库/Karabiner-Elements/pkginfo/build
+CMAKE_BINARY_DIR = /Users/btwise/Karabiner-Elements/pkginfo/build
 
 #=============================================================================
 # Special targets to cleanup operation of make.

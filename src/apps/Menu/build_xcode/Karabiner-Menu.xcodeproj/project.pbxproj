@@ -7,229 +7,229 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		7239C4C731414C1BA98170C3 /* ZERO_CHECK */ = {
+		21C513FDE755419A985BC062 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 97CA73D54ED64FCDAE60129B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = BFBFB85FF2BD4C6694ABB9D7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				9C6B56B1C85B41AAAFD42BBD /* CMake Rules */,
+				CC62539E4BAC4C97A3801FB8 /* CMake Rules */,
+			);
+			dependencies = (
+				A8D88B306B5849FCADC7F759 /* PBXTargetDependency */,
+				A6AB3E819BD04F128937DC86 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		C31994D58E784D5D8CF99882 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A96C39FF6B374063944251E8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E1280468AD1A4156A99F1922 /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		9578690886DB44F8AE2096E0 /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = B45D2E6EF92349EABD3EB34D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				624A526F97344AA1B6EA2F0B /* CMake Rules */,
-			);
-			dependencies = (
-				11A0487829B2413EB55E45DE /* PBXTargetDependency */,
-				348FD16253724549AD73EEEF /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0722D90C6AF24D8995BEFD29 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0031DD443CE14D51B9C256B3 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */; };
-		4AD744A82BFD4039A8AF7670 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */ = {isa = PBXBuildFile; fileRef = E010B76F82AF47768EDBE1A1 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */; };
-		4C028E45E31843659D91B575 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = EE411C9F99F349AC8C0AD9A8 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */; };
-		4FDCC5BF0F264D1881E6503C /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXBuildFile; fileRef = 89480E92215E4F6CA1728D78 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/share/Resources/app.icns */; };
-		96F97FF73ED64393907B823D /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/main.m */ = {isa = PBXBuildFile; fileRef = 4B2C66D70DA543E49677F44A /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/main.m */; };
-		BCD93E526B674D58ADAB68B4 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = A38185E32829403EAFB05CE9 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */; };
-		DBC3BD864E964F3EB6447DD3 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */ = {isa = PBXBuildFile; fileRef = E8AB1268C4B143B389EA2661 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */; };
-		F8F73FFBF98E4F0B9AA7E942 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/MenuController.m */ = {isa = PBXBuildFile; fileRef = C517E3CD41B34378B47D5B49 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/MenuController.m */; };
+		00B0B313568148FD81F8CECC /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */ = {isa = PBXBuildFile; fileRef = 06419715C78C439BBB3930BA /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */; };
+		158E52DED70B4C84A7ECD368 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */ = {isa = PBXBuildFile; fileRef = 7BB8107088F1454BBCCABA77 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */; };
+		3626101D125C47ADA0956B63 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXBuildFile; fileRef = C8B0A026DBAA409A899FE1E6 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */; };
+		55DE4BCE3C7F4DCAAE50996B /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4F24D3924CAB4754AFE9C1E7 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */; };
+		944054D87A4148F59BEA7146 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/MenuController.m */ = {isa = PBXBuildFile; fileRef = A9FC14F68044499C9DB7A8BB /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/MenuController.m */; };
+		9F93411BBC5142FE85BEB253 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/main.m */ = {isa = PBXBuildFile; fileRef = E691FEBC4E4C41028D3A773F /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/main.m */; };
+		BB873A69C72446568CD93482 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = BB43F4B602FB47DEABDDAD3C /* /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */; };
+		D5777D2A9A104105A07B6A9F /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = 5651EFF707B6412AAB3F78D8 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		407FF84102F8437880164BC5 /* Debug */ = {
+		23D2786D0782487ABD6DD078 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
-		875CAF4ED9A64208ABA6C9B4 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		98D54F9F0B44438C8064E6FC /* MinSizeRel */ = {
+		A9CF0D1E0FCD41F9856594FA /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		CAE0A00FA97F4DECBAD24E37 /* RelWithDebInfo */ = {
+		B4C43187DB8442A896D60F34 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
+		CE3153CC033F4CD5B720EE0A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		05F3F31C309A4578B7A264E5 /* PBXContainerItemProxy */ = {
+		581A5DC85B5B46BEB8C1F250 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 44772FF5B95A4FF09616F7B8 /* Project object */;
+			containerPortal = 3F3E42B2CD314A668AC61302 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7239C4C731414C1BA98170C3;
-			remoteInfo = ZERO_CHECK;
-		};
-		2AC17631572844A5BD96D9BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44772FF5B95A4FF09616F7B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7239C4C731414C1BA98170C3;
-			remoteInfo = ZERO_CHECK;
-		};
-		8D9F08FF8C744C7B8AA8FF3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44772FF5B95A4FF09616F7B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF79414C69A049F8B4D933B3;
+			remoteGlobalIDString = 701A2FE1AFCE4E4783A4E354;
 			remoteInfo = "Karabiner-Menu";
+		};
+		94E56E04A2E14C41A02DF857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F3E42B2CD314A668AC61302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C31994D58E784D5D8CF99882;
+			remoteInfo = ZERO_CHECK;
+		};
+		D6153B3185D8465987665775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F3E42B2CD314A668AC61302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C31994D58E784D5D8CF99882;
+			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0031DD443CE14D51B9C256B3 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		152CA6D3F5154AF09362BECD /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4B2C66D70DA543E49677F44A /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
-		7125365FD6C44598A9D13B46 /* Karabiner-Menu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Karabiner-Menu"; sourceTree = BUILT_PRODUCTS_DIR; };
-		89480E92215E4F6CA1728D78 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = app.icns; path = ../share/Resources/app.icns; sourceTree = SOURCE_ROOT; };
-		A38185E32829403EAFB05CE9 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
-		C517E3CD41B34378B47D5B49 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/MenuController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = MenuController.m; path = src/MenuController.m; sourceTree = SOURCE_ROOT; };
-		E010B76F82AF47768EDBE1A1 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = SOURCE_ROOT; };
-		E8AB1268C4B143B389EA2661 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		EE411C9F99F349AC8C0AD9A8 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		06419715C78C439BBB3930BA /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		4F24D3924CAB4754AFE9C1E7 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5651EFF707B6412AAB3F78D8 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		70A6E136C35945AC930ECD16 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7BB8107088F1454BBCCABA77 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		9C962571B9684956A2A01DCE /* Karabiner-Menu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Karabiner-Menu"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FC14F68044499C9DB7A8BB /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/MenuController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = MenuController.m; path = src/MenuController.m; sourceTree = SOURCE_ROOT; };
+		BB43F4B602FB47DEABDDAD3C /* /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		C8B0A026DBAA409A899FE1E6 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = app.icns; path = ../share/Resources/app.icns; sourceTree = SOURCE_ROOT; };
+		E691FEBC4E4C41028D3A773F /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		37DE31BCDF7B4023B8096177 = {
+		3212F9BACBC64D20955D8D19 = {
 			isa = PBXGroup;
 			children = (
-				B44466D29D274C249243F330 /* Karabiner-Menu */,
-				A2F3040FC77A495F86A5BD5B /* ALL_BUILD */,
-				BD9CCCF9E51945DDBD98B8DA /* Products */,
+				79C2C92DB471441A997E52CD /* Karabiner-Menu */,
+				D99F7224DE9F49A2A9DE717D /* ALL_BUILD */,
+				9185B225DB87487EA9331A5F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4CC7225431BC4DD98892E510 /* CMake Rules */ = {
+		6055E8BC32314B21BC8ED827 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		A2F3040FC77A495F86A5BD5B /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				4CC7225431BC4DD98892E510 /* CMake Rules */,
-				152CA6D3F5154AF09362BECD /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		B1695A2F0A75476E8CB56D01 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E8AB1268C4B143B389EA2661 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */,
-				A38185E32829403EAFB05CE9 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */,
+				06419715C78C439BBB3930BA /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */,
+				BB43F4B602FB47DEABDDAD3C /* /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B44466D29D274C249243F330 /* Karabiner-Menu */ = {
+		79C2C92DB471441A997E52CD /* Karabiner-Menu */ = {
 			isa = PBXGroup;
 			children = (
-				BE28CD844F01405E96DEC7AA /* Source Files */,
-				B1695A2F0A75476E8CB56D01 /* Resources */,
-				0031DD443CE14D51B9C256B3 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */,
-				E010B76F82AF47768EDBE1A1 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */,
-				89480E92215E4F6CA1728D78 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/share/Resources/app.icns */,
+				BE3B3412338445058500A572 /* Source Files */,
+				6055E8BC32314B21BC8ED827 /* Resources */,
+				4F24D3924CAB4754AFE9C1E7 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */,
+				7BB8107088F1454BBCCABA77 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */,
+				C8B0A026DBAA409A899FE1E6 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
 			);
 			name = "Karabiner-Menu";
 			sourceTree = "<group>";
 		};
-		BD9CCCF9E51945DDBD98B8DA /* Products */ = {
+		9185B225DB87487EA9331A5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7125365FD6C44598A9D13B46 /* Karabiner-Menu */,
+				9C962571B9684956A2A01DCE /* Karabiner-Menu */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE28CD844F01405E96DEC7AA /* Source Files */ = {
+		BE3B3412338445058500A572 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE411C9F99F349AC8C0AD9A8 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */,
-				C517E3CD41B34378B47D5B49 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/MenuController.m */,
-				4B2C66D70DA543E49677F44A /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/main.m */,
+				5651EFF707B6412AAB3F78D8 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */,
+				A9FC14F68044499C9DB7A8BB /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/MenuController.m */,
+				E691FEBC4E4C41028D3A773F /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/main.m */,
 			);
 			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D99F7224DE9F49A2A9DE717D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F65C0BA58FEF4194B7C4CDF0 /* CMake Rules */,
+				70A6E136C35945AC930ECD16 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F65C0BA58FEF4194B7C4CDF0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF79414C69A049F8B4D933B3 /* Karabiner-Menu */ = {
+		701A2FE1AFCE4E4783A4E354 /* Karabiner-Menu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2034FB6004548B2B8EAC6FA /* Build configuration list for PBXNativeTarget "Karabiner-Menu" */;
+			buildConfigurationList = 40ACC58D1C504A6084059972 /* Build configuration list for PBXNativeTarget "Karabiner-Menu" */;
 			buildPhases = (
-				05647C36A3014D7B9D6A6D14 /* Resources */,
-				AF7FCE6C67C5420D9E7C5CDC /* Sources */,
+				6AC05CD8371349BC94E12A17 /* Resources */,
+				E2D3008C67124C45B73CEF73 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7C0149FB05AD409FBAFE3482 /* PBXTargetDependency */,
+				7D6BA707C9394D5CADD035AF /* PBXTargetDependency */,
 			);
 			name = "Karabiner-Menu";
 			productName = "Karabiner-Menu";
-			productReference = 7125365FD6C44598A9D13B46 /* Karabiner-Menu */;
+			productReference = 9C962571B9684956A2A01DCE /* Karabiner-Menu */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		44772FF5B95A4FF09616F7B8 /* Project object */ = {
+		3F3E42B2CD314A668AC61302 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1010;
 			};
-			buildConfigurationList = FCB9FEC347D149DB8C2AE9F1 /* Build configuration list for PBXProject "Karabiner-Menu" */;
+			buildConfigurationList = D94B71949A7346F1AE1CDFF7 /* Build configuration list for PBXProject "Karabiner-Menu" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				407FF84102F8437880164BC5 /* Debug */,
-				875CAF4ED9A64208ABA6C9B4 /* Release */,
-				98D54F9F0B44438C8064E6FC /* MinSizeRel */,
-				CAE0A00FA97F4DECBAD24E37 /* RelWithDebInfo */,
+				23D2786D0782487ABD6DD078 /* Debug */,
+				CE3153CC033F4CD5B720EE0A /* Release */,
+				A9CF0D1E0FCD41F9856594FA /* MinSizeRel */,
+				B4C43187DB8442A896D60F34 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 37DE31BCDF7B4023B8096177;
+			mainGroup = 3212F9BACBC64D20955D8D19;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				9578690886DB44F8AE2096E0 /* ALL_BUILD */,
-				FF79414C69A049F8B4D933B3 /* Karabiner-Menu */,
-				7239C4C731414C1BA98170C3 /* ZERO_CHECK */,
+				21C513FDE755419A985BC062 /* ALL_BUILD */,
+				701A2FE1AFCE4E4783A4E354 /* Karabiner-Menu */,
+				C31994D58E784D5D8CF99882 /* ZERO_CHECK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35E003EB1248482BA8C9D7DD = {
+		02D22BAD7A2D4843A3533A5B = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,7 +244,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		4F69F89EF12345CFA2B4EAD7 = {
+		6376798969AC47C59F734D18 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +259,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		624A526F97344AA1B6EA2F0B /* CMake Rules */ = {
+		CC62539E4BAC4C97A3801FB8 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,10 +267,10 @@ exit 0";
 			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		9C6B56B1C85B41AAAFD42BBD /* CMake Rules */ = {
+		E1280468AD1A4156A99F1922 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,57 +278,77 @@ exit 0";
 			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05647C36A3014D7B9D6A6D14 /* Resources */ = {
+		6AC05CD8371349BC94E12A17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC3BD864E964F3EB6447DD3 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */,
-				4AD744A82BFD4039A8AF7670 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */,
-				4FDCC5BF0F264D1881E6503C /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/share/Resources/app.icns */,
+				00B0B313568148FD81F8CECC /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/Assets.xcassets */,
+				158E52DED70B4C84A7ECD368 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/Resources/MainMenu.xib */,
+				3626101D125C47ADA0956B63 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AF7FCE6C67C5420D9E7C5CDC /* Sources */ = {
+		E2D3008C67124C45B73CEF73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C028E45E31843659D91B575 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */,
-				F8F73FFBF98E4F0B9AA7E942 /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/MenuController.m */,
-				96F97FF73ED64393907B823D /* /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/src/main.m */,
+				D5777D2A9A104105A07B6A9F /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/AppDelegate.m */,
+				944054D87A4148F59BEA7146 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/MenuController.m */,
+				9F93411BBC5142FE85BEB253 /* /Users/btwise/Karabiner-Elements/src/apps/Menu/src/main.m */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11A0487829B2413EB55E45DE /* PBXTargetDependency */ = {
+		7D6BA707C9394D5CADD035AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7239C4C731414C1BA98170C3 /* ZERO_CHECK */;
-			targetProxy = 05F3F31C309A4578B7A264E5 /* PBXContainerItemProxy */;
+			target = C31994D58E784D5D8CF99882 /* ZERO_CHECK */;
+			targetProxy = 94E56E04A2E14C41A02DF857 /* PBXContainerItemProxy */;
 		};
-		348FD16253724549AD73EEEF /* PBXTargetDependency */ = {
+		A6AB3E819BD04F128937DC86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF79414C69A049F8B4D933B3 /* Karabiner-Menu */;
-			targetProxy = 8D9F08FF8C744C7B8AA8FF3D /* PBXContainerItemProxy */;
+			target = C31994D58E784D5D8CF99882 /* ZERO_CHECK */;
+			targetProxy = D6153B3185D8465987665775 /* PBXContainerItemProxy */;
 		};
-		7C0149FB05AD409FBAFE3482 /* PBXTargetDependency */ = {
+		A8D88B306B5849FCADC7F759 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7239C4C731414C1BA98170C3 /* ZERO_CHECK */;
-			targetProxy = 2AC17631572844A5BD96D9BB /* PBXContainerItemProxy */;
+			target = 701A2FE1AFCE4E4783A4E354 /* Karabiner-Menu */;
+			targetProxy = 581A5DC85B5B46BEB8C1F250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199AFC53960E4CE196A1EA9E /* MinSizeRel */ = {
+		08286CDE0D584521A4E9BCD4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1D8AB4DD124E4F569A3ACD59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -342,61 +362,73 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		22B879E7412F4B08BF5A07DF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../share");
-				INFOPLIST_FILE = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				LIBRARY_SEARCH_PATHS = " /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Karabiner-Menu";
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		585B41B7712844D49B48DD8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
 		};
-		8632187120974788BC7D95BA /* Debug */ = {
+		361B373447AF4F24B1D17A31 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		838A2810C5744033A2FD0706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8B7A2D7FABB24BBB9FAC83C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8BA214A799354BCE9234CE7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -407,122 +439,64 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../share");
-				INFOPLIST_FILE = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				LIBRARY_SEARCH_PATHS = " /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
 				OTHER_CFLAGS = "   -Wall -Werror     -fobjc-arc -fmodules  ";
 				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "Karabiner-Menu";
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
 		};
-		A2E0E36DEAC649FC8BC8AB9E /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		A30AF5A5C2E74F50BFEC63FB /* MinSizeRel */ = {
+		8E7D0D834C4E41E3A3D14621 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/build";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		9A0D871684044093A5ECC5B3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		B00DC3A475314A07891A5048 /* Release */ = {
+		9CE049B8608D40ECB6CB17EE /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/build";
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		B9D65CD4E4284254B45A2E04 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		BAA23755E8C54FC8BB2AE4D6 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../share");
-				INFOPLIST_FILE = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				LIBRARY_SEARCH_PATHS = " /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Karabiner-Menu";
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		BD31D5F4ADEE4765B0BBC1F0 /* Release */ = {
+		A419E562053C4E0B9550FC96 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -533,44 +507,24 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../share");
-				INFOPLIST_FILE = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
-				LIBRARY_SEARCH_PATHS = " /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
 				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
 				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "Karabiner-Menu";
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		C9E8031DC43349F1800E502D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		D66FDE1C65D34CE1BEA3BA42 /* Debug */ = {
+		BF5A66238E3E42C48EE8D308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -584,33 +538,89 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
 		};
-		DCD1A4FA938B4D69AC0B2BD1 /* RelWithDebInfo */ = {
+		C6955D2A02274B659456E714 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/build";
-			};
-			name = RelWithDebInfo;
-		};
-		E9F67028C08B499C9391D336 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/build";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-Menu";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Release;
 		};
-		F1188C74DFD94773B8607A0C /* RelWithDebInfo */ = {
+		C6D6CF5C0DC14B88A5B40A8D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/Menu/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/Karabiner-Menu.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/Menu/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-Menu";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CA2D188054CC42139B63FE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/build";
+			};
+			name = Release;
+		};
+		D0260841D7FC4698891AFAF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/build";
+			};
+			name = Debug;
+		};
+		EB0E7CB2C151445DB5B5A7C8 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -622,72 +632,62 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		F27470138364405E9DEEB4F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/build";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97CA73D54ED64FCDAE60129B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		40ACC58D1C504A6084059972 /* Build configuration list for PBXNativeTarget "Karabiner-Menu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				585B41B7712844D49B48DD8C /* Debug */,
-				C9E8031DC43349F1800E502D /* Release */,
-				199AFC53960E4CE196A1EA9E /* MinSizeRel */,
-				F1188C74DFD94773B8607A0C /* RelWithDebInfo */,
+				8BA214A799354BCE9234CE7E /* Debug */,
+				C6955D2A02274B659456E714 /* Release */,
+				A419E562053C4E0B9550FC96 /* MinSizeRel */,
+				C6D6CF5C0DC14B88A5B40A8D /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B45D2E6EF92349EABD3EB34D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		A96C39FF6B374063944251E8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D66FDE1C65D34CE1BEA3BA42 /* Debug */,
-				B00DC3A475314A07891A5048 /* Release */,
-				A2E0E36DEAC649FC8BC8AB9E /* MinSizeRel */,
-				B9D65CD4E4284254B45A2E04 /* RelWithDebInfo */,
+				1D8AB4DD124E4F569A3ACD59 /* Debug */,
+				838A2810C5744033A2FD0706 /* Release */,
+				9A0D871684044093A5ECC5B3 /* MinSizeRel */,
+				361B373447AF4F24B1D17A31 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D2034FB6004548B2B8EAC6FA /* Build configuration list for PBXNativeTarget "Karabiner-Menu" */ = {
+		BFBFB85FF2BD4C6694ABB9D7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8632187120974788BC7D95BA /* Debug */,
-				BD31D5F4ADEE4765B0BBC1F0 /* Release */,
-				22B879E7412F4B08BF5A07DF /* MinSizeRel */,
-				BAA23755E8C54FC8BB2AE4D6 /* RelWithDebInfo */,
+				BF5A66238E3E42C48EE8D308 /* Debug */,
+				8B7A2D7FABB24BBB9FAC83C5 /* Release */,
+				08286CDE0D584521A4E9BCD4 /* MinSizeRel */,
+				EB0E7CB2C151445DB5B5A7C8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FCB9FEC347D149DB8C2AE9F1 /* Build configuration list for PBXProject "Karabiner-Menu" */ = {
+		D94B71949A7346F1AE1CDFF7 /* Build configuration list for PBXProject "Karabiner-Menu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F27470138364405E9DEEB4F2 /* Debug */,
-				E9F67028C08B499C9391D336 /* Release */,
-				A30AF5A5C2E74F50BFEC63FB /* MinSizeRel */,
-				DCD1A4FA938B4D69AC0B2BD1 /* RelWithDebInfo */,
+				D0260841D7FC4698891AFAF2 /* Debug */,
+				CA2D188054CC42139B63FE01 /* Release */,
+				9CE049B8608D40ECB6CB17EE /* MinSizeRel */,
+				8E7D0D834C4E41E3A3D14621 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 44772FF5B95A4FF09616F7B8 /* Project object */;
+	rootObject = 3F3E42B2CD314A668AC61302 /* Project object */;
 }
