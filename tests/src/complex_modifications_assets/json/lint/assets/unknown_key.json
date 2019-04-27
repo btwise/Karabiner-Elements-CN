@@ -1,0 +1,11 @@
+{
+    "title": "unknown key",
+    "unknown_key": "unknown_key",
+    "rules": [
+        {
+            "description": "unknown key",
+            "manipulators": [],
+            "unknown_key": "unknown_value"
+        }
+    ]
+}

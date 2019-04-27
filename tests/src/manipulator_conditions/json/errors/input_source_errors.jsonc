@@ -1,0 +1,78 @@
+[
+    {
+        "class": "input_source",
+        "input": null,
+        "error": "json must be object, but is `null`"
+    },
+
+    // type
+
+    {
+        "class": "input_source",
+        "input": {
+            "type": null
+        },
+        "error": "type must be string, but is `null`"
+    },
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input-source-if"
+        },
+        "error": "unknown type `input-source-if`"
+    },
+
+    // input_sources
+
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input_source_if",
+            "input_sources": null
+        },
+        "error": "`input_sources` must be array, but is `null`"
+    },
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input_source_if",
+            "input_sources": [null]
+        },
+        "error": "`input_sources` entry error: json must be object, but is `null`"
+    },
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input_source_if",
+            "input_sources": [
+                {
+                    "language": "regex("
+                }
+            ]
+        },
+        "error": "`input_sources` entry error: The expression contained mismatched ( and ).: `\"language\":\"regex(\"`"
+    },
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input_source_if",
+            "input_sources": [
+                {
+                    "LANGUAGE": "en"
+                }
+            ]
+        },
+        "error": "`input_sources` entry error: unknown key: `LANGUAGE`"
+    },
+
+    // unknown key
+
+    {
+        "class": "input_source",
+        "input": {
+            "type": "input_source_if",
+            "input-sources": []
+        },
+        "error": "unknown key `input-sources` in `{\"input-sources\":[],\"type\":\"input_source_if\"}`"
+    }
+]

@@ -1,0 +1,138 @@
+[
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 2
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 4
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 6
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 8
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 10
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 12
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "f5",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 14
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 16
+        },
+        "valid": true
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "input": "assets/broken.json",
+        "errors": [
+            "[json.exception.parse_error.101] parse error at line 2, column 1: syntax error while parsing object key - unexpected end of input; expected string literal"
+        ]
+    },
+    {
+        "input": "assets/conditions_error.json",
+        "errors": [
+            "`rule 1` error: condition type must be string, but is `null`",
+            "`rule 2` error: `bundle_identifiers` must be array, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/maintainers_error.json",
+        "errors": ["`maintainers` must be array, but is `null`"]
+    },
+    {
+        "input": "assets/manipulators_error_1.json",
+        "errors": [
+            "`rule 1` error: `type` must be specified: {\"from\":{\"key_code\":\"escape\",\"modifiers\":{\"mandatory\":[\"control\"],\"optional\":[\"any\"]}},\"to\":[{\"key_code\":\"mission_control\"}]}",
+            "`rule 2` error: `from` error: `pointing_button` error: json must be string or number, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/manipulators_error_2.json",
+        "errors": [
+            "`rules` entry error: `manipulators` must be array, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/manipulators_error_3.json",
+        "errors": [
+            "`rules` entry error: `manipulators` entry error: json must be object, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/manipulators_error_4.json",
+        "errors": [
+            "`rules` entry error: `description` must be string, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/manipulators_error_5.json",
+        "errors": [
+            "`rules` entry error: `available_since` must be string, but is `null`"
+        ]
+    },
+    {
+        "input": "assets/not_found.json",
+        "errors": ["failed to open json/lint/assets/not_found.json"]
+    },
+    {
+        "input": "assets/rules_error.json",
+        "errors": ["`rules` must be array, but is `null`"]
+    },
+    {
+        "input": "assets/title_error.json",
+        "errors": ["`title` must be string, but is `null`"]
+    },
+    {
+        "input": "assets/type_error.json",
+        "errors": ["json must be object, but is `[]`"]
+    },
+    {
+        "input": "assets/unknown_key.json",
+        "errors": []
+    },
+    { "input": "assets/valid.json", "errors": [] }
+]

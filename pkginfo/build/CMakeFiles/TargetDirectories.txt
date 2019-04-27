@@ -1,0 +1,2 @@
+/Users/btwise/我的仓库/Karabiner-Elements/pkginfo/build/CMakeFiles/rebuild_cache.dir
+/Users/btwise/我的仓库/Karabiner-Elements/pkginfo/build/CMakeFiles/edit_cache.dir

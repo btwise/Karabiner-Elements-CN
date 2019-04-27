@@ -1,0 +1,24 @@
+jarro2783/cxxopts@v2.1.2 --cmake header -H sha256:95f524c6615a2067e935e02ef74b013b17efa339df0a3c9db3e91fc0afbaf269
+mpark/variant@v1.4.0 --cmake header -H sha256:8f6b28ab3640b5d76d5b6664dda7257a4405ce59179220431b8fd196c79b2ecb
+pqrs-org/cpp-cf-dictionary
+pqrs-org/cpp-cf-number
+pqrs-org/cpp-environment_variable
+pqrs-org/cpp-filesystem
+pqrs-org/cpp-json
+pqrs-org/cpp-local_datagram
+pqrs-org/cpp-osx-chrono
+pqrs-org/cpp-osx-file_monitor
+pqrs-org/cpp-osx-frontmost_application_monitor
+pqrs-org/cpp-osx-input_source
+pqrs-org/cpp-osx-input_source_monitor
+pqrs-org/cpp-osx-input_source_selector
+pqrs-org/cpp-osx-iokit_hid_manager
+pqrs-org/cpp-osx-iokit_hid_queue_value_monitor
+pqrs-org/cpp-osx-session
+pqrs-org/cpp-osx-system_preferences_monitor
+pqrs-org/cpp-shell
+pqrs-org/cpp-sign
+pqrs-org/cpp-spdlog
+pqrs-org/cpp-string
+pqrs-org/objc-weakify
+scopeInfinity/NaturalSort@12f74beb58d9b18a41b25339d994da0e222fe80f --cmake header -H sha256:d284b2c55704bf58cddabfc07e71e5e39b4bc2f747cd9cf72b5b14975fe02a7c

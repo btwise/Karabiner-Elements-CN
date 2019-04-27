@@ -1,0 +1,197 @@
+[
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 1000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "left_shift",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 2000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 2,
+        "event": {
+            "key_code": "spacebar",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "spacebar",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 3000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "spacebar",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "spacebar",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 4000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "escape",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "escape",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 5000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "escape",
+            "type": "key_code"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "key_code": "escape",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 6000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "key_code": "tab",
+            "type": "key_code"
+        },
+        "event_time_stamp": {
+            "time_stamp": 7000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "pointing_button": "button1",
+            "type": "pointing_button"
+        },
+        "event_type": "key_down",
+        "lazy": false,
+        "original_event": {
+            "pointing_button": "button1",
+            "type": "pointing_button"
+        },
+        "event_time_stamp": {
+            "time_stamp": 8000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "pointing_motion": {
+                "x": -10
+            },
+            "type": "pointing_motion"
+        },
+        "event_type": "single",
+        "lazy": false,
+        "original_event": {
+            "pointing_motion": {
+                "x": -10
+            },
+            "type": "pointing_motion"
+        },
+        "event_time_stamp": {
+            "time_stamp": 9000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "pointing_button": "button1",
+            "type": "pointing_button"
+        },
+        "event_type": "key_up",
+        "lazy": false,
+        "original_event": {
+            "pointing_button": "button1",
+            "type": "pointing_button"
+        },
+        "event_time_stamp": {
+            "time_stamp": 10000
+        },
+        "valid": true
+    },
+    {
+        "device_id": 1,
+        "event": {
+            "pointing_motion": {
+                "y": 10
+            },
+            "type": "pointing_motion"
+        },
+        "event_type": "single",
+        "lazy": false,
+        "original_event": {
+            "pointing_motion": {
+                "y": 10
+            },
+            "type": "pointing_motion"
+        },
+        "event_time_stamp": {
+            "time_stamp": 11000
+        },
+        "valid": true
+    }
+]

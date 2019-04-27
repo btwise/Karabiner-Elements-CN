@@ -1,0 +1,1 @@
+[{"type":"device_if","identifiers":[{"vendor_id":1000,"product_id":2000},{"vendor_id":1001,"product_id":2001},{"vendor_id":1099,"description":"任意product_id"}]},{"type":"device_if","identifiers":[{"vendor_id":8888},{"description":"如果错误，则忽略条件"}]}]

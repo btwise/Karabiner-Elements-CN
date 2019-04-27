@@ -1,0 +1,79 @@
+[
+    {
+        "class": "to_event_definition",
+        "input": null,
+        "error": "json must be object, but is `null`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "key_code": "unknown_key_code"
+        },
+        "error": "`key_code` error: unknown key_code: `\"unknown_key_code\"`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "modifiers": {
+                "mandatory": ["shift"]
+            }
+        },
+        "error": "`modifiers` error: json must be array or string, but is `{\"mandatory\":[\"shift\"]}`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "lazy": []
+        },
+        "error": "`lazy` must be boolean, but is `[]`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "repeat": []
+        },
+        "error": "`repeat` must be boolean, but is `[]`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "halt": null
+        },
+        "error": "`halt` must be boolean, but is `null`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "hold_down_milliseconds": null
+        },
+        "error": "`hold_down_milliseconds` must be number, but is `null`"
+    },
+    {
+        "class": "to_event_definition",
+        "input": {
+            "held_down_milliseconds": null
+        },
+        "error": "`held_down_milliseconds` must be number, but is `null`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {
+            "Lazy": true,
+            "repeat": false
+        },
+        "error": "unknown key `Lazy` in `{\"Lazy\":true,\"repeat\":false}`"
+    },
+
+    {
+        "class": "to_event_definition",
+        "input": {},
+        "error": "event type is invalid: `{}`"
+    }
+]

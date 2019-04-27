@@ -1,0 +1,1850 @@
+[
+    {
+        "category": "修饰键"
+    },
+    {
+        "label": "caps_lock键",
+        "data": {
+            "key_code": "caps_lock"
+        }
+    },
+    {
+        "label": "左_control键",
+        "data": {
+            "key_code": "left_control"
+        }
+    },
+    {
+        "label": "左_shift键",
+        "data": {
+            "key_code": "left_shift"
+        }
+    },
+    {
+        "label": "左_option键",
+        "data": {
+            "key_code": "left_option"
+        }
+    },
+    {
+        "label": "左_command键",
+        "data": {
+            "key_code": "left_command"
+        }
+    },
+    {
+        "label": "右_control键",
+        "data": {
+            "key_code": "right_control"
+        }
+    },
+    {
+        "label": "右_shift键",
+        "data": {
+            "key_code": "right_shift"
+        }
+    },
+    {
+        "label": "右_option键",
+        "data": {
+            "key_code": "right_option"
+        }
+    },
+    {
+        "label": "右_command键",
+        "data": {
+            "key_code": "right_command"
+        }
+    },
+    {
+        "label": "fn键",
+        "data": {
+            "key_code": "fn"
+        }
+    },
+    {
+        "category": "控制和符号"
+    },
+    {
+        "label": "return_或_enter键",
+        "data": {
+            "key_code": "return_or_enter"
+        }
+    },
+    {
+        "label": "escape键",
+        "data": {
+            "key_code": "escape"
+        }
+    },
+    {
+        "label": "delete_或_backspace键",
+        "data": {
+            "key_code": "delete_or_backspace"
+        }
+    },
+    {
+        "label": "delete_forward",
+        "data": {
+            "key_code": "delete_forward"
+        }
+    },
+    {
+        "label": "tab键",
+        "data": {
+            "key_code": "tab"
+        }
+    },
+    {
+        "label": "空格键",
+        "data": {
+            "key_code": "spacebar"
+        }
+    },
+    {
+        "label": "连字符 (-)",
+        "data": {
+            "key_code": "hyphen"
+        }
+    },
+    {
+        "label": "等号 (=)",
+        "data": {
+            "key_code": "equal_sign"
+        }
+    },
+    {
+        "label": "左方括号 [",
+        "data": {
+            "key_code": "open_bracket"
+        }
+    },
+    {
+        "label": "右方括号 ]",
+        "data": {
+            "key_code": "close_bracket"
+        }
+    },
+    {
+        "label": "反斜杠 (\\)",
+        "data": {
+            "key_code": "backslash"
+        }
+    },
+    {
+        "label": "也是反斜杠",
+        "data": {
+            "key_code": "non_us_pound"
+        }
+    },
+    {
+        "label": "分号 (;)",
+        "data": {
+            "key_code": "semicolon"
+        }
+    },
+    {
+        "label": "引号 (')",
+        "data": {
+            "key_code": "quote"
+        }
+    },
+    {
+        "label": "上点 (`)",
+        "data": {
+            "key_code": "grave_accent_and_tilde"
+        }
+    },
+    {
+        "label": "逗号 (,)",
+        "data": {
+            "key_code": "comma"
+        }
+    },
+    {
+        "label": "句号 (.)",
+        "data": {
+            "key_code": "period"
+        }
+    },
+    {
+        "label": "斜杠 (/)",
+        "data": {
+            "key_code": "slash"
+        }
+    },
+    {
+        "label": "§ 分节符",
+        "data": {
+            "key_code": "non_us_backslash"
+        }
+    },
+    {
+        "category": "方向键"
+    },
+    {
+        "label": "上箭头",
+        "data": {
+            "key_code": "up_arrow"
+        }
+    },
+    {
+        "label": "下箭头",
+        "data": {
+            "key_code": "down_arrow"
+        }
+    },
+    {
+        "label": "左箭头",
+        "data": {
+            "key_code": "left_arrow"
+        }
+    },
+    {
+        "label": "右箭头",
+        "data": {
+            "key_code": "right_arrow"
+        }
+    },
+    {
+        "label": "page_up键",
+        "data": {
+            "key_code": "page_up"
+        }
+    },
+    {
+        "label": "page_down键",
+        "data": {
+            "key_code": "page_down"
+        }
+    },
+    {
+        "label": "home键",
+        "data": {
+            "key_code": "home"
+        }
+    },
+    {
+        "label": "end键",
+        "data": {
+            "key_code": "end"
+        }
+    },
+    {
+        "category": "字母键"
+    },
+    {
+        "label": "a",
+        "data": {
+            "key_code": "a"
+        }
+    },
+    {
+        "label": "b",
+        "data": {
+            "key_code": "b"
+        }
+    },
+    {
+        "label": "c",
+        "data": {
+            "key_code": "c"
+        }
+    },
+    {
+        "label": "d",
+        "data": {
+            "key_code": "d"
+        }
+    },
+    {
+        "label": "e",
+        "data": {
+            "key_code": "e"
+        }
+    },
+    {
+        "label": "f",
+        "data": {
+            "key_code": "f"
+        }
+    },
+    {
+        "label": "g",
+        "data": {
+            "key_code": "g"
+        }
+    },
+    {
+        "label": "h",
+        "data": {
+            "key_code": "h"
+        }
+    },
+    {
+        "label": "i",
+        "data": {
+            "key_code": "i"
+        }
+    },
+    {
+        "label": "j",
+        "data": {
+            "key_code": "j"
+        }
+    },
+    {
+        "label": "k",
+        "data": {
+            "key_code": "k"
+        }
+    },
+    {
+        "label": "l",
+        "data": {
+            "key_code": "l"
+        }
+    },
+    {
+        "label": "m",
+        "data": {
+            "key_code": "m"
+        }
+    },
+    {
+        "label": "n",
+        "data": {
+            "key_code": "n"
+        }
+    },
+    {
+        "label": "o",
+        "data": {
+            "key_code": "o"
+        }
+    },
+    {
+        "label": "p",
+        "data": {
+            "key_code": "p"
+        }
+    },
+    {
+        "label": "q",
+        "data": {
+            "key_code": "q"
+        }
+    },
+    {
+        "label": "r",
+        "data": {
+            "key_code": "r"
+        }
+    },
+    {
+        "label": "s",
+        "data": {
+            "key_code": "s"
+        }
+    },
+    {
+        "label": "t",
+        "data": {
+            "key_code": "t"
+        }
+    },
+    {
+        "label": "u",
+        "data": {
+            "key_code": "u"
+        }
+    },
+    {
+        "label": "v",
+        "data": {
+            "key_code": "v"
+        }
+    },
+    {
+        "label": "w",
+        "data": {
+            "key_code": "w"
+        }
+    },
+    {
+        "label": "x",
+        "data": {
+            "key_code": "x"
+        }
+    },
+    {
+        "label": "y",
+        "data": {
+            "key_code": "y"
+        }
+    },
+    {
+        "label": "z",
+        "data": {
+            "key_code": "z"
+        }
+    },
+    {
+        "category": "数字键"
+    },
+    {
+        "label": "1",
+        "data": {
+            "key_code": "1"
+        }
+    },
+    {
+        "label": "2",
+        "data": {
+            "key_code": "2"
+        }
+    },
+    {
+        "label": "3",
+        "data": {
+            "key_code": "3"
+        }
+    },
+    {
+        "label": "4",
+        "data": {
+            "key_code": "4"
+        }
+    },
+    {
+        "label": "5",
+        "data": {
+            "key_code": "5"
+        }
+    },
+    {
+        "label": "6",
+        "data": {
+            "key_code": "6"
+        }
+    },
+    {
+        "label": "7",
+        "data": {
+            "key_code": "7"
+        }
+    },
+    {
+        "label": "8",
+        "data": {
+            "key_code": "8"
+        }
+    },
+    {
+        "label": "9",
+        "data": {
+            "key_code": "9"
+        }
+    },
+    {
+        "label": "0",
+        "data": {
+            "key_code": "0"
+        }
+    },
+    {
+        "category": "功能键"
+    },
+    {
+        "label": "f1",
+        "data": {
+            "key_code": "f1"
+        }
+    },
+    {
+        "label": "f2",
+        "data": {
+            "key_code": "f2"
+        }
+    },
+    {
+        "label": "f3",
+        "data": {
+            "key_code": "f3"
+        }
+    },
+    {
+        "label": "f4",
+        "data": {
+            "key_code": "f4"
+        }
+    },
+    {
+        "label": "f5",
+        "data": {
+            "key_code": "f5"
+        }
+    },
+    {
+        "label": "f6",
+        "data": {
+            "key_code": "f6"
+        }
+    },
+    {
+        "label": "f7",
+        "data": {
+            "key_code": "f7"
+        }
+    },
+    {
+        "label": "f8",
+        "data": {
+            "key_code": "f8"
+        }
+    },
+    {
+        "label": "f9",
+        "data": {
+            "key_code": "f9"
+        }
+    },
+    {
+        "label": "f10",
+        "data": {
+            "key_code": "f10"
+        }
+    },
+    {
+        "label": "f11",
+        "data": {
+            "key_code": "f11"
+        }
+    },
+    {
+        "label": "f12",
+        "data": {
+            "key_code": "f12"
+        }
+    },
+    {
+        "label": "f13",
+        "data": {
+            "key_code": "f13"
+        }
+    },
+    {
+        "label": "f14",
+        "data": {
+            "key_code": "f14"
+        }
+    },
+    {
+        "label": "f15",
+        "data": {
+            "key_code": "f15"
+        }
+    },
+    {
+        "label": "f16",
+        "data": {
+            "key_code": "f16"
+        }
+    },
+    {
+        "label": "f17",
+        "data": {
+            "key_code": "f17"
+        }
+    },
+    {
+        "label": "f18",
+        "data": {
+            "key_code": "f18"
+        }
+    },
+    {
+        "label": "f19",
+        "data": {
+            "key_code": "f19"
+        }
+    },
+    {
+        "label": "f20",
+        "data": {
+            "key_code": "f20"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "f21",
+        "data": {
+            "key_code": "f21"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "f22",
+        "data": {
+            "key_code": "f22"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "f23",
+        "data": {
+            "key_code": "f23"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "f24",
+        "data": {
+            "key_code": "f24"
+        }
+    },
+    {
+        "category": "媒体控制"
+    },
+    {
+        "not_from": true,
+        "label": "显示亮度减少",
+        "data": {
+            "consumer_key_code": "display_brightness_decrement"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "显示亮度增加",
+        "data": {
+            "consumer_key_code": "display_brightness_increment"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "调度中心",
+        "data": {
+            "key_code": "mission_control"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "启动台",
+        "data": {
+            "key_code": "launchpad"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "仪表板",
+        "data": {
+            "key_code": "dashboard"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "键盘背光减少",
+        "data": {
+            "key_code": "illumination_decrement"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "键盘背光增加",
+        "data": {
+            "key_code": "illumination_increment"
+        }
+    },
+    {
+        "label": "倒回",
+        "data": {
+            "consumer_key_code": "rewind"
+        }
+    },
+    {
+        "label": "播放或暂停",
+        "data": {
+            "consumer_key_code": "play_or_pause"
+        }
+    },
+    {
+        "label": "快进",
+        "data": {
+            "consumer_key_code": "fastforward"
+        }
+    },
+    {
+        "label": "静音",
+        "data": {
+            "consumer_key_code": "mute"
+        }
+    },
+    {
+        "label": "降低音量",
+        "data": {
+            "consumer_key_code": "volume_decrement"
+        }
+    },
+    {
+        "label": "升高音量",
+        "data": {
+            "consumer_key_code": "volume_increment"
+        }
+    },
+    {
+        "label": "弹出",
+        "data": {
+            "consumer_key_code": "eject"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "苹果显示亮度减少",
+        "data": {
+            "key_code": "apple_display_brightness_decrement"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "苹果显示亮度增加",
+        "data": {
+            "key_code": "apple_display_brightness_increment"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "苹果顶壳显示亮度减少",
+        "data": {
+            "key_code": "apple_top_case_display_brightness_decrement"
+        }
+    },
+    {
+        "not_from": true,
+        "label": "苹果顶壳显示亮度增加",
+        "data": {
+            "key_code": "apple_top_case_display_brightness_increment"
+        }
+    },
+    {
+        "label": "扫描上一首曲目",
+        "data": {
+            "consumer_key_code": "scan_previous_track"
+        }
+    },
+    {
+        "label": "扫描下一首曲目",
+        "data": {
+            "consumer_key_code": "scan_next_track"
+        }
+    },
+    {
+        "category": "小键盘键"
+    },
+    {
+        "label": "小键盘数字锁定",
+        "data": {
+            "key_code": "keypad_num_lock"
+        }
+    },
+    {
+        "label": "小键盘斜杠",
+        "data": {
+            "key_code": "keypad_slash"
+        }
+    },
+    {
+        "label": "小键盘星号",
+        "data": {
+            "key_code": "keypad_asterisk"
+        }
+    },
+    {
+        "label": "小键盘连字符",
+        "data": {
+            "key_code": "keypad_hyphen"
+        }
+    },
+    {
+        "label": "小键盘加号",
+        "data": {
+            "key_code": "keypad_plus"
+        }
+    },
+    {
+        "label": "小键盘回车",
+        "data": {
+            "key_code": "keypad_enter"
+        }
+    },
+    {
+        "label": "小键盘1",
+        "data": {
+            "key_code": "keypad_1"
+        }
+    },
+    {
+        "label": "小键盘2",
+        "data": {
+            "key_code": "keypad_2"
+        }
+    },
+    {
+        "label": "小键盘3",
+        "data": {
+            "key_code": "keypad_3"
+        }
+    },
+    {
+        "label": "小键盘4",
+        "data": {
+            "key_code": "keypad_4"
+        }
+    },
+    {
+        "label": "小键盘5",
+        "data": {
+            "key_code": "keypad_5"
+        }
+    },
+    {
+        "label": "小键盘6",
+        "data": {
+            "key_code": "keypad_6"
+        }
+    },
+    {
+        "label": "小键盘7",
+        "data": {
+            "key_code": "keypad_7"
+        }
+    },
+    {
+        "label": "小键盘8",
+        "data": {
+            "key_code": "keypad_8"
+        }
+    },
+    {
+        "label": "小键盘9",
+        "data": {
+            "key_code": "keypad_9"
+        }
+    },
+    {
+        "label": "小键盘0",
+        "data": {
+            "key_code": "keypad_0"
+        }
+    },
+    {
+        "label": "小键盘句号",
+        "data": {
+            "key_code": "keypad_period"
+        }
+    },
+    {
+        "label": "小键盘等号",
+        "data": {
+            "key_code": "keypad_equal_sign"
+        }
+    },
+    {
+        "label": "小键盘逗号",
+        "data": {
+            "key_code": "keypad_comma"
+        }
+    },
+    {
+        "category": "虚拟键"
+    },
+    {
+        "label": "vk_none（禁用此键）",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_none"
+        }
+    },
+    {
+        "category": "PC键盘上的键"
+    },
+    {
+        "label": "print_screen键",
+        "data": {
+            "key_code": "print_screen"
+        }
+    },
+    {
+        "label": "scroll_lock键",
+        "data": {
+            "key_code": "scroll_lock"
+        }
+    },
+    {
+        "label": "pause键",
+        "data": {
+            "key_code": "pause"
+        }
+    },
+    {
+        "label": "insert键",
+        "data": {
+            "key_code": "insert"
+        }
+    },
+    {
+        "label": "应用",
+        "data": {
+            "key_code": "application"
+        }
+    },
+    {
+        "label": "帮助",
+        "data": {
+            "key_code": "help"
+        }
+    },
+    {
+        "label": "电源",
+        "data": {
+            "key_code": "power"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "执行",
+        "data": {
+            "key_code": "execute"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "菜单",
+        "data": {
+            "key_code": "menu"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "选择",
+        "data": {
+            "key_code": "select"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "停止",
+        "data": {
+            "key_code": "stop"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "重复",
+        "data": {
+            "key_code": "again"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "撤销",
+        "data": {
+            "key_code": "undo"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "剪切",
+        "data": {
+            "key_code": "cut"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "拷贝",
+        "data": {
+            "key_code": "copy"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "粘贴",
+        "data": {
+            "key_code": "paste"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "查找",
+        "data": {
+            "key_code": "find"
+        }
+    },
+    {
+        "category": "国际键"
+    },
+    {
+        "label": "国际1",
+        "data": {
+            "key_code": "international1"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际2",
+        "data": {
+            "key_code": "international2"
+        }
+    },
+    {
+        "label": "国际3",
+        "data": {
+            "key_code": "international3"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际4",
+        "data": {
+            "key_code": "international4"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际5",
+        "data": {
+            "key_code": "international5"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际6",
+        "data": {
+            "key_code": "international6"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际7",
+        "data": {
+            "key_code": "international7"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际8",
+        "data": {
+            "key_code": "international8"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "国际9",
+        "data": {
+            "key_code": "international9"
+        }
+    },
+    {
+        "label": "语言1",
+        "data": {
+            "key_code": "lang1"
+        }
+    },
+    {
+        "label": "语言2",
+        "data": {
+            "key_code": "lang2"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言3",
+        "data": {
+            "key_code": "lang3"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言4",
+        "data": {
+            "key_code": "lang4"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言5",
+        "data": {
+            "key_code": "lang5"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言6",
+        "data": {
+            "key_code": "lang6"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言7",
+        "data": {
+            "key_code": "lang7"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言8",
+        "data": {
+            "key_code": "lang8"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "语言9",
+        "data": {
+            "key_code": "lang9"
+        }
+    },
+    {
+        "category": "日语"
+    },
+    {
+        "label": "英数キー",
+        "data": {
+            "key_code": "japanese_eisuu"
+        }
+    },
+    {
+        "label": "かなキー",
+        "data": {
+            "key_code": "japanese_kana"
+        }
+    },
+    {
+        "label": "PCキーボードの無変換キー",
+        "not_to": true,
+        "data": {
+            "key_code": "japanese_pc_nfer"
+        }
+    },
+    {
+        "label": "PCキーボードの変換キー",
+        "not_to": true,
+        "data": {
+            "key_code": "japanese_pc_xfer"
+        }
+    },
+    {
+        "label": "PCキーボードのかなキー",
+        "not_to": true,
+        "data": {
+            "key_code": "japanese_pc_katakana"
+        }
+    },
+    {
+        "category": "鼠标按键"
+    },
+    {
+        "not_from": true,
+        "label": "按键1",
+        "data": {
+            "pointing_button": "button1"
+        }
+    },
+    {
+        "label": "按键2",
+        "data": {
+            "pointing_button": "button2"
+        }
+    },
+    {
+        "label": "按键3",
+        "data": {
+            "pointing_button": "button3"
+        }
+    },
+    {
+        "label": "按键4",
+        "data": {
+            "pointing_button": "button4"
+        }
+    },
+    {
+        "label": "按键5",
+        "data": {
+            "pointing_button": "button5"
+        }
+    },
+    {
+        "label": "按键6",
+        "data": {
+            "pointing_button": "button6"
+        }
+    },
+    {
+        "label": "按键7",
+        "data": {
+            "pointing_button": "button7"
+        }
+    },
+    {
+        "label": "按键8",
+        "data": {
+            "pointing_button": "button8"
+        }
+    },
+    {
+        "label": "按键9",
+        "data": {
+            "pointing_button": "button9"
+        }
+    },
+    {
+        "label": "按键10",
+        "data": {
+            "pointing_button": "button10"
+        }
+    },
+    {
+        "label": "按键11",
+        "data": {
+            "pointing_button": "button11"
+        }
+    },
+    {
+        "label": "按键12",
+        "data": {
+            "pointing_button": "button12"
+        }
+    },
+    {
+        "label": "按键13",
+        "data": {
+            "pointing_button": "button13"
+        }
+    },
+    {
+        "label": "按键14",
+        "data": {
+            "pointing_button": "button14"
+        }
+    },
+    {
+        "label": "按键15",
+        "data": {
+            "pointing_button": "button15"
+        }
+    },
+    {
+        "label": "按键16",
+        "data": {
+            "pointing_button": "button16"
+        }
+    },
+    {
+        "label": "按键17",
+        "data": {
+            "pointing_button": "button17"
+        }
+    },
+    {
+        "label": "按键18",
+        "data": {
+            "pointing_button": "button18"
+        }
+    },
+    {
+        "label": "按键19",
+        "data": {
+            "pointing_button": "button19"
+        }
+    },
+    {
+        "label": "按键20",
+        "data": {
+            "pointing_button": "button20"
+        }
+    },
+    {
+        "label": "按键21",
+        "data": {
+            "pointing_button": "button21"
+        }
+    },
+    {
+        "label": "按键22",
+        "data": {
+            "pointing_button": "button22"
+        }
+    },
+    {
+        "label": "按键23",
+        "data": {
+            "pointing_button": "button23"
+        }
+    },
+    {
+        "label": "按键24",
+        "data": {
+            "pointing_button": "button24"
+        }
+    },
+    {
+        "label": "按键25",
+        "data": {
+            "pointing_button": "button25"
+        }
+    },
+    {
+        "label": "按键26",
+        "data": {
+            "pointing_button": "button26"
+        }
+    },
+    {
+        "label": "按键27",
+        "data": {
+            "pointing_button": "button27"
+        }
+    },
+    {
+        "label": "按键28",
+        "data": {
+            "pointing_button": "button28"
+        }
+    },
+    {
+        "label": "按键29",
+        "data": {
+            "pointing_button": "button29"
+        }
+    },
+    {
+        "label": "按键30",
+        "data": {
+            "pointing_button": "button30"
+        }
+    },
+    {
+        "label": "按键31",
+        "data": {
+            "pointing_button": "button31"
+        }
+    },
+    {
+        "label": "按键32",
+        "data": {
+            "pointing_button": "button32"
+        }
+    },
+    {
+        "category": "鼠标"
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向上",
+        "data": {
+            "mouse_key": {
+                "y": -1536
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向上（快）",
+        "data": {
+            "mouse_key": {
+                "y": -3072
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向上（慢）",
+        "data": {
+            "mouse_key": {
+                "y": -768
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向下",
+        "data": {
+            "mouse_key": {
+                "y": 1536
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向下（快）",
+        "data": {
+            "mouse_key": {
+                "y": 3072
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向下（慢）",
+        "data": {
+            "mouse_key": {
+                "y": 768
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向左",
+        "data": {
+            "mouse_key": {
+                "x": -1536
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向左（快）",
+        "data": {
+            "mouse_key": {
+                "x": -3072
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向左（慢）",
+        "data": {
+            "mouse_key": {
+                "x": -768
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向右",
+        "data": {
+            "mouse_key": {
+                "x": 1536
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向右（快）",
+        "data": {
+            "mouse_key": {
+                "x": 3072
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "鼠标向右（慢）",
+        "data": {
+            "mouse_key": {
+                "x": 768
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向上滚动",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": -32
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向上滚动（快速）",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": -64
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向上滚动（慢）",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": -16
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向下滚动",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": 32
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向下滚动（快速）",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": 64
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向下滚动（慢）",
+        "data": {
+            "mouse_key": {
+                "vertical_wheel": 16
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向左滚动",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": 32
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向左滚动（快速）",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": 64
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向左滚动（慢）",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": 16
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向右滚动",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": -32
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向右滚动（快速）",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": -64
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "向右滚动（慢）",
+        "data": {
+            "mouse_key": {
+                "horizontal_wheel": -16
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "速度加倍(2.0)",
+        "data": {
+            "mouse_key": {
+                "speed_multiplier": 2.0
+            }
+        }
+    },
+    {
+        "not_from": true,
+        "label": "速度加倍 (0.5)",
+        "data": {
+            "mouse_key": {
+                "speed_multiplier": 0.5
+            }
+        }
+    },
+    {
+        "category": "其他"
+    },
+    {
+        "not_to": true,
+        "label": "keypad_equal_sign_as400",
+        "data": {
+            "key_code": "keypad_equal_sign_as400"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "locking_caps_lock",
+        "data": {
+            "key_code": "locking_caps_lock"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "locking_num_lock",
+        "data": {
+            "key_code": "locking_num_lock"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "locking_scroll_lock",
+        "data": {
+            "key_code": "locking_scroll_lock"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "交替擦除",
+        "data": {
+            "key_code": "alternate_erase"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "sys_req_or_attention",
+        "data": {
+            "key_code": "sys_req_or_attention"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "取消",
+        "data": {
+            "key_code": "cancel"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "清除",
+        "data": {
+            "key_code": "clear"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "预先",
+        "data": {
+            "key_code": "prior"
+        }
+    },
+    {
+        "label": "很少使用返回 (HID使用0x9e)",
+        "not_to": true,
+        "data": {
+            "key_code": "return"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "separator",
+        "data": {
+            "key_code": "separator"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "out",
+        "data": {
+            "key_code": "out"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "oper",
+        "data": {
+            "key_code": "oper"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "清除或再次",
+        "data": {
+            "key_code": "clear_or_again"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "cr_sel_or_props",
+        "data": {
+            "key_code": "cr_sel_or_props"
+        }
+    },
+    {
+        "not_to": true,
+        "label": "ex_sel",
+        "data": {
+            "key_code": "ex_sel"
+        }
+    },
+    {
+        "label": "左⌥（左OPTION）",
+        "data": {
+            "key_code": "left_alt"
+        }
+    },
+    {
+        "label": "左⌘(左COMMAND)",
+        "data": {
+            "key_code": "left_gui"
+        }
+    },
+    {
+        "label": "右⌥（右OPTION）",
+        "data": {
+            "key_code": "right_alt"
+        }
+    },
+    {
+        "label": "右⌘(右COMMAND)",
+        "data": {
+            "key_code": "right_gui"
+        }
+    },
+    {
+        "label": "vk_consumer_brightness_down (显示亮度减少)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_brightness_down"
+        }
+    },
+    {
+        "label": "vk_consumer_brightness_up (显示亮度增加)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_brightness_up"
+        }
+    },
+    {
+        "label": "vk_mission_control (调度中心)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_mission_control"
+        }
+    },
+    {
+        "label": "vk_launchpad （启动台）",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_launchpad"
+        }
+    },
+    {
+        "label": "vk_dashboard (仪表板)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_dashboard"
+        }
+    },
+    {
+        "label": "vk_consumer_illumination_down (键盘背光减量)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_illumination_down"
+        }
+    },
+    {
+        "label": "vk_consumer_illumination_up (键盘背光增量)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_illumination_up"
+        }
+    },
+    {
+        "label": "vk_consumer_previous (倒带)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_previous"
+        }
+    },
+    {
+        "label": "vk_consumer_play (播放)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_play"
+        }
+    },
+    {
+        "label": "vk_consumer_next (快进)",
+        "not_from": true,
+        "data": {
+            "key_code": "vk_consumer_next"
+        }
+    },
+    {
+        "label": "volume_down (音量减)",
+        "data": {
+            "key_code": "volume_down"
+        }
+    },
+    {
+        "label": "volume_up (音量加)",
+        "data": {
+            "key_code": "volume_up"
+        }
+    },
+    {
+        "label": "key_code ::显示亮度减少",
+        "not_from": true,
+        "data": {
+            "key_code": "display_brightness_decrement"
+        }
+    },
+    {
+        "label": "key_code ::显示亮度增加",
+        "not_from": true,
+        "data": {
+            "key_code": "display_brightness_increment"
+        }
+    },
+    {
+        "label": "key_code::倒带",
+        "not_from": true,
+        "data": {
+            "key_code": "rewind"
+        }
+    },
+    {
+        "label": "key_code::播放或暂停",
+        "not_from": true,
+        "data": {
+            "key_code": "play_or_pause"
+        }
+    },
+    {
+        "label": "key_code::快进",
+        "not_from": true,
+        "data": {
+            "key_code": "fastforward"
+        }
+    },
+    {
+        "label": "key_code::静音",
+        "data": {
+            "key_code": "mute"
+        }
+    },
+    {
+        "label": "key_code::音量减",
+        "data": {
+            "key_code": "volume_decrement"
+        }
+    },
+    {
+        "label": "key_code::音量加",
+        "data": {
+            "key_code": "volume_increment"
+        }
+    }
+]

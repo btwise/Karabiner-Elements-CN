@@ -1,0 +1,42 @@
+[
+    {
+        "class": "from_modifiers_definition",
+        "input": null,
+        "error": "json must be object, but is `null`"
+    },
+    {
+        "class": "from_modifiers_definition",
+        "input": {
+            "mandatory": null
+        },
+        "error": "`mandatory` error: json must be array or string, but is `null`"
+    },
+    {
+        "class": "from_modifiers_definition",
+        "input": {
+            "mandatory": [null]
+        },
+        "error": "`mandatory` error: `modifier` must be string, but is `null`"
+    },
+    {
+        "class": "from_modifiers_definition",
+        "input": {
+            "optional": null
+        },
+        "error": "`optional` error: json must be array or string, but is `null`"
+    },
+    {
+        "class": "from_modifiers_definition",
+        "input": {
+            "optional": [null]
+        },
+        "error": "`optional` error: `modifier` must be string, but is `null`"
+    },
+    {
+        "class": "from_modifiers_definition",
+        "input": {
+            "Optional": [null]
+        },
+        "error": "unknown key `Optional` in `{\"Optional\":[null]}`"
+    }
+]

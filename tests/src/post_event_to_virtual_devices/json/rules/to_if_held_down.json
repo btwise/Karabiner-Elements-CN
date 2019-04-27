@@ -1,0 +1,80 @@
+[
+    {
+        "description": "f1 -> f2 (with empty `to_`)",
+        "from": {
+            "key_code": "f1",
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "to_if_held_down": [
+            {
+                "key_code": "f2"
+            }
+        ],
+        "type": "basic"
+    },
+    {
+        "description": "f2 -> f3,f4 (with `to_`)",
+        "from": {
+            "key_code": "f2",
+            "modifiers": {
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "f3"
+            }
+        ],
+        "to_if_held_down": [
+            {
+                "key_code": "f4"
+            }
+        ],
+        "type": "basic"
+    },
+    {
+        "description": "left_shift+f3 -> f4,f5 (from: modifier+key)",
+        "from": {
+            "key_code": "f3",
+            "modifiers": {
+                "mandatory": ["left_shift"],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "f4"
+            }
+        ],
+        "to_if_held_down": [
+            {
+                "key_code": "f5"
+            }
+        ],
+        "type": "basic"
+    },
+    {
+        "description":
+            "left_shift+f4 -> right_shift,right_control (from: modifier+key)",
+        "from": {
+            "key_code": "f4",
+            "modifiers": {
+                "mandatory": ["left_shift"],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "right_shift"
+            }
+        ],
+        "to_if_held_down": [
+            {
+                "key_code": "right_control"
+            }
+        ],
+        "type": "basic"
+    }
+]

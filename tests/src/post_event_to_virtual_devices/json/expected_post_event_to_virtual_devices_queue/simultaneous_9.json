@@ -1,0 +1,54 @@
+[
+    {
+        "keyboard_input": {
+            "keys": [
+                "a"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 5,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "a",
+                "s"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 1002,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "s"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 1007,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "spacebar",
+                "s"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 1012,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "spacebar"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 1017,
+        "type": "keyboard_input"
+    }
+]

@@ -1,0 +1,88 @@
+[
+    {
+        "keyboard_input": {
+            "keys": [
+                "tab"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 1000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "tab",
+                "escape"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 2000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "tab",
+                "escape",
+                "spacebar"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 3000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "escape",
+                "spacebar"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 4000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "escape",
+                "spacebar"
+            ],
+            "modifiers": [
+                "left_shift"
+            ]
+        },
+        "time_stamp": 5000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "return_or_enter",
+                "escape",
+                "spacebar"
+            ],
+            "modifiers": [
+                "left_shift"
+            ]
+        },
+        "time_stamp": 6000,
+        "type": "keyboard_input"
+    },
+    {
+        "keyboard_input": {
+            "keys": [
+                "return_or_enter",
+                "escape",
+                "spacebar",
+                "a"
+            ],
+            "modifiers": [
+                "left_shift"
+            ]
+        },
+        "time_stamp": 7000,
+        "type": "keyboard_input"
+    }
+]

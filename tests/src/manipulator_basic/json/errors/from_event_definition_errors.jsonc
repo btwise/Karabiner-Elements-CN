@@ -1,0 +1,99 @@
+[
+    // from_event_definition
+
+    {
+        "class": "from_event_definition",
+        "input": null,
+        "error": "json must be object, but is `null`"
+    },
+
+    // from_event_definition.event_definition
+
+    {
+        "class": "from_event_definition",
+        "input": {
+            "key_code": null
+        },
+        "error": "`key_code` error: json must be string or number, but is `null`"
+    },
+
+    // from_event_definition.simultaneous
+
+    {
+        "class": "from_event_definition",
+        "input": {
+            "simultaneous": null
+        },
+        "error": "`simultaneous` must be array, but is `null`"
+    },
+    {
+        "class": "from_event_definition",
+        "input": {
+            "simultaneous": [null]
+        },
+        "error": "`simultaneous` entry must be object, but is `null`"
+    },
+    {
+        "class": "from_event_definition",
+        "input": {
+            "simultaneous": [
+                {
+                    "unknown_key": "unknown_value"
+                }
+            ]
+        },
+        "error": "unknown key: `unknown_key` in `{\"unknown_key\":\"unknown_value\"}"
+    },
+    {
+        "class": "from_event_definition",
+        "input": {
+            "simultaneous": [{}]
+        },
+        "error": "event type is invalid: `{\"simultaneous\":[{}]}`"
+    },
+
+    // from_event_definition.simultaneous_options
+
+    {
+        "class": "from_event_definition",
+        "input": {
+            "simultaneous_options": null
+        },
+        "error": "`simultaneous_options` error: json must be object, but is `null`"
+    },
+
+    // from_event_definition.modifiers
+
+    {
+        "class": "from_event_definition",
+        "input": {
+            "modifiers": null
+        },
+        "error": "`modifiers` error: json must be object, but is `null`"
+    },
+
+    // unknown key
+
+    {
+        "class": "from_event_definition",
+        "input": {
+            "unknown_key": "dummy"
+        },
+        "error": "`from` error: unknown key `unknown_key` in `{\"unknown_key\":\"dummy\"}`"
+    },
+
+    // extra errors
+
+    {
+        "class": "from_event_definition",
+        "input": {},
+        "error": "event is not specified: `{}`"
+    },
+    {
+        "class": "from_event_definition",
+        "input": {
+            "shell_command": "ls"
+        },
+        "error": "event type is invalid: `{\"shell_command\":\"ls\"}`"
+    }
+]

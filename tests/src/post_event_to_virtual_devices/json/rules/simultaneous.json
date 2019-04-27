@@ -1,0 +1,322 @@
+[
+    {
+        "description": "a+s -> d",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "a"
+                },
+                {
+                    "key_code": "s"
+                }
+            ],
+            "modifiers": {
+                "mandatory": [],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "d"
+            },
+            {
+                "key_code": "f"
+            }
+        ]
+    },
+    {
+        "description": "left_shift + q+w -> e",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "q"
+                },
+                {
+                    "key_code": "w"
+                }
+            ],
+            "modifiers": {
+                "mandatory": ["left_shift"],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "e"
+            },
+            {
+                "key_code": "r"
+            }
+        ]
+    },
+    {
+        "description": "button1+button2+button3 -> button4",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "pointing_button": "button1"
+                },
+                {
+                    "pointing_button": "button2"
+                },
+                {
+                    "pointing_button": "button3"
+                }
+            ]
+        },
+        "to": [
+            {
+                "pointing_button": "button4"
+            }
+        ]
+    },
+    {
+        "description": "button1 -> button5",
+        "type": "basic",
+        "from": {
+            "pointing_button": "button1"
+        },
+        "to": [
+            {
+                "pointing_button": "button5"
+            }
+        ]
+    },
+    {
+        "description": "z+x -> 1 (to_if_held_down)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "z"
+                },
+                {
+                    "key_code": "x"
+                }
+            ],
+            "modifiers": {
+                "mandatory": [],
+                "optional": ["any"]
+            }
+        },
+        "to_if_held_down": [
+            {
+                "key_code": "1"
+            }
+        ]
+    },
+    {
+        "description": "z+c -> 2/3 (to_if_alone)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "z"
+                },
+                {
+                    "key_code": "c"
+                }
+            ],
+            "modifiers": {
+                "mandatory": [],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "2"
+            }
+        ],
+        "to_if_alone": [
+            {
+                "key_code": "3"
+            }
+        ]
+    },
+    {
+        "description": "j+k -> 1 (key_down_order)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "j"
+                },
+                {
+                    "key_code": "k"
+                }
+            ],
+            "simultaneous_options": {
+                "key_down_order": "strict"
+            }
+        },
+        "to": [
+            {
+                "key_code": "1"
+            }
+        ]
+    },
+    {
+        "description": "k+j -> 2 (key_down_order)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "k"
+                },
+                {
+                    "key_code": "j"
+                }
+            ],
+            "simultaneous_options": {
+                "key_down_order": "strict"
+            }
+        },
+        "to": [
+            {
+                "key_code": "2"
+            }
+        ]
+    },
+    {
+        "description": "left_shift + u+i -> 1 (key_down_order, key_up_order)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "u"
+                },
+                {
+                    "key_code": "i"
+                }
+            ],
+            "simultaneous_options": {
+                "key_down_order": "strict",
+                "key_up_order": "strict_inverse",
+                "to_after_key_up": [
+                    {
+                        "key_code": "3"
+                    }
+                ]
+            },
+            "modifiers": {
+                "mandatory": ["left_shift"],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "1"
+            }
+        ],
+        "to_after_key_up": [
+            {
+                "key_code": "2"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "name": "simple_vi_mode",
+                "type": "variable_if",
+                "value": 1
+            }
+        ],
+        "from": {
+            "key_code": "j"
+        },
+        "to": [
+            {
+                "key_code": "down_arrow"
+            }
+        ],
+        "type": "basic"
+    },
+    {
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "s"
+                },
+                {
+                    "key_code": "j"
+                }
+            ],
+            "simultaneous_options": {
+                "key_down_order": "strict",
+                "key_up_order": "strict_inverse",
+                "to_after_key_up": [
+                    {
+                        "set_variable": {
+                            "name": "simple_vi_mode",
+                            "value": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "to": [
+            {
+                "set_variable": {
+                    "name": "simple_vi_mode",
+                    "value": 1
+                }
+            },
+            {
+                "key_code": "down_arrow"
+            }
+        ],
+        "type": "basic"
+    },
+    {
+        "description": "1+2 -> left_control (key_up_when)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "1"
+                },
+                {
+                    "key_code": "2"
+                }
+            ],
+            "simultaneous_options": {
+                "key_up_when": "all"
+            },
+            "modifiers": {
+                "mandatory": [],
+                "optional": ["any"]
+            }
+        },
+        "to": [
+            {
+                "key_code": "left_control"
+            }
+        ]
+    },
+    {
+        "description": "3+4 -> 5 (detect_key_down_uninterruptedly)",
+        "type": "basic",
+        "from": {
+            "simultaneous": [
+                {
+                    "key_code": "3"
+                },
+                {
+                    "key_code": "4"
+                }
+            ],
+            "simultaneous_options": {
+                "detect_key_down_uninterruptedly": true
+            }
+        },
+        "to": [
+            {
+                "key_code": "5"
+            }
+        ]
+    }
+]

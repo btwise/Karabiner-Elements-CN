@@ -1,0 +1,209 @@
+#pragma once
+
+#include <CoreFoundation/CoreFoundation.h>
+#include <cstdlib>
+#include <string>
+#include <thread>
+
+namespace krbn {
+class constants final {
+public:
+  static const char* get_version_file_path(void) {
+    return "/Library/Application Support/org.pqrs/Karabiner-Elements/version";
+  }
+
+  static const char* get_tmp_directory(void) {
+    return "/Library/Application Support/org.pqrs/tmp";
+  }
+
+  static std::string get_pid_directory(void) {
+    return "/Library/Application Support/org.pqrs/tmp/pid";
+  }
+
+  static const char* get_grabber_socket_file_path(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_grabber_receiver";
+  }
+
+  static const char* get_grabber_alerts_json_file_path(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_grabber_alerts.json";
+  }
+
+  static const char* get_devices_json_file_path(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_grabber_devices.json";
+  }
+
+  static const char* get_device_details_json_file_path(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_grabber_device_details.json";
+  }
+
+  static const char* get_manipulator_environment_json_file_path(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_grabber_manipulator_environment.json";
+  }
+
+  static const char* get_console_user_server_socket_directory(void) {
+    return "/Library/Application Support/org.pqrs/tmp/karabiner_console_user_server";
+  }
+
+  static const char* get_system_configuration_directory(void) {
+    return "/Library/Application Support/org.pqrs/config";
+  }
+
+  static const char* get_system_core_configuration_file_path(void) {
+    return "/Library/Application Support/org.pqrs/config/karabiner.json";
+  }
+
+  static const std::string& get_user_configuration_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      if (auto xdg_config_home = std::getenv("XDG_CONFIG_HOME")) {
+        directory = xdg_config_home;
+      } else {
+        if (auto home = std::getenv("HOME")) {
+          directory = home;
+          directory += "/.config";
+        }
+      }
+
+      if (!directory.empty()) {
+        directory += "/karabiner";
+      }
+    }
+
+    return directory;
+  }
+
+  static const std::string& get_user_data_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      if (auto xdg_config_home = std::getenv("XDG_DATA_HOME")) {
+        directory = xdg_config_home;
+      } else {
+        if (auto home = std::getenv("HOME")) {
+          directory = home;
+          directory += "/.local/share";
+        }
+      }
+
+      if (!directory.empty()) {
+        directory += "/karabiner";
+      }
+    }
+
+    return directory;
+  }
+
+  static const std::string& get_user_core_configuration_file_path(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string file_path;
+
+    if (!once) {
+      once = true;
+      auto directory = get_user_configuration_directory();
+      if (!directory.empty()) {
+        file_path = directory + "/karabiner.json";
+      }
+    }
+
+    return file_path;
+  }
+
+  static const std::string& get_user_core_configuration_automatic_backups_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      auto d = get_user_configuration_directory();
+      if (!d.empty()) {
+        directory = d + "/automatic_backups";
+      }
+    }
+
+    return directory;
+  }
+
+  static const std::string& get_user_complex_modifications_assets_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      auto d = get_user_configuration_directory();
+      if (!d.empty()) {
+        directory = d + "/assets/complex_modifications";
+      }
+    }
+
+    return directory;
+  }
+
+  static const std::string& get_user_log_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      auto d = get_user_data_directory();
+      if (!d.empty()) {
+        directory = d + "/log";
+      }
+    }
+
+    return directory;
+  }
+
+  static const std::string& get_user_pid_directory(void) {
+    static std::mutex mutex;
+    std::lock_guard<std::mutex> guard(mutex);
+
+    static bool once = false;
+    static std::string directory;
+
+    if (!once) {
+      once = true;
+      auto d = get_user_data_directory();
+      if (!d.empty()) {
+        directory = d + "/pid";
+      }
+    }
+
+    return directory;
+  }
+
+  static const char* get_distributed_notification_observed_object(void) {
+    return "org.pqrs.karabiner";
+  }
+
+  static const char* get_distributed_notification_console_user_server_is_disabled(void) {
+    return "console_user_server_is_disabled";
+  }
+
+  static const char* get_distributed_notification_device_grabbing_state_is_changed(void) {
+    return "device_grabbing_state_is_changed";
+  }
+};
+} // namespace krbn

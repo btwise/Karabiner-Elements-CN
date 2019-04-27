@@ -1,0 +1,72 @@
+[
+    {
+        "descriptions": {
+            "manufacturer": "manufacturer1",
+            "product": "product1"
+        },
+        "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 5678,
+            "vendor_id": 1234
+        },
+        "is_built_in_keyboard": true,
+        "is_built_in_trackpad": false
+    },
+    {
+        "descriptions": {
+            "manufacturer": "manufacturer2",
+            "product": "product2"
+        },
+        "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 5679,
+            "vendor_id": 1234
+        },
+        "is_built_in_keyboard": false,
+        "is_built_in_trackpad": true
+    },
+    {
+        "descriptions": {
+            "manufacturer": "manufacturer3",
+            "product": "product3"
+        },
+        "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 6789,
+            "vendor_id": 2345
+        },
+        "is_built_in_keyboard": false,
+        "is_built_in_trackpad": false
+    },
+    {
+        "descriptions": {
+            "manufacturer": "manufacturer1",
+            "product": "product4"
+        },
+        "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 678,
+            "vendor_id": 123
+        },
+        "is_built_in_keyboard": true,
+        "is_built_in_trackpad": false
+    },
+    {
+        "descriptions": {
+            "manufacturer": "manufacturer1",
+            "product": "product4"
+        },
+        "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 678,
+            "vendor_id": 123
+        },
+        "is_built_in_keyboard": false,
+        "is_built_in_trackpad": true
+    }
+]

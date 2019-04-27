@@ -1,0 +1,22 @@
+[
+    {
+        "type": "device_if",
+        "identifiers": [
+            {
+                "vendor_id": 1000,
+                "product_id": 2000
+            },
+            {
+                "vendor_id": 1001,
+                "product_id": 2001
+            },
+            {
+                "description": "任意 product_id",
+                "vendor_id": 1099
+            },
+            {
+                "description": "如果未设置vendor_id和product_id，则忽略"
+            }
+        ]
+    }
+]

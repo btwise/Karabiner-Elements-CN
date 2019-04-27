@@ -1,0 +1,218 @@
+[
+    // empty
+
+    {
+        "input": {},
+        "tests": [
+            {
+                "input": [],
+                "expected": []
+            },
+            {
+                "input": ["left_shift"],
+                "expected": null
+            }
+        ]
+    },
+
+    // mandatory_modifiers any
+
+    {
+        "input": {
+            "mandatory": ["any"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": []
+            },
+            {
+                "input": ["left_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["left_command", "left_shift"],
+                "expected": ["left_command", "left_shift"]
+            }
+        ]
+    },
+
+    // optional_modifiers any
+
+    {
+        "input": {
+            "optional": ["any"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": []
+            },
+            {
+                "input": ["left_shift"],
+                "expected": []
+            },
+            {
+                "input": ["left_command", "left_shift"],
+                "expected": []
+            }
+        ]
+    },
+
+    // mandatory_modifiers and optional_modifiers
+
+    {
+        "input": {
+            "mandatory": ["control"],
+            "optional": ["shift"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": null
+            },
+            {
+                "input": ["left_control"],
+                "expected": ["left_control"]
+            },
+            {
+                "input": ["left_control", "left_shift"],
+                "expected": ["left_control"]
+            },
+            {
+                "input": ["left_control", "left_option", "left_shift"],
+                "expected": null
+            }
+        ]
+    },
+
+    {
+        "input": {
+            "mandatory": ["control"],
+            "optional": ["shift", "option"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": null
+            },
+            {
+                "input": ["left_control"],
+                "expected": ["left_control"]
+            },
+            {
+                "input": ["left_control", "left_shift"],
+                "expected": ["left_control"]
+            },
+            {
+                "input": ["left_control", "left_option", "left_shift"],
+                "expected": ["left_control"]
+            },
+            {
+                "input": ["fn", "left_control", "left_option", "left_shift"],
+                "expected": null
+            }
+        ]
+    },
+
+    // mandatory_modifiers strict matching
+
+    {
+        "input": {
+            "mandatory": ["left_shift"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": null
+            },
+            {
+                "input": ["left_command"],
+                "expected": null
+            },
+            {
+                "input": ["left_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["left_shift", "right_shift"],
+                "expected": null
+            }
+        ]
+    },
+
+    // mandatory_modifiers (modifier::shift)
+
+    {
+        "input": {
+            "mandatory": ["shift"],
+            "optional": ["any"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": null
+            },
+            {
+                "input": ["left_command"],
+                "expected": null
+            },
+            {
+                "input": ["left_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["right_shift"],
+                "expected": ["right_shift"]
+            },
+            // If left_shift and right_shift are pressed, left_shift will be returned.
+            {
+                "input": ["left_shift", "right_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["left_command", "left_shift", "right_shift"],
+                "expected": ["left_shift"]
+            }
+        ]
+    },
+
+    // mandatory_modifiers strict matching (modifier::shift)
+
+    {
+        "input": {
+            "mandatory": ["shift"]
+        },
+        "tests": [
+            {
+                "input": [],
+                "expected": null
+            },
+            {
+                "input": ["left_command"],
+                "expected": null
+            },
+            {
+                "input": ["left_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["right_shift"],
+                "expected": ["right_shift"]
+            },
+            // If left_shift and right_shift are pressed, left_shift will be returned.
+            {
+                "input": ["left_shift", "right_shift"],
+                "expected": ["left_shift"]
+            },
+            {
+                "input": ["left_command", "left_shift"],
+                "expected": null
+            },
+            {
+                "input": ["left_command", "left_shift", "right_shift"],
+                "expected": null
+            }
+        ]
+    }
+]

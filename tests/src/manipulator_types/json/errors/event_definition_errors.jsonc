@@ -1,0 +1,192 @@
+[
+    {
+        "class": "event_definition",
+        "input": {
+            "key_code": "a",
+            "consumer_key_code": "mute"
+        },
+        "error": "multiple types are specified: `{\"consumer_key_code\":\"mute\",\"key_code\":\"a\"}`"
+    },
+
+    // key_code
+
+    {
+        "class": "event_definition",
+        "input": {
+            "key_code": null
+        },
+        "error": "`key_code` error: json must be string or number, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "key_code": "unknown_key_code"
+        },
+        "error": "`key_code` error: unknown key_code: `\"unknown_key_code\"`"
+    },
+
+    // consumer_key_code
+
+    {
+        "class": "event_definition",
+        "input": {
+            "consumer_key_code": null
+        },
+        "error": "`consumer_key_code` error: json must be string or number, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "consumer_key_code": "unknown_consumer_key_code"
+        },
+        "error": "`consumer_key_code` error: unknown consumer_key_code: `\"unknown_consumer_key_code\"`"
+    },
+
+    // pointing_button
+
+    {
+        "class": "event_definition",
+        "input": {
+            "pointing_button": null
+        },
+        "error": "`pointing_button` error: json must be string or number, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "pointing_button": "unknown_pointing_button"
+        },
+        "error": "`pointing_button` error: unknown pointing_button: `\"unknown_pointing_button\"`"
+    },
+
+    // any
+
+    {
+        "class": "event_definition",
+        "input": {
+            "any": null
+        },
+        "error": "`any` must be string, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "any": "unknown"
+        },
+        "error": "unknown `any`: `\"unknown\"`"
+    },
+
+    // shell_command
+
+    {
+        "class": "event_definition",
+        "input": {
+            "shell_command": null
+        },
+        "error": "`shell_command` must be string, but is `null`"
+    },
+
+    // select_input_source
+
+    {
+        "class": "event_definition",
+        "input": {
+            "select_input_source": null
+        },
+        "error": "`select_input_source` must be object or array of objects, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "select_input_source": {
+                "language": null
+            }
+        },
+        "error": "`select_input_source` error: `language` must be string, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "select_input_source": [
+                {
+                    "language": null
+                }
+            ]
+        },
+        "error": "`select_input_source` error: `language` must be string, but is `null`"
+    },
+
+    // set_variable
+
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": null
+        },
+        "error": "`set_variable` must be object, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": {
+                "name": null
+            }
+        },
+        "error": "`set_variable.name` must be string, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": {
+                "value": null
+            }
+        },
+        "error": "`set_variable.value` must be number, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": {
+                "Name": "flag"
+            }
+        },
+        "error": "unknown key `Name` in `{\"Name\":\"flag\"}`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": {
+                "value": 1
+            }
+        },
+        "error": "`set_variable.name` is not found in `{\"value\":1}`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "set_variable": {
+                "name": "flag"
+            }
+        },
+        "error": "`set_variable.value` is not found in `{\"name\":\"flag\"}`"
+    },
+
+    // mouse_key
+
+    {
+        "class": "event_definition",
+        "input": {
+            "mouse_key": null
+        },
+        "error": "`mouse_key` must be object, but is `null`"
+    },
+    {
+        "class": "event_definition",
+        "input": {
+            "mouse_key": {
+                "x": null
+            }
+        },
+        "error": "`mouse_key` error: `x` must be number, but is `null`"
+    }
+]

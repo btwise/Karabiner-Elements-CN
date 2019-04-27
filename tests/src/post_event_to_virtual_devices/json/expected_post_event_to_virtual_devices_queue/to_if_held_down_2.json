@@ -1,0 +1,12 @@
+[
+    {
+        "keyboard_input": {
+            "keys": [
+                "tab"
+            ],
+            "modifiers": []
+        },
+        "time_stamp": 5,
+        "type": "keyboard_input"
+    }
+]

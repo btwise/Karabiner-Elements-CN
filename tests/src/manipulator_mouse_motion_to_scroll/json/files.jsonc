@@ -1,0 +1,57 @@
+[
+    {
+        // slight movement
+        "input": "input/counter_1.jsonc",
+        "expected": "expected/counter_1.jsonc"
+    },
+    {
+        // scroll direction lock (with cancel)
+        "input": "input/counter_2.jsonc",
+        "expected": "expected/counter_2.jsonc"
+    },
+    {
+        // scroll direction lock
+        "input": "input/counter_3.jsonc",
+        "expected": "expected/counter_3.jsonc"
+    },
+    {
+        // continous slight movement
+        "input": "input/counter_4.jsonc",
+        "expected": "expected/counter_4.jsonc"
+    },
+    {
+        // high speed movement
+        "input": "input/counter_5.jsonc",
+        "expected": "expected/counter_5.jsonc"
+    },
+    {
+        // one event
+        "input": "input/counter_6.jsonc",
+        "expected": "expected/counter_6.jsonc"
+    },
+    {
+        // one event (speed 1000%)
+        "input": "input/counter_7.jsonc",
+        "expected": "expected/counter_7.jsonc"
+    },
+    {
+        // one event (speed 1000%)
+        "input": "input/counter_8.jsonc",
+        "expected": "expected/counter_8.jsonc"
+    },
+    {
+        // one event (speed 200%)
+        "input": "input/counter_9.jsonc",
+        "expected": "expected/counter_9.jsonc"
+    },
+    {
+        // high speed movement (speed 5%)
+        "input": "input/counter_10.jsonc",
+        "expected": "expected/counter_10.jsonc"
+    },
+    {
+        // long slow movement
+        "input": "input/counter_11.jsonc",
+        "expected": "expected/counter_11.jsonc"
+    }
+]

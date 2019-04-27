@@ -1,0 +1,203 @@
+{
+    "global": {
+        "check_for_updates_on_startup": false,
+        "show_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": {
+                        "key_code": "delete_or_backspace"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "escape"
+                    },
+                    "to": {
+                        "key_code": "spacebar"
+                    }
+                }
+            ],
+            "fn_function_keys": [
+                {
+                    "from": {
+                        "key_code": "f1"
+                    },
+                    "to": {
+                        "key_code": "escape"
+                    }
+                }
+            ],
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Emacs bindings, etc.",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ]
+                            },
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
+                                "type": "basic",
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 400
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "description test",
+                        "manipulators": [
+                            {
+                                "description": "description test 2"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": []
+                    }
+                ],
+                "dummy": {
+                    "keep_me": true
+                },
+                "parameters": {
+                    "basic.to_if_alone_timeout_milliseconds": 800,
+                    "dummy": {
+                        "keep_me": true
+                    }
+                }
+            },
+            "virtual_hid_keyboard": {
+                "country_code": 99
+            },
+            "devices": [
+                {
+                    "identifiers": {
+                        "vendor_id": 1133,
+                        "product_id": 50475,
+                        "is_keyboard": true,
+                        "is_pointing_device": false
+                    },
+                    "ignore": false,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        }
+                    ],
+                    "fn_function_keys": [
+                        {
+                            "from": {
+                                "key_code": "f1"
+                            },
+                            "to": {
+                                "key_code": "escape"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "f2"
+                            },
+                            "to": {
+                                "key_code": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "vendor_id": 1452,
+                        "product_id": 610,
+                        "is_keyboard": true,
+                        "is_pointing_device": false
+                    },
+                    "ignore": true,
+                    "disable_built_in_keyboard_if_exists": true
+                },
+                {
+                    "identifiers": {
+                        "vendor_id": 1234,
+                        "product_id": 50475,
+                        "is_keyboard": true,
+                        "is_pointing_device": false
+                    },
+                    "ignore": false,
+                    "simple_modifications": {
+                        "caps_lock": "left_control"
+                    },
+                    "fn_function_keys": {
+                        "f1": "escape",
+                        "f2": ""
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Empty",
+            "selected": false
+        },
+        {
+            "name": "fn_function_keys v1",
+            "selected": false,
+            "fn_function_keys": {
+                "f1": "escape"
+            }
+        }
+    ],
+    "dummy": {
+        "keep_me": true
+    }
+}

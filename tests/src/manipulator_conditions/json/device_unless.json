@@ -1,0 +1,29 @@
+[
+    {
+        "type": "device_unless",
+        "identifiers": [
+            {
+                "vendor_id": 1000,
+                "product_id": 2000
+            },
+            {
+                "vendor_id": 1001,
+                "product_id": 2001
+            },
+            {
+                "vendor_id": 1099
+            }
+        ]
+    },
+    {
+        "type": "device_unless",
+        "identifiers": [
+            {
+                "vendor_id": 8888
+            },
+            {
+                "description": "condition is ignored if error"
+            }
+        ]
+    }
+]
