@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m \
-  /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.h
+  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.h

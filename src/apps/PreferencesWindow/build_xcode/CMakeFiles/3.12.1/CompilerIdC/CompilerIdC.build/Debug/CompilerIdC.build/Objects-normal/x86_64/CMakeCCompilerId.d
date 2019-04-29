@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c
+  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c

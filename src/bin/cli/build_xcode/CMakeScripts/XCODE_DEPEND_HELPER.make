@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.karabiner_cli.Debug:
-/Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/Debug/karabiner_cli:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/Debug/karabiner_cli
+/Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/Debug/karabiner_cli:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/Debug/karabiner_cli
 
 
 PostBuild.karabiner_cli.Release:
-/Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/Release/karabiner_cli:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/Release/karabiner_cli
+/Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/Release/karabiner_cli:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/Release/karabiner_cli
 
 
 PostBuild.karabiner_cli.MinSizeRel:
-/Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/MinSizeRel/karabiner_cli:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/MinSizeRel/karabiner_cli
+/Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/MinSizeRel/karabiner_cli:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/MinSizeRel/karabiner_cli
 
 
 PostBuild.karabiner_cli.RelWithDebInfo:
-/Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/RelWithDebInfo/karabiner_cli:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/bin/cli/build_xcode/RelWithDebInfo/karabiner_cli
+/Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/RelWithDebInfo/karabiner_cli:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/bin/cli/build_xcode/RelWithDebInfo/karabiner_cli
 
 
 

@@ -44,26 +44,10 @@ public:
           }
 
         } else if (key == "options") {
-          if (!value.is_object()) {
-            throw pqrs::json::unmarshal_error(fmt::format("`{0}` must be object, but is `{1}`", key, value.dump()));
-          }
-
-          for (const auto& [k, v] : value.items()) {
-            if (k == "speed_multiplier") {
-              counter_parameters_.set_speed_multiplier(v.get<double>());
-            } else if (k == "threshold") { // (secret parameter)
-              counter_parameters_.set_threshold(v.get<int>());
-            } else if (k == "recent_time_duration_milliseconds") { // (secret parameter)
-              counter_parameters_.set_recent_time_duration_milliseconds(
-                  std::chrono::milliseconds(v.get<int>()));
-            } else if (k == "momentum_minus") { // (secret parameter)
-              counter_parameters_.set_momentum_minus(v.get<int>());
-            } else if (k == "direction_lock_threshold") { // (secret parameter)
-              counter_parameters_.set_direction_lock_threshold(v.get<int>());
-            } else if (k == "scroll_event_interval_milliseconds_threshold") { // (secret parameter)
-              counter_parameters_.set_scroll_event_interval_milliseconds_threshold(
-                  std::chrono::milliseconds(v.get<int>()));
-            }
+          try {
+            options_.update(value);
+          } catch (const pqrs::json::unmarshal_error& e) {
+            throw pqrs::json::unmarshal_error(fmt::format("`{0}` error: {1}", key, e.what()));
           }
 
         } else if (key == "description" ||
@@ -79,7 +63,7 @@ public:
 
       counter_ = std::make_unique<counter>(weak_dispatcher_,
                                            parameters,
-                                           counter_parameters_);
+                                           options_);
 
       counter_->scroll_event_arrived.connect([this](auto&& pointing_motion) {
         post_events(pointing_motion);
@@ -223,7 +207,7 @@ private:
   }
 
   from_modifiers_definition from_modifiers_definition_;
-  counter_parameters counter_parameters_;
+  options options_;
   std::unique_ptr<counter> counter_;
 
   std::shared_ptr<std::unordered_set<modifier_flag>> from_mandatory_modifiers_;

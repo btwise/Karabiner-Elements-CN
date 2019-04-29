@@ -1,4 +1,4 @@
-# Install script for directory: /Users/btwise/Karabiner-Elements/src/core/console_user_server
+# Install script for directory: /Users/btwise/我的仓库/Karabiner-Elements/src/core/console_user_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/btwise/Karabiner-Elements/src/core/console_user_server/build_xcode/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/btwise/我的仓库/Karabiner-Elements/src/core/console_user_server/build_xcode/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
