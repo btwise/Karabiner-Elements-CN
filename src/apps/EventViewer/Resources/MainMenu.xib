@@ -18,7 +18,7 @@
                 <menuItem title="EventViewer" id="56">
                     <menu key="submenu" title="EventViewer" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="Quit EventViewer" id="136">
+                            <menuItem title="退出EventViewer" id="136">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="terminate:" target="-2" id="tPj-0x-Qdg"/>
@@ -27,85 +27,85 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Edit" id="NcH-ne-3OP">
+                <menuItem title="编辑" id="NcH-ne-3OP">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Edit" id="9DO-UA-3ou">
+                    <menu key="submenu" title="编辑" id="9DO-UA-3ou">
                         <items>
-                            <menuItem title="Undo" keyEquivalent="z" id="RaZ-ep-uen">
+                            <menuItem title="撤销" keyEquivalent="z" id="RaZ-ep-uen">
                                 <connections>
                                     <action selector="undo:" target="-1" id="DKi-F2-HUX"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Redo" keyEquivalent="Z" id="8MK-7k-UUs">
+                            <menuItem title="重做" keyEquivalent="Z" id="8MK-7k-UUs">
                                 <connections>
                                     <action selector="redo:" target="-1" id="Ywl-Ia-ckF"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="Of1-ih-QZ9"/>
-                            <menuItem title="Cut" keyEquivalent="x" id="mCz-fd-e9s">
+                            <menuItem title="剪切" keyEquivalent="x" id="mCz-fd-e9s">
                                 <connections>
                                     <action selector="cut:" target="-1" id="1lG-Zn-Caz"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Copy" keyEquivalent="c" id="gLa-l0-Qr6">
+                            <menuItem title="复制" keyEquivalent="c" id="gLa-l0-Qr6">
                                 <connections>
                                     <action selector="copy:" target="-1" id="b5j-s5-bNa"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Paste" keyEquivalent="v" id="S6S-51-7OL">
+                            <menuItem title="粘贴" keyEquivalent="v" id="S6S-51-7OL">
                                 <connections>
                                     <action selector="paste:" target="-1" id="O9q-Pn-CWT"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="UZX-cw-ZX2">
+                            <menuItem title="粘贴和匹配样式" keyEquivalent="V" id="UZX-cw-ZX2">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="pasteAsPlainText:" target="-1" id="mgy-jQ-D9w"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Delete" id="a1X-w3-ag0">
+                            <menuItem title="删除" id="a1X-w3-ag0">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="delete:" target="-1" id="fbY-PE-JVs"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Select All" keyEquivalent="a" id="nZ9-IT-BlF">
+                            <menuItem title="全选" keyEquivalent="a" id="nZ9-IT-BlF">
                                 <connections>
                                     <action selector="selectAll:" target="-1" id="bt4-na-nAu"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="nU2-vQ-DdR"/>
-                            <menuItem title="Find" id="kWp-NA-5fc">
+                            <menuItem title="查找" id="kWp-NA-5fc">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Find" id="PTR-H9-cVW">
+                                <menu key="submenu" title="查找" id="PTR-H9-cVW">
                                     <items>
-                                        <menuItem title="Find…" tag="1" keyEquivalent="f" id="qWT-lE-38a">
+                                        <menuItem title="查找…" tag="1" keyEquivalent="f" id="qWT-lE-38a">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="1L9-6H-gna"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Find and Replace…" tag="12" keyEquivalent="f" id="1Fk-5E-T0k">
+                                        <menuItem title="查找和替换…" tag="12" keyEquivalent="f" id="1Fk-5E-T0k">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="performTextFinderAction:" target="-1" id="s5m-K2-2qY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Find Next" tag="2" keyEquivalent="g" id="W8Q-Ds-lZe">
+                                        <menuItem title="查找下一个" tag="2" keyEquivalent="g" id="W8Q-Ds-lZe">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="6d3-15-5iJ"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="vTz-7I-5LK">
+                                        <menuItem title="查找上一个" tag="3" keyEquivalent="G" id="vTz-7I-5LK">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="Duq-Us-IAY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
+                                        <menuItem title="使用选择查找" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="709-rw-C5q"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="NLF-pa-Yzy">
+                                        <menuItem title="跳转到选择" keyEquivalent="j" id="NLF-pa-Yzy">
                                             <connections>
                                                 <action selector="centerSelectionInVisibleArea:" target="-1" id="cts-NK-Mfr"/>
                                             </connections>
@@ -113,34 +113,34 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Spelling and Grammar" id="Fyx-lx-aMr">
+                            <menuItem title="拼写和语法" id="Fyx-lx-aMr">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Spelling" id="11m-b0-ZtJ">
+                                <menu key="submenu" title="拼写和语法" id="11m-b0-ZtJ">
                                     <items>
-                                        <menuItem title="Show Spelling and Grammar" keyEquivalent=":" id="smt-qb-3bM">
+                                        <menuItem title="显示拼写和语法" keyEquivalent=":" id="smt-qb-3bM">
                                             <connections>
                                                 <action selector="showGuessPanel:" target="-1" id="Hdw-KQ-K6m"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Check Document Now" keyEquivalent=";" id="QXk-8g-npl">
+                                        <menuItem title="立即检查文档" keyEquivalent=";" id="QXk-8g-npl">
                                             <connections>
                                                 <action selector="checkSpelling:" target="-1" id="wRL-BG-OIc"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="cqU-ez-aW9"/>
-                                        <menuItem title="Check Spelling While Typing" id="n8r-an-Mvb">
+                                        <menuItem title="键入时检查拼写" id="n8r-an-Mvb">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleContinuousSpellChecking:" target="-1" id="65N-Xg-msd"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Check Grammar With Spelling" id="3Mu-qf-fqo">
+                                        <menuItem title="用拼写检查语法" id="3Mu-qf-fqo">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleGrammarChecking:" target="-1" id="K9l-MP-PBu"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Correct Spelling Automatically" id="cbS-aO-QPX">
+                                        <menuItem title="自动纠正拼写" id="cbS-aO-QPX">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticSpellingCorrection:" target="-1" id="YuY-K9-O2P"/>
@@ -149,42 +149,42 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Substitutions" id="IKF-be-bFk">
+                            <menuItem title="替换" id="IKF-be-bFk">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Substitutions" id="Kvt-CL-pMI">
+                                <menu key="submenu" title="替换" id="Kvt-CL-pMI">
                                     <items>
-                                        <menuItem title="Show Substitutions" id="0Ur-C9-MVR">
+                                        <menuItem title="显示替换" id="0Ur-C9-MVR">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontSubstitutionsPanel:" target="-1" id="Pw0-WY-GZx"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="59C-IC-omI"/>
-                                        <menuItem title="Smart Copy/Paste" id="GFs-GC-evz">
+                                        <menuItem title="智能 复制/粘贴" id="GFs-GC-evz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleSmartInsertDelete:" target="-1" id="fcq-PH-7wv"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Smart Quotes" id="XfT-V1-94I">
+                                        <menuItem title="智能引号" id="XfT-V1-94I">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticQuoteSubstitution:" target="-1" id="HTF-Ii-7Xc"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Smart Dashes" id="lhH-ht-Q6W">
+                                        <menuItem title="智能破折号" id="lhH-ht-Q6W">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticDashSubstitution:" target="-1" id="Bzz-OR-6J9"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Smart Links" id="m6B-Fy-Uh6">
+                                        <menuItem title="智能链接" id="m6B-Fy-Uh6">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticLinkDetection:" target="-1" id="zK4-Ze-abt"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Data Detectors" id="5Ks-0p-YXl">
+                                        <menuItem title="数据检测器" id="5Ks-0p-YXl">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticDataDetection:" target="-1" id="6FJ-2i-3i5"/>
@@ -199,23 +199,23 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Transformations" id="fDn-r6-8kb">
+                            <menuItem title="转换" id="fDn-r6-8kb">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Transformations" id="8VG-IB-sl2">
+                                <menu key="submenu" title="转换" id="8VG-IB-sl2">
                                     <items>
-                                        <menuItem title="Make Upper Case" id="4sX-BI-4v2">
+                                        <menuItem title="变大写" id="4sX-BI-4v2">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="uppercaseWord:" target="-1" id="yvq-Ot-NTH"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Make Lower Case" id="uNb-tw-vbE">
+                                        <menuItem title="变小写" id="uNb-tw-vbE">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="lowercaseWord:" target="-1" id="EbP-Tr-dpz"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Capitalize" id="thZ-RT-Ymr">
+                                        <menuItem title="大写" id="thZ-RT-Ymr">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="capitalizeWord:" target="-1" id="gGy-Ag-dKH"/>
@@ -224,17 +224,17 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Speech" id="eZJ-Vk-JLo">
+                            <menuItem title="语音" id="eZJ-Vk-JLo">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Speech" id="Qaj-ht-hYd">
+                                <menu key="submenu" title="语音" id="Qaj-ht-hYd">
                                     <items>
-                                        <menuItem title="Start Speaking" id="bYb-jq-XJp">
+                                        <menuItem title="开始朗读" id="bYb-jq-XJp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="startSpeaking:" target="-1" id="KaU-Ag-3gN"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Stop Speaking" id="Pha-7a-gUB">
+                                        <menuItem title="停止朗读" id="Pha-7a-gUB">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="stopSpeaking:" target="-1" id="Ajt-gk-2Bo"/>
@@ -252,7 +252,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="122" width="874" height="550"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1600" height="877"/>
             <value key="minSize" type="size" width="874" height="550"/>
             <view key="contentView" wantsLayer="YES" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="874" height="550"/>
@@ -262,32 +262,32 @@
                         <rect key="frame" x="10" y="7" width="854" height="539"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
-                            <tabViewItem label="Main" identifier="Main" id="656">
+                            <tabViewItem label="基本" identifier="Main" id="656">
                                 <view key="view" id="659">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box borderType="line" title="Keyboard &amp; Pointing events" translatesAutoresizingMaskIntoConstraints="NO" id="614">
+                                        <box borderType="line" title="键盘 &amp; 鼠标事件" translatesAutoresizingMaskIntoConstraints="NO" id="614">
                                             <rect key="frame" x="14" y="198" width="806" height="285"/>
                                             <view key="contentView" id="pJS-41-sBt">
                                                 <rect key="frame" x="3" y="3" width="800" height="267"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="541">
-                                                        <rect key="frame" x="11" y="229" width="158" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="copy to pasteboard" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
+                                                        <rect key="frame" x="11" y="229" width="120" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="复制到剪贴板" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
                                                         <connections>
                                                             <action selector="copy:" target="571" id="590"/>
                                                         </connections>
                                                     </button>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="539">
-                                                        <rect key="frame" x="167" y="229" width="131" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="clear the result" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="540">
+                                                        <rect key="frame" x="129" y="229" width="94" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="清除结果" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="540">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
                                                         <connections>
                                                             <action selector="clear:" target="571" id="580"/>
@@ -296,11 +296,11 @@
                                                     <scrollView horizontalLineScroll="16" horizontalPageScroll="10" verticalLineScroll="16" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="561">
                                                         <rect key="frame" x="17" y="10" width="766" height="216"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="OS0-60-iDz">
-                                                            <rect key="frame" x="1" y="0.0" width="749" height="215"/>
+                                                            <rect key="frame" x="1" y="0.0" width="764" height="215"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" enabled="NO" rowHeight="14" headerView="565" id="564">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="749" height="192"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="764" height="192"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -308,7 +308,7 @@
                                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                                     <tableColumns>
                                                                         <tableColumn identifier="eventType" editable="NO" width="120" minWidth="40" maxWidth="1000" id="567">
-                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="eventType">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="事件类型">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -320,7 +320,7 @@
                                                                             </textFieldCell>
                                                                         </tableColumn>
                                                                         <tableColumn identifier="code" editable="NO" width="50" minWidth="40" maxWidth="1000" id="566">
-                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="code">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="代码">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,7 +332,7 @@
                                                                             </textFieldCell>
                                                                         </tableColumn>
                                                                         <tableColumn identifier="name" editable="NO" width="200" minWidth="10" maxWidth="3.4028234663852886e+38" id="581">
-                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="name">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="名称">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -343,8 +343,8 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                         </tableColumn>
-                                                                        <tableColumn identifier="misc" editable="NO" width="367" minWidth="10" maxWidth="3.4028234663852886e+38" id="585">
-                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="misc">
+                                                                        <tableColumn identifier="misc" editable="NO" width="382" minWidth="10" maxWidth="3.4028234663852886e+38" id="585">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="其它">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -364,16 +364,16 @@
                                                             </subviews>
                                                             <nil key="backgroundColor"/>
                                                         </clipView>
-                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="563">
+                                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="563">
                                                             <rect key="frame" x="-100" y="-100" width="785" height="15"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
-                                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="562">
-                                                            <rect key="frame" x="750" y="23" width="15" height="192"/>
+                                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="562">
+                                                            <rect key="frame" x="749" y="23" width="16" height="192"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <tableHeaderView key="headerView" autoresizesSubviews="NO" focusRingType="none" id="565">
-                                                            <rect key="frame" x="0.0" y="0.0" width="749" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="764" height="23"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableHeaderView>
                                                     </scrollView>
@@ -403,16 +403,17 @@
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="539" secondAttribute="trailing" constant="20" symbolic="YES" id="z4N-2m-jQX"/>
                                                 </constraints>
                                             </view>
+                                            <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                         </box>
-                                        <box title="Input Area" translatesAutoresizingMaskIntoConstraints="NO" id="HuX-nl-e5r">
+                                        <box title="输入区域" translatesAutoresizingMaskIntoConstraints="NO" id="HuX-nl-e5r">
                                             <rect key="frame" x="14" y="6" width="806" height="166"/>
                                             <view key="contentView" id="dbf-S3-bPS">
                                                 <rect key="frame" x="3" y="3" width="800" height="148"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-Nj-Y8H">
-                                                        <rect key="frame" x="8" y="121" width="125" height="17"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Text input test field:" id="Rse-px-eu0">
+                                                        <rect key="frame" x="8" y="121" width="114" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="文本输入测试字段:" id="Rse-px-eu0">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -421,15 +422,15 @@
                                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-IW-1A7">
                                                         <rect key="frame" x="10" y="10" width="642" height="111"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="Hx6-3h-z4E">
-                                                            <rect key="frame" x="1" y="1" width="625" height="109"/>
+                                                            <rect key="frame" x="1" y="1" width="640" height="109"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textView importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="A4A-YB-ifF">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="625" height="109"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="640" height="109"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    <size key="minSize" width="625" height="109"/>
+                                                                    <size key="minSize" width="640" height="109"/>
                                                                     <size key="maxSize" width="881" height="10000000"/>
                                                                     <attributedString key="textStorage">
                                                                         <fragment>
@@ -451,12 +452,12 @@
                                                                 </textView>
                                                             </subviews>
                                                         </clipView>
-                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="52f-3v-VlJ">
+                                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="52f-3v-VlJ">
                                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
-                                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fRi-UI-8x2">
-                                                            <rect key="frame" x="626" y="1" width="15" height="109"/>
+                                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fRi-UI-8x2">
+                                                            <rect key="frame" x="625" y="1" width="16" height="109"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                     </scrollView>
@@ -500,15 +501,15 @@
                                     <outlet property="initialFirstResponder" destination="925" id="930"/>
                                 </connections>
                             </tabViewItem>
-                            <tabViewItem label="Frontmost Application" identifier="" id="JP7-qs-Qlf">
+                            <tabViewItem label="最前面的应用" identifier="" id="JP7-qs-Qlf">
                                 <view key="view" id="OUd-40-tIR">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZl-yu-fW5">
-                                            <rect key="frame" x="15" y="466" width="500" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="You can investigate a bundle identifier and a file path of the frontmost application." id="OUp-OJ-jvF">
-                                                <font key="font" metaFont="system"/>
+                                            <rect key="frame" x="15" y="466" width="323" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看最前面的应用程序的包标识符和文件路径。" id="OUp-OJ-jvF">
+                                                <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -516,26 +517,26 @@
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmW-ja-RxN">
                                             <rect key="frame" x="17" y="17" width="800" height="439"/>
                                             <clipView key="contentView" drawsBackground="NO" id="Oc9-TS-hYQ">
-                                                <rect key="frame" x="1" y="1" width="783" height="437"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="798" height="437"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="KEZ-Np-coZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="437"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="437"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="783" height="437"/>
+                                                        <size key="minSize" width="798" height="437"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="3iX-Nr-Dk5">
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="3iX-Nr-Dk5">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cHg-52-amM">
-                                                <rect key="frame" x="784" y="1" width="15" height="437"/>
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cHg-52-amM">
+                                                <rect key="frame" x="783" y="1" width="16" height="437"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -551,15 +552,15 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="Variables" identifier="" id="cGx-w7-vVq">
+                            <tabViewItem label="变量" identifier="" id="cGx-w7-vVq">
                                 <view key="view" id="xSW-Xf-kXV">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-zu-dhb">
-                                            <rect key="frame" x="15" y="466" width="371" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="You can investigate internal variables of Karabiner-Elements." id="Rwn-Zi-dJH">
-                                                <font key="font" metaFont="system"/>
+                                            <rect key="frame" x="15" y="466" width="277" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看Karabiner-Elements的内部变量。" id="Rwn-Zi-dJH">
+                                                <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -567,26 +568,26 @@
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP7-yc-xcR">
                                             <rect key="frame" x="17" y="17" width="800" height="439"/>
                                             <clipView key="contentView" drawsBackground="NO" id="jio-Mp-Rne">
-                                                <rect key="frame" x="1" y="1" width="783" height="437"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="798" height="437"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Glx-oy-lpN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="437"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="437"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="783" height="437"/>
+                                                        <size key="minSize" width="798" height="437"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="nnN-0i-1m7">
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="nnN-0i-1m7">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="x3H-49-ue5">
-                                                <rect key="frame" x="784" y="1" width="15" height="437"/>
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="x3H-49-ue5">
+                                                <rect key="frame" x="783" y="1" width="16" height="437"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -602,15 +603,15 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="Devices" identifier="" id="sss-5h-aF9" userLabel="Devices">
+                            <tabViewItem label="设备" identifier="" id="sss-5h-aF9" userLabel="Devices">
                                 <view key="view" id="fLo-qF-myO">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-2x-a5P">
-                                            <rect key="frame" x="15" y="466" width="319" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="You can investigate the detail of connected devices." id="QSM-Dx-67c">
-                                                <font key="font" metaFont="system"/>
+                                            <rect key="frame" x="15" y="466" width="217" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看已连接设备的详细信息。" id="QSM-Dx-67c">
+                                                <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -618,26 +619,26 @@
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="923-6B-3Sw">
                                             <rect key="frame" x="17" y="10" width="800" height="446"/>
                                             <clipView key="contentView" drawsBackground="NO" id="QSl-Tw-YGc">
-                                                <rect key="frame" x="1" y="1" width="783" height="444"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="798" height="444"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="pzX-J3-r2O">
-                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="444"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="444"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="783" height="444"/>
+                                                        <size key="minSize" width="798" height="444"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="8Tb-cM-IbT">
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="8Tb-cM-IbT">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="iWX-eG-TVZ">
-                                                <rect key="frame" x="784" y="1" width="15" height="444"/>
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="iWX-eG-TVZ">
+                                                <rect key="frame" x="783" y="1" width="16" height="444"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -653,22 +654,22 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="EventViewer-Preferences" identifier="" id="xC1-NR-t4e">
+                            <tabViewItem label="EventViewer首选项" identifier="" id="xC1-NR-t4e">
                                 <view key="view" id="FqR-MI-IIO">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box borderType="line" title="Window behavior" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-gM-a7s">
+                                        <box borderType="line" title="窗口行为" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-gM-a7s">
                                             <rect key="frame" x="14" y="407" width="806" height="76"/>
                                             <view key="contentView" id="sxi-Co-MLe">
                                                 <rect key="frame" x="3" y="3" width="800" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="qpH-oY-yl0">
-                                                        <rect key="frame" x="15" y="32" width="417" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="Force EventViewer to stay on top of other windows. (Default: Off)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WCA-8e-MOA">
+                                                        <rect key="frame" x="15" y="32" width="359" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="强制事件查看器保持在其他窗口之上。 （默认值：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WCA-8e-MOA">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
                                                         <connections>
                                                             <action selector="setWindowProperty:" target="494" id="g7Q-Pu-z0x"/>
@@ -676,10 +677,10 @@
                                                         </connections>
                                                     </button>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="hsb-w2-bkZ">
-                                                        <rect key="frame" x="15" y="8" width="299" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="Show EventViewer in all spaces. (Default: Off)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Be8-wB-67e">
+                                                        <rect key="frame" x="15" y="8" width="319" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="在所有空间中显示事件查看器。 （默认值：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Be8-wB-67e">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
                                                         <connections>
                                                             <action selector="setWindowProperty:" target="494" id="Ozo-zS-xj7"/>
@@ -697,6 +698,7 @@
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hsb-w2-bkZ" secondAttribute="trailing" constant="20" symbolic="YES" id="zhi-G1-j5z"/>
                                                 </constraints>
                                             </view>
+                                            <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                         </box>
                                         <box borderType="line" title="Others" translatesAutoresizingMaskIntoConstraints="NO" id="lH0-6O-BWP">
                                             <rect key="frame" x="14" y="349" width="806" height="52"/>
@@ -705,10 +707,10 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="cCs-zq-ovo">
-                                                        <rect key="frame" x="15" y="8" width="240" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="Hide ignorable events. (Default: On)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
+                                                        <rect key="frame" x="15" y="8" width="239" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="隐藏可忽略的事件。 （默认值：开）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
                                                         <connections>
                                                             <binding destination="W9q-2J-Sz1" name="value" keyPath="values.kHideIgnorableEvents" id="edc-Yz-Iry"/>
@@ -750,7 +752,7 @@
             <connections>
                 <outlet property="initialFirstResponder" destination="925" id="929"/>
             </connections>
-            <point key="canvasLocation" x="305" y="465"/>
+            <point key="canvasLocation" x="1016" y="490"/>
         </window>
         <customObject id="494" userLabel="App Delegate" customClass="AppDelegate">
             <connections>

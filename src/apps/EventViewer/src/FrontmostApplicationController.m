@@ -43,8 +43,8 @@ static void staticCallback(const char* bundle_identifier,
       [self.text setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
     }
 
-    NSString* bundleIdentifierLine = [NSString stringWithFormat:@"Bundle Identifier:  %@\n", bundleIdentifier];
-    NSString* filePathLine = [NSString stringWithFormat:@"File Path:          %@\n\n", filePath];
+    NSString* bundleIdentifierLine = [NSString stringWithFormat:@"捆绑标识符:  %@\n", bundleIdentifier];
+    NSString* filePathLine = [NSString stringWithFormat:@"文件路径:          %@\n\n", filePath];
     NSDictionary* attributes = @{NSFontAttributeName : [NSFont fontWithName:@"Menlo" size:11]};
 
     [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:bundleIdentifierLine
@@ -65,7 +65,7 @@ static void staticCallback(const char* bundle_identifier,
     NSTextStorage* textStorage = self.textView.textStorage;
     [textStorage beginEditing];
     if (self.text.length == 0) {
-      NSString* placeholder = @"Please switch to apps which you want to know Bundle Identifier.";
+      NSString* placeholder = @"请切换到您想要了解捆绑标识符的应用程序。";
       [textStorage setAttributedString:[[NSAttributedString alloc] initWithString:placeholder]];
     } else {
       [textStorage setAttributedString:self.text];

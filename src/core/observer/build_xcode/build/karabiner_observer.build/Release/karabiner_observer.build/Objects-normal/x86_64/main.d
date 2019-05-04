@@ -6,6 +6,10 @@ dependencies: \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_queue.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_queue/entry.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_queue/event.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/core_configuration.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/connected_devices/connected_devices.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/connected_devices/details/device.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/connected_devices/details/descriptions.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/device_properties.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/iokit_utility.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/logger.hpp \
@@ -33,12 +37,20 @@ dependencies: \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/operation_type.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/pointing_button.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/pointing_motion.hpp \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/share/hash.hpp \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/manipulator_environment.hpp \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/share/device_properties_manager.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/json_writer.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/async_file_writer.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/dispatcher_utility.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/global_configuration.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/complex_modifications.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/complex_modifications_parameters.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/complex_modifications_rule.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/device.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/simple_modifications.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/core_configuration/details/profile/virtual_hid_keyboard.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/hash.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/manipulator_environment.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/device_properties_manager.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_queue/event_time_stamp.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_queue/queue.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/modifier_flag_manager.hpp \

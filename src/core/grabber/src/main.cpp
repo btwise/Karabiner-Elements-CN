@@ -12,15 +12,10 @@
 #include <spdlog/sinks/rotating_file_sink.h>
 
 int main(int argc, const char* argv[]) {
-  krbn::dispatcher_utility::initialize_dispatchers();
-
   if (getuid() != 0) {
     std::cerr << "fatal: karabiner_grabber requires root privilege." << std::endl;
     exit(1);
   }
-
-  signal(SIGUSR1, SIG_IGN);
-  signal(SIGUSR2, SIG_IGN);
 
   // Setup logger
 
@@ -41,6 +36,13 @@ int main(int argc, const char* argv[]) {
       return 0;
     }
   }
+
+  // Initialize
+
+  krbn::dispatcher_utility::initialize_dispatchers();
+
+  signal(SIGUSR1, SIG_IGN);
+  signal(SIGUSR2, SIG_IGN);
 
   // Load kexts
 
@@ -107,7 +109,7 @@ int main(int argc, const char* argv[]) {
     });
   });
 
-  components_manager = std::make_unique<krbn::components_manager>(version_monitor);
+  components_manager = std::make_shared<krbn::components_manager>(version_monitor);
 
   version_monitor->async_start();
   components_manager->async_start();

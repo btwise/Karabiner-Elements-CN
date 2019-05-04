@@ -9,11 +9,6 @@
 #include <pqrs/filesystem.hpp>
 
 int main(int argc, const char* argv[]) {
-  krbn::dispatcher_utility::initialize_dispatchers();
-
-  signal(SIGUSR1, SIG_IGN);
-  signal(SIGUSR2, SIG_IGN);
-
   // Setup logger
 
   if (!krbn::constants::get_user_log_directory().empty()) {
@@ -30,6 +25,13 @@ int main(int argc, const char* argv[]) {
     krbn::logger::get_logger()->info("Exit since another process is running.");
     exit(0);
   }
+
+  // Initialize
+
+  krbn::dispatcher_utility::initialize_dispatchers();
+
+  signal(SIGUSR1, SIG_IGN);
+  signal(SIGUSR2, SIG_IGN);
 
   // Migrate old configuration file
 
@@ -53,7 +55,7 @@ int main(int argc, const char* argv[]) {
     });
   });
 
-  components_manager = std::make_unique<krbn::components_manager>(version_monitor);
+  components_manager = std::make_shared<krbn::components_manager>(version_monitor);
 
   version_monitor->async_start();
   components_manager->async_start();

@@ -208,6 +208,7 @@ nlohmann::json get_default_fn_function_keys_json(void) {
 nlohmann::json get_default_virtual_hid_keyboard_json(void) {
   return nlohmann::json{
       {"country_code", 0},
+      {"mouse_key_xy_scale", 100},
   };
 }
 
@@ -740,11 +741,13 @@ TEST_CASE("profile.to_json") {
                                                   nlohmann::json{{"key_code", "do nothing"}}.dump());
 
     profile.get_virtual_hid_keyboard().set_country_code(krbn::hid_country_code(20));
+    profile.get_virtual_hid_keyboard().set_mouse_key_xy_scale(250);
 
     auto expected_fn_function_keys = get_default_fn_function_keys_json();
     expected_fn_function_keys[2]["to"]["key_code"] = "to f3";
     auto expected_virtual_hid_keyboard = get_default_virtual_hid_keyboard_json();
     expected_virtual_hid_keyboard["country_code"] = 20;
+    expected_virtual_hid_keyboard["mouse_key_xy_scale"] = 250;
     nlohmann::json expected({
         {"complex_modifications", nlohmann::json::object({
                                       {"rules", nlohmann::json::array()},
@@ -1299,10 +1302,7 @@ TEST_CASE("virtual_hid_keyboard.to_json") {
   {
     auto json = nlohmann::json::object();
     krbn::core_configuration::details::virtual_hid_keyboard virtual_hid_keyboard(json);
-    REQUIRE(virtual_hid_keyboard.to_json() == get_default_virtual_hid_keyboard_json());
-
-    auto actual = virtual_hid_keyboard.to_json();
-    REQUIRE(actual == get_default_virtual_hid_keyboard_json());
+    REQUIRE(nlohmann::json(virtual_hid_keyboard) == get_default_virtual_hid_keyboard_json());
   }
   {
     nlohmann::json json({
@@ -1310,11 +1310,13 @@ TEST_CASE("virtual_hid_keyboard.to_json") {
     });
     krbn::core_configuration::details::virtual_hid_keyboard virtual_hid_keyboard(json);
     virtual_hid_keyboard.set_country_code(krbn::hid_country_code(10));
+    virtual_hid_keyboard.set_mouse_key_xy_scale(50);
 
     nlohmann::json expected({
         {"country_code", 10},
+        {"mouse_key_xy_scale", 50},
         {"dummy", {{"keep_me", true}}},
     });
-    REQUIRE(virtual_hid_keyboard.to_json() == expected);
+    REQUIRE(nlohmann::json(virtual_hid_keyboard) == expected);
   }
 }

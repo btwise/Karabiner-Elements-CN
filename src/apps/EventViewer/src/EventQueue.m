@@ -58,10 +58,10 @@ static void hid_value_observer_callback(enum libkrbn_hid_value_type type,
     NSString* eventType = @"";
     switch (event_type) {
       case libkrbn_hid_value_event_type_key_down:
-        eventType = [NSString stringWithFormat:@"%@_down", keyType];
+        eventType = [NSString stringWithFormat:@"%@_按下", keyType];
         break;
       case libkrbn_hid_value_event_type_key_up:
-        eventType = [NSString stringWithFormat:@"%@_up", keyType];
+        eventType = [NSString stringWithFormat:@"%@_松开", keyType];
         break;
       case libkrbn_hid_value_event_type_single:
         eventType = @"";
@@ -72,7 +72,7 @@ static void hid_value_observer_callback(enum libkrbn_hid_value_type type,
 
     if (simpleModificationJson.count > 0) {
       queue.simpleModificationJsonString = [KarabinerKitJsonUtility createJsonString:simpleModificationJson];
-      [queue updateAddSimpleModificationButton:[NSString stringWithFormat:@"Add `%@` to Karabiner-Elements", name]];
+      [queue updateAddSimpleModificationButton:[NSString stringWithFormat:@"添加 `%@`到Karabiner-Elements", name]];
     }
   });
 }
@@ -191,7 +191,7 @@ enum {
 
 - (NSString*)buttonToString:(NSEvent*)event {
   NSInteger number = [event buttonNumber];
-  return [NSString stringWithFormat:@"button%d", (int)(number + 1)];
+  return [NSString stringWithFormat:@"按钮%d", (int)(number + 1)];
 }
 
 - (void)pushKeyEvent:(NSString*)code name:(NSString*)name eventType:(NSString*)eventType {
@@ -206,7 +206,7 @@ enum {
   [self push:eventType
         code:[NSString stringWithFormat:@"%d", (int)([event buttonNumber])]
         name:[self buttonToString:event]
-        misc:[NSString stringWithFormat:@"{x:%d,y:%d} click_count:%d %@",
+        misc:[NSString stringWithFormat:@"{x:%d,y:%d} 点击计数:%d %@",
                                         (int)([event locationInWindow].x), (int)([event locationInWindow].y),
                                         (int)([event clickCount]),
                                         [flags length] > 0 ? [NSString stringWithFormat:@"flags:%@", flags] : @""]];
@@ -224,23 +224,23 @@ enum {
     case NSEventTypeLeftMouseDown:
     case NSEventTypeRightMouseDown:
     case NSEventTypeOtherMouseDown:
-      [self pushMouseEvent:event eventType:@"button_down"];
+      [self pushMouseEvent:event eventType:@"按下按钮"];
       break;
 
     case NSEventTypeLeftMouseUp:
     case NSEventTypeRightMouseUp:
     case NSEventTypeOtherMouseUp:
-      [self pushMouseEvent:event eventType:@"button_up"];
+      [self pushMouseEvent:event eventType:@"松开按钮"];
       break;
 
     case NSEventTypeLeftMouseDragged:
     case NSEventTypeRightMouseDragged:
     case NSEventTypeOtherMouseDragged:
-      [self pushMouseEvent:event eventType:@"mouse_dragged"];
+      [self pushMouseEvent:event eventType:@"鼠标拖拽"];
       break;
 
     case NSEventTypeScrollWheel:
-      [self pushScrollWheelEvent:event eventType:@"scroll_wheel"];
+      [self pushScrollWheelEvent:event eventType:@"滚轮"];
       break;
 
     default:
