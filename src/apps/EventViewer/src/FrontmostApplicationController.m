@@ -34,27 +34,6 @@ static void staticCallback(const char* bundle_identifier,
 }
 
 - (void)callback:(NSString*)bundleIdentifier filePath:(NSString*)filePath {
-  // Update self.text
-
-  if (![@"org.pqrs.Karabiner.EventViewer" isEqualToString:bundleIdentifier] &&
-      ![@"org.pqrs.Karabiner-EventViewer" isEqualToString:bundleIdentifier]) {
-    // Clear if text is huge.
-    if (self.text.length > 4 * 1024) {
-      [self.text setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
-    }
-
-    NSString* bundleIdentifierLine = [NSString stringWithFormat:@"捆绑标识符:  %@\n", bundleIdentifier];
-    NSString* filePathLine = [NSString stringWithFormat:@"文件路径:          %@\n\n", filePath];
-    NSDictionary* attributes = @{NSFontAttributeName : [NSFont fontWithName:@"Menlo" size:11]};
-
-    [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:bundleIdentifierLine
-                                                                      attributes:attributes]];
-    [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:filePathLine
-                                                                      attributes:attributes]];
-  }
-
-  // Update self.textView
-
   @weakify(self);
   dispatch_async(dispatch_get_main_queue(), ^{
     @strongify(self);
@@ -62,10 +41,31 @@ static void staticCallback(const char* bundle_identifier,
       return;
     }
 
+    // Update self.text
+
+    if (![@"org.pqrs.Karabiner.EventViewer" isEqualToString:bundleIdentifier] &&
+        ![@"org.pqrs.Karabiner-EventViewer" isEqualToString:bundleIdentifier]) {
+      // Clear if text is huge.
+      if (self.text.length > 4 * 1024) {
+        [self.text setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
+      }
+
+      NSString* bundleIdentifierLine = [NSString stringWithFormat:@"捆绑标识符:  %@\n", bundleIdentifier];
+      NSString* filePathLine = [NSString stringWithFormat:@"文件路径:          %@\n\n", filePath];
+      NSDictionary* attributes = @{NSFontAttributeName : [NSFont fontWithName:@"Menlo" size:11]};
+
+      [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:bundleIdentifierLine
+                                                                        attributes:attributes]];
+      [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:filePathLine
+                                                                        attributes:attributes]];
+    }
+
+    // Update self.textView
+
     NSTextStorage* textStorage = self.textView.textStorage;
     [textStorage beginEditing];
     if (self.text.length == 0) {
-      NSString* placeholder = @"请切换到您想要了解捆绑标识符的应用程序。";
+      NSString* placeholder = @"请切换到您想要了解捆绑标识符的应用程序.";
       [textStorage setAttributedString:[[NSAttributedString alloc] initWithString:placeholder]];
     } else {
       [textStorage setAttributedString:self.text];
