@@ -2,8 +2,10 @@
 
 #include "core_configuration/core_configuration.hpp"
 #include "device_properties.hpp"
+#include "event_queue.hpp"
 #include "hid_keyboard_caps_lock_led_state_manager.hpp"
 #include "iokit_utility.hpp"
+#include "orphan_key_up_events_manager.hpp"
 #include "pressed_keys_manager.hpp"
 #include "types.hpp"
 #include <pqrs/osx/iokit_hid_queue_value_monitor.hpp>
@@ -17,8 +19,12 @@ public:
         std::weak_ptr<const core_configuration::core_configuration> core_configuration) : dispatcher_client(),
                                                                                           device_id_(device_id),
                                                                                           core_configuration_(core_configuration),
+                                                                                          hid_queue_value_monitor_async_start_called_(false),
+                                                                                          first_value_arrived_(false),
                                                                                           grabbed_(false),
-                                                                                          disabled_(false) {
+                                                                                          disabled_(false),
+                                                                                          grabbed_time_stamp_(0),
+                                                                                          ungrabbed_time_stamp_(0) {
     device_properties_ = std::make_shared<device_properties>(device_id,
                                                              device);
 
@@ -29,15 +35,7 @@ public:
     device_name_ = iokit_utility::make_device_name_for_log(device_id,
                                                            device);
 
-    hid_queue_value_monitor_->started.connect([this] {
-      grabbed_ = true;
-      control_caps_lock_led_state_manager();
-    });
-
-    hid_queue_value_monitor_->stopped.connect([this] {
-      grabbed_ = false;
-      control_caps_lock_led_state_manager();
-    });
+    orphan_key_up_events_manager_ = std::make_shared<orphan_key_up_events_manager>();
   }
 
   ~entry(void) {
@@ -69,6 +67,14 @@ public:
     return hid_queue_value_monitor_;
   }
 
+  bool get_first_value_arrived(void) const {
+    return first_value_arrived_;
+  }
+
+  void set_first_value_arrived(bool value) {
+    first_value_arrived_ = value;
+  }
+
   std::shared_ptr<hid_keyboard_caps_lock_led_state_manager> get_caps_lock_led_state_manager(void) const {
     return caps_lock_led_state_manager_;
   }
@@ -77,12 +83,24 @@ public:
     return device_name_;
   }
 
+  std::shared_ptr<orphan_key_up_events_manager> get_orphan_key_up_events_manager(void) const {
+    return orphan_key_up_events_manager_;
+  }
+
   bool get_grabbed(void) const {
     return grabbed_;
   }
 
   void set_grabbed(bool value) {
     grabbed_ = value;
+
+    if (grabbed_) {
+      grabbed_time_stamp_ = pqrs::osx::chrono::mach_absolute_time_point();
+    } else {
+      ungrabbed_time_stamp_ = pqrs::osx::chrono::mach_absolute_time_point();
+    }
+
+    control_caps_lock_led_state_manager();
   }
 
   bool get_disabled(void) const {
@@ -118,17 +136,44 @@ public:
     return false;
   }
 
-  void async_start_queue_value_monitor(void) const {
+  void async_start_queue_value_monitor(void) {
     if (hid_queue_value_monitor_) {
+      if (!hid_queue_value_monitor_async_start_called_) {
+        first_value_arrived_ = false;
+        hid_queue_value_monitor_async_start_called_ = true;
+      }
+
       hid_queue_value_monitor_->async_start(kIOHIDOptionsTypeSeizeDevice,
                                             std::chrono::milliseconds(1000));
     }
   }
 
-  void async_stop_queue_value_monitor(void) const {
+  void async_stop_queue_value_monitor(void) {
     if (hid_queue_value_monitor_) {
+      hid_queue_value_monitor_async_start_called_ = false;
+
       hid_queue_value_monitor_->async_stop();
     }
+  }
+
+  bool is_grabbed(absolute_time_point time_stamp) {
+    if (grabbed_time_stamp_ <= ungrabbed_time_stamp_) {
+      // The current state of device is `ungrabbed`.
+
+      if (grabbed_time_stamp_ <= time_stamp &&
+          time_stamp <= ungrabbed_time_stamp_) {
+        return true;
+      }
+
+    } else {
+      // The current state of device is `grabbed`.
+
+      if (grabbed_time_stamp_ <= time_stamp) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
 private:
@@ -155,11 +200,21 @@ private:
   std::weak_ptr<const core_configuration::core_configuration> core_configuration_;
   std::shared_ptr<device_properties> device_properties_;
   std::shared_ptr<pressed_keys_manager> pressed_keys_manager_;
+
   std::shared_ptr<pqrs::osx::iokit_hid_queue_value_monitor> hid_queue_value_monitor_;
+  bool hid_queue_value_monitor_async_start_called_;
+  bool first_value_arrived_;
+
   std::shared_ptr<hid_keyboard_caps_lock_led_state_manager> caps_lock_led_state_manager_;
   std::string device_name_;
+
+  std::shared_ptr<orphan_key_up_events_manager> orphan_key_up_events_manager_;
+
   bool grabbed_;
   bool disabled_;
+
+  absolute_time_point grabbed_time_stamp_;
+  absolute_time_point ungrabbed_time_stamp_;
 };
 } // namespace device_grabber_details
 } // namespace krbn

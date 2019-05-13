@@ -17,7 +17,7 @@
 #include "types/hid_usage_page.hpp"
 #include "types/hid_value.hpp"
 #include "types/key_code.hpp"
-#include "types/key_like_event.hpp"
+#include "types/key_down_up_valued_event.hpp"
 #include "types/led_state.hpp"
 #include "types/location_id.hpp"
 #include "types/modifier_flag.hpp"
@@ -791,6 +791,29 @@ inline std::optional<pointing_button> make_pointing_button(const hid_value& hid_
     }
   }
   return std::nullopt;
+}
+
+inline std::string to_string(const key_down_up_valued_event& event) {
+  if (auto value = event.find<key_code>()) {
+    auto json = nlohmann::json::object({
+        {"key_code", make_key_code_name(*value)},
+    });
+    return json.dump();
+
+  } else if (auto value = event.find<consumer_key_code>()) {
+    auto json = nlohmann::json::object({
+        {"consumer_key_code", make_consumer_key_code_name(*value)},
+    });
+    return json.dump();
+
+  } else if (auto value = event.find<pointing_button>()) {
+    auto json = nlohmann::json::object({
+        {"pointing_button", make_pointing_button_name(*value)},
+    });
+    return json.dump();
+  }
+
+  return "";
 }
 } // namespace types
 

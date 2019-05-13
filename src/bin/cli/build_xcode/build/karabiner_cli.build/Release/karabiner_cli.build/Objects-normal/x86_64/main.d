@@ -26,12 +26,13 @@ dependencies: \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/hid_usage_page.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/hid_value.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/key_code.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/key_down_up_valued_event.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/pointing_button.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/led_state.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/location_id.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/modifier_flag.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/mouse_key.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/operation_type.hpp \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/pointing_button.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/types/pointing_motion.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/json_writer.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/async_file_writer.hpp \

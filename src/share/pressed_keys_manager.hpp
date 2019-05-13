@@ -3,7 +3,6 @@
 // `krbn::pressed_keys_manager` can be used safely in a multi-threaded environment.
 
 #include "types.hpp"
-#include <mpark/variant.hpp>
 #include <unordered_set>
 
 namespace krbn {
@@ -13,14 +12,14 @@ public:
   void insert(T value) {
     std::lock_guard<std::mutex> lock(mutex_);
 
-    entries_.insert(value);
+    entries_.insert(key_down_up_valued_event(value));
   }
 
   template <typename T>
   void erase(T value) {
     std::lock_guard<std::mutex> lock(mutex_);
 
-    entries_.erase(value);
+    entries_.erase(key_down_up_valued_event(value));
   }
 
   bool empty(void) const {
@@ -30,11 +29,7 @@ public:
   }
 
 private:
-  using entry_t = mpark::variant<key_code,
-                                 consumer_key_code,
-                                 pointing_button>;
-  std::unordered_set<entry_t, std::hash<entry_t>> entries_;
-
+  std::unordered_set<key_down_up_valued_event> entries_;
   mutable std::mutex mutex_;
 };
 } // namespace krbn
