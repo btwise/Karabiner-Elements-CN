@@ -107,6 +107,7 @@ dependencies: \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/manipulators/nop.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/types.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/manipulator_manager.hpp \
+  /Users/btwise/我的仓库/Karabiner-Elements/src/core/grabber/include/device_grabber_details/notification_message_manager.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/core/grabber/include/device_grabber_details/simple_modifications_manipulator_manager.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/event_tap_utility.hpp \
   /Users/btwise/我的仓库/Karabiner-Elements/src/share/manipulator/manipulator_managers_connector.hpp \

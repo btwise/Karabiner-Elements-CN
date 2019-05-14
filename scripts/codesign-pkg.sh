@@ -2,7 +2,7 @@
 
 set -e
 
-readonly CODESIGN_IDENTITY='C86BB5F7830071C7B0B07D168A9A9375CC2D02C5'
+readonly CODESIGN_IDENTITY='2EEEE4E3D9F6B2CDF130BCA6128433DF94783042'
 readonly PATH=/bin:/sbin:/usr/bin:/usr/sbin; export PATH
 readonly LOGFILE="`dirname $0`/productsign.log"
 

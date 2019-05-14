@@ -11,10 +11,6 @@ static void version_changed_callback(void* refcon) {
   static dispatch_once_t once;
 
   dispatch_once(&once, ^{
-    // initialize managers
-    [KarabinerKitConfigurationManager sharedManager];
-    [KarabinerKitDeviceManager sharedManager];
-
     libkrbn_enable_version_monitor(version_changed_callback, NULL);
   });
 }
@@ -71,8 +67,8 @@ static void version_changed_callback(void* refcon) {
 
 + (BOOL)quitKarabinerWithConfirmation {
   NSAlert* alert = [NSAlert new];
-  alert.messageText = @"你确定要退出Karabiner-Elements吗？?";
-  alert.informativeText = @"在Karabiner-Elements退出后，将更改已更改的密钥。";
+  alert.messageText = @"你确定要退出Karabiner-Elements吗?";
+  alert.informativeText = @"在Karabiner-Elements退出后，将更改已更改的键值定义.";
   [alert addButtonWithTitle:@"退出"];
   [alert addButtonWithTitle:@"取消"];
   if ([alert runModal] == NSAlertFirstButtonReturn) {

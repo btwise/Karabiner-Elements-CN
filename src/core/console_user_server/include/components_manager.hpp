@@ -149,6 +149,10 @@ private:
 
     menu_process_manager_ = std::make_unique<menu_process_manager>(configuration_monitor_);
 
+    // Run NotificationWindow
+
+    application_launcher::launch_notification_window();
+
     // updater_process_manager_
 
     updater_process_manager_ = std::make_unique<updater_process_manager>(configuration_monitor_);
