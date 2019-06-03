@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m \
-  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.h
+  /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m \
+  /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.h

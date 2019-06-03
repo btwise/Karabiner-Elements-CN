@@ -12,8 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.1/CMakeSystem.cmake"
-  "/Users/btwise/我的仓库/Karabiner-Elements/src/common.cmake"
-  "/Users/btwise/我的仓库/Karabiner-Elements/src/share/karabiner_version.h.in"
+  "/Users/btwise/Karabiner-Elements/src/common.cmake"
+  "/Users/btwise/Karabiner-Elements/src/share/karabiner_version.h.in"
   "/usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -45,7 +45,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "/Users/btwise/我的仓库/Karabiner-Elements/src/share/karabiner_version.h"
+  "/Users/btwise/Karabiner-Elements/src/share/karabiner_version.h"
   "Distribution.xml"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )

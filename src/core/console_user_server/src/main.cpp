@@ -1,9 +1,10 @@
-#include "components_manager.hpp"
+#include "console_user_server/components_manager.hpp"
+#include "console_user_server/migration.hpp"
 #include "constants.hpp"
 #include "dispatcher_utility.hpp"
 #include "karabiner_version.h"
+#include "launchctl_utility.hpp"
 #include "logger.hpp"
-#include "migration.hpp"
 #include "process_utility.hpp"
 #include <pqrs/dispatcher.hpp>
 #include <pqrs/filesystem.hpp>
@@ -26,6 +27,11 @@ int main(int argc, const char* argv[]) {
     exit(0);
   }
 
+  // Manage launchctl
+
+  krbn::launchctl_utility::manage_session_monitor();
+  krbn::launchctl_utility::manage_console_user_server(true);
+
   // Initialize
 
   krbn::dispatcher_utility::initialize_dispatchers();
@@ -35,7 +41,7 @@ int main(int argc, const char* argv[]) {
 
   // Migrate old configuration file
 
-  krbn::migration::migrate_v1();
+  krbn::console_user_server::migration::migrate_v1();
 
   // Create directories
 
@@ -44,7 +50,7 @@ int main(int argc, const char* argv[]) {
 
   // Run components_manager
 
-  std::shared_ptr<krbn::components_manager> components_manager;
+  std::shared_ptr<krbn::console_user_server::components_manager> components_manager;
 
   auto version_monitor = std::make_shared<krbn::version_monitor>(krbn::constants::get_version_file_path());
 
@@ -55,7 +61,7 @@ int main(int argc, const char* argv[]) {
     });
   });
 
-  components_manager = std::make_shared<krbn::components_manager>(version_monitor);
+  components_manager = std::make_shared<krbn::console_user_server::components_manager>(version_monitor);
 
   version_monitor->async_start();
   components_manager->async_start();

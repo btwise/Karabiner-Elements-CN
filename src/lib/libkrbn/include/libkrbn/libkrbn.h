@@ -32,6 +32,7 @@ bool libkrbn_lock_single_application_with_user_pid_file(const char* pid_file_nam
 void libkrbn_unlock_single_application(void);
 
 void libkrbn_launchctl_manage_console_user_server(bool load);
+void libkrbn_launchctl_manage_session_monitor(void);
 void libkrbn_launchctl_restart_console_user_server(void);
 
 void libkrbn_check_for_updates_in_background(void);
@@ -79,6 +80,11 @@ void libkrbn_core_configuration_select_profile(libkrbn_core_configuration* p, si
 const char* libkrbn_core_configuration_get_selected_profile_name(libkrbn_core_configuration* p);
 void libkrbn_core_configuration_push_back_profile(libkrbn_core_configuration* p);
 void libkrbn_core_configuration_erase_profile(libkrbn_core_configuration* p, size_t index);
+
+// profile::parameters
+
+int libkrbn_core_configuration_get_selected_profile_parameters_delay_milliseconds_before_open_device(libkrbn_core_configuration* p);
+void libkrbn_core_configuration_set_selected_profile_parameters_delay_milliseconds_before_open_device(libkrbn_core_configuration* p, int value);
 
 // profile::simple_modifications
 

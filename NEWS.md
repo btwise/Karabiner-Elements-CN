@@ -2,7 +2,18 @@
 
 ## Beta
 
-- Fixed a key stuck issue when the key is pressed immediately after the keyboard is connected.
+- Fixed a key stuck issue which occurs when the key is released,
+  and at the exact same moment Karabiner-Elements opens the device.
+- Fixed a issue which Karabiner-Elements mistakes a remote user for a current console user
+  if another user is logged in from Screen Sharing while console is used.
+- Add `Delay before open device` configuration into `Karabiner-Elements Preferences > Devices > Advanced` tab.
+- Move `Disable the built-in keyboard while one of the following selected devices is connected` configuration
+  into `Karabiner-Elements Preferences > Devices > Advanced` tab.
+- Added `Show key code in hexadecimal format` option into EventViewer.
+
+## Version 12.4.0
+
+- Fixed a key stuck issue which occurs when the key is held down before Karabiner-Elements opens the device.
 - Add `Mouse Key XY speed` configuration into `Karabiner-Elements Preferences > Virtual Keyboard` tab.
 - Event code format on EventViewer changed to decimal number from hex.
 

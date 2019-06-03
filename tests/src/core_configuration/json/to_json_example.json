@@ -287,6 +287,10 @@
                 }
             ],
             "name": "Default profile",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 500,
+                "dummy": true
+            },
             "selected": true,
             "simple_modifications": [
                 {
@@ -422,6 +426,9 @@
                 }
             ],
             "name": "Empty",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
@@ -540,6 +547,9 @@
                 }
             ],
             "name": "fn_function_keys v1",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {

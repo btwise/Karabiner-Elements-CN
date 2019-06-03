@@ -32,7 +32,12 @@ static void hid_value_observer_callback(enum libkrbn_hid_value_type type,
       return;
     }
 
-    NSString* code = [NSString stringWithFormat:@"%d", value];
+    NSString* code = nil;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kShowHex]) {
+      code = [NSString stringWithFormat:@"0x%02x", value];
+    } else {
+      code = [NSString stringWithFormat:@"%d", value];
+    }
     NSString* keyType = @"";
     NSMutableDictionary* simpleModificationJson = [NSMutableDictionary new];
 
@@ -40,7 +45,7 @@ static void hid_value_observer_callback(enum libkrbn_hid_value_type type,
     buffer[0] = '\0';
     switch (type) {
       case libkrbn_hid_value_type_key_code:
-        keyType = @"key";
+        keyType = @"按键";
         libkrbn_get_key_code_name(buffer, sizeof(buffer), value);
         simpleModificationJson[@"from"] = [NSMutableDictionary new];
         simpleModificationJson[@"from"][@"key_code"] = [NSString stringWithUTF8String:buffer];
@@ -72,7 +77,7 @@ static void hid_value_observer_callback(enum libkrbn_hid_value_type type,
 
     if (simpleModificationJson.count > 0) {
       queue.simpleModificationJsonString = [KarabinerKitJsonUtility createJsonString:simpleModificationJson];
-      [queue updateAddSimpleModificationButton:[NSString stringWithFormat:@"添加 `%@`到Karabiner-Elements", name]];
+      [queue updateAddSimpleModificationButton:[NSString stringWithFormat:@"添加 `%@`键到Karabiner-Elements", name]];
     }
   });
 }
@@ -191,7 +196,7 @@ enum {
 
 - (NSString*)buttonToString:(NSEvent*)event {
   NSInteger number = [event buttonNumber];
-  return [NSString stringWithFormat:@"按钮%d", (int)(number + 1)];
+  return [NSString stringWithFormat:@"鼠标按键%d", (int)(number + 1)];
 }
 
 - (void)pushKeyEvent:(NSString*)code name:(NSString*)name eventType:(NSString*)eventType {
@@ -206,7 +211,7 @@ enum {
   [self push:eventType
         code:[NSString stringWithFormat:@"%d", (int)([event buttonNumber])]
         name:[self buttonToString:event]
-        misc:[NSString stringWithFormat:@"{x:%d,y:%d} 点击计数:%d %@",
+        misc:[NSString stringWithFormat:@"{x:%d,y:%d} 单击数:%d %@",
                                         (int)([event locationInWindow].x), (int)([event locationInWindow].y),
                                         (int)([event clickCount]),
                                         [flags length] > 0 ? [NSString stringWithFormat:@"flags:%@", flags] : @""]];
@@ -224,13 +229,13 @@ enum {
     case NSEventTypeLeftMouseDown:
     case NSEventTypeRightMouseDown:
     case NSEventTypeOtherMouseDown:
-      [self pushMouseEvent:event eventType:@"按下按钮"];
+      [self pushMouseEvent:event eventType:@"鼠标按钮按下"];
       break;
 
     case NSEventTypeLeftMouseUp:
     case NSEventTypeRightMouseUp:
     case NSEventTypeOtherMouseUp:
-      [self pushMouseEvent:event eventType:@"松开按钮"];
+      [self pushMouseEvent:event eventType:@"鼠标按钮放开"];
       break;
 
     case NSEventTypeLeftMouseDragged:

@@ -5,12 +5,12 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeSystem.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/common.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/我的仓库/Karabiner-Elements/src/share/karabiner_version.h.in))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/apps/Menu/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/3.12.1/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/common.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/btwise/Karabiner-Elements/src/share/karabiner_version.h.in))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCXXInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake))
@@ -33,5 +33,5 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/Platform/Darwin.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /usr/local/Cellar/cmake/3.12.1/share/cmake/Modules/Platform/UnixPaths.cmake))
 
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -H/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu -B/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode
+/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/usr/local/Cellar/cmake/3.12.1/bin/cmake -H/Users/btwise/Karabiner-Elements/src/apps/Menu -B/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode

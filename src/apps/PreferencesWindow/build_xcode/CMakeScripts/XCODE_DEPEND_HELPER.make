@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.Karabiner-Elements.Debug:
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Debug/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Debug/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Debug/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Debug/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
 
 
 PostBuild.Karabiner-Elements.Release:
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Release/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Release/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Release/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Release/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
 
 
 PostBuild.Karabiner-Elements.MinSizeRel:
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/MinSizeRel/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/MinSizeRel/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/MinSizeRel/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/MinSizeRel/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
 
 
 PostBuild.Karabiner-Elements.RelWithDebInfo:
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/RelWithDebInfo/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/RelWithDebInfo/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/RelWithDebInfo/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/RelWithDebInfo/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements
 
 
 

@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/btwise/Karabiner-Elements/src/core/session_monitor/src/main.cpp \
+  /Users/btwise/Karabiner-Elements/src/share/constants.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/dispatcher_utility.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/karabiner_version.h \
+  /Users/btwise/Karabiner-Elements/src/share/logger.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/process_utility.hpp \
+  /Users/btwise/Karabiner-Elements/src/core/session_monitor/include/session_monitor/components_manager.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/monitor/version_monitor.hpp \
+  /Users/btwise/Karabiner-Elements/src/core/session_monitor/include/session_monitor/receiver.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/filesystem_utility.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/apple_hid_usage_tables.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/stream_utility.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/absolute_time_duration.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/absolute_time_point.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/consumer_key_code.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/device_id.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/device_identifiers.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/product_id.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/vendor_id.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/event_type.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/grabbable_state.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_country_code.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage_page.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_value.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/key_code.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/key_down_up_valued_event.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/pointing_button.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/led_state.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/location_id.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/modifier_flag.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/mouse_key.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/operation_type.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/pointing_motion.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/session_monitor_receiver_client.hpp

@@ -1,0 +1,3 @@
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/CMakeFiles/karabiner_session_monitor.dir
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/CMakeFiles/ALL_BUILD.dir
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/CMakeFiles/ZERO_CHECK.dir
