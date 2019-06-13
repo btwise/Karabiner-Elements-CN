@@ -7,353 +7,331 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		3633B641F7164C3796299A1A /* ZERO_CHECK */ = {
+		64A5BDA8E9E44268B0FE17CE /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 81E3CC82A78B466191CFB296 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = CF28B220A82D4386AE39E72F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				59F65C52FBA7442D8110721C /* CMake Rules */,
+				39CA1C2E630D41DEB9141C58 /* CMake Rules */,
+			);
+			dependencies = (
+				512292EB0083420B87D619C5 /* PBXTargetDependency */,
+				6BCBEAAA5E544C08847FBF27 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		95CC9BA572094C0B983E8977 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9B91F5B4A9F34C98A336F47D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				40C154EA9C994540B4F7763F /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		F62AF885CAAF4531B8D1AE35 /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = AB8A91CC7640451EBD724869 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				7C20D64836684D348BA15BA4 /* CMake Rules */,
-			);
-			dependencies = (
-				7AC0AF3B263C44FC95D7B6BA /* PBXTargetDependency */,
-				8A75A94736A0490484460C83 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		02069F2E08BD4F48A47D1BCE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */ = {isa = PBXBuildFile; fileRef = DB3F64A0AFFD4E089AD3A876 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */; };
-		02B4D0765DF2408AB80D965E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */ = {isa = PBXBuildFile; fileRef = CF288933C044455A9A3810EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */; };
-		03CF12538D9742759996A906 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */ = {isa = PBXBuildFile; fileRef = A7A6FBDE4FCA4069826A4CB5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */; };
-		0F6EF970450246CEBCA5F013 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */ = {isa = PBXBuildFile; fileRef = C394086DFC614E75A72A15F0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */; };
-		11CA8FF7E2014A71A60D4C5F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 697EAE263F5A421EB1050A8F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */; };
-		2335CC65C40144F9BEA4CC2F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 59387AD5383542139EB1DA1F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */; };
-		23C0692B81B241CE97570E17 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */ = {isa = PBXBuildFile; fileRef = 8679B31CFC90458189CAB380 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */; };
-		23FB8487AF2F4201B93D79BC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */ = {isa = PBXBuildFile; fileRef = 1D6E73A8CE1D4DE39A35FBF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */; };
-		25E6EAE269A447E397651675 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */ = {isa = PBXBuildFile; fileRef = 598999A222ED43309F57F033 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */; };
-		27B909747E54446B909377DB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */ = {isa = PBXBuildFile; fileRef = 81A032A592474D6A9E4938CC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */; };
-		2867C0188A944357A3B643D7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */ = {isa = PBXBuildFile; fileRef = F59D299556C2499289FC7345 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */; };
-		28B9ACA8FF764B2B917DAA60 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */ = {isa = PBXBuildFile; fileRef = 580E685E29674AC59E8E4BFA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */; };
-		29DC89F23E5443F58AA14D24 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = A864D8E9E91A42A5BC4F82FD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */; };
-		2A282D6DA3D84E0EA2AF2AF1 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */ = {isa = PBXBuildFile; fileRef = 80FBE5C4923F4B009181FBAA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */; };
-		355914ADF5B842DBAB977180 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 4A4D0C529D9447029B98136E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */; };
-		3F95473A2DB843E383C6A7F9 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */ = {isa = PBXBuildFile; fileRef = 7E8D6E03F7EA413F8FA121D8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */; };
-		4948C423C5BA4E14935F6B7C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = D6E7CCEEC55F4FCEB8E2963F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */; };
-		4B31D76A92DA4882AE221660 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */ = {isa = PBXBuildFile; fileRef = 9A8AA1DF75A54B648021A354 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */; };
-		4C3B73F919FE44429DC5DEDA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */ = {isa = PBXBuildFile; fileRef = 9EEDB649519343E39B2DEF49 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */; };
-		4D2776C4D7BB471B83F71CAC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */ = {isa = PBXBuildFile; fileRef = D50A84C613ED4CF4904A8CF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */; };
-		4F59BE962EA64FB5AD56725A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */ = {isa = PBXBuildFile; fileRef = 547B9D392DA0459A840C52A0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */; };
-		52357BB530B049379BCAE431 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */ = {isa = PBXBuildFile; fileRef = 897AD39E48254C238C9036E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */; };
-		5ED7E50EED2540DEBFB9092D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 238B1C9EDAEB407680607920 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */; };
-		6238A219B4E1403FB817D26B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */ = {isa = PBXBuildFile; fileRef = 27666B547FD342ADA367663E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */; };
-		6EE35D1D16094B9F9D416981 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 8FC9F1C435EA4E188754B843 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */; };
-		8EA9CD37FC2246DBA4551902 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 1EAFB2263F714CE08ADE2C8D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */; };
-		9AC4A144B07B420386420CA6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8246EC08364D460AAA622E4F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */; };
-		9DE9DD769C094BDE946087A3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */ = {isa = PBXBuildFile; fileRef = 2885445A779A434581F3B864 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */; };
-		9DF31CF09CA34239B829CD93 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXBuildFile; fileRef = 99341F439D9B4E9A9406680D /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */; };
-		A331FF319BF248068E41233C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 33CEFF91B4BD415F809B2F17 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */; };
-		B3D4DACBD81847F3921C515C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */ = {isa = PBXBuildFile; fileRef = 8062053E3A2C42F08A6F497D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */; };
-		B82896EF2DA049FEB648F2D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */ = {isa = PBXBuildFile; fileRef = C7993BCFFEB5414AA4BC5A64 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */; };
-		C006C1C4BAA84708996B8209 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */ = {isa = PBXBuildFile; fileRef = C28602AF380D4EF5811EC88A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */; };
-		C0B286CCF9B14D5EB2934274 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 8D8CACB5427143598699FA62 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */; };
-		D107A641AE2441F196F0ABE3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */ = {isa = PBXBuildFile; fileRef = 1D8B9D482A724F2DAB17C2F1 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */; };
-		DB46BD7C4B5A4DDB8C526B16 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */ = {isa = PBXBuildFile; fileRef = 29232D8411144521A7E281E6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */; };
-		DD940069E0EA497E8C1B285A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */ = {isa = PBXBuildFile; fileRef = 5EF5545EF35C4FDA9BAADC48 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */; };
-		E74518694B174386A5DD84EA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 8D31920DF9EE4900ADAB1A26 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */; };
-		E920AD5F4EF44B74A2029355 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */ = {isa = PBXBuildFile; fileRef = BE3E92A9F84C462F83138B02 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */; };
-		F2C3537A359148BBB91EE97D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = D627BC73FE224072BB3C39C8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */; };
-		F88CFA5DB3E14532A786BF9D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */ = {isa = PBXBuildFile; fileRef = C23E9A92CD76452DA4E448E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */; };
-		F8E4C44FEFD5435AB672A240 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 91E6516B165F4C51B89DD2C2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */; };
+		08635EE76E85469E82703FB2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = ABB29D3C621F42869FC77C9C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */; };
+		1B8064AE93BA45259D9E7923 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = CED5425F16DE42B79C748FA2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */; };
+		1BDEEF5A4E6A4988B8A0D87A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */ = {isa = PBXBuildFile; fileRef = B68FBD4B304F4BE9AA591245 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */; };
+		21A2B3F7A1504046B6158E51 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */ = {isa = PBXBuildFile; fileRef = 1E4446CF3000483483CABA19 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */; };
+		2537C18555FC4A5F86427757 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */ = {isa = PBXBuildFile; fileRef = 521B0CE11CBB4E63AE1601FB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */; };
+		2AEE800961604AA0A7C7A8BB /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXBuildFile; fileRef = E22DAB39A5C4406E947328E8 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */; };
+		3718BEF22E58475D8701158E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */ = {isa = PBXBuildFile; fileRef = CCDCF413CC354FAEAB62C467 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */; };
+		444A269AEAAC4DB69486A21B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */ = {isa = PBXBuildFile; fileRef = 208951DA009045C6A20823E4 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */; };
+		4BD7EFC923D0497EAEEB74B3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */ = {isa = PBXBuildFile; fileRef = DC5CE2285A5748B2ADE8785B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */; };
+		4CB93A7567E94EE690858D03 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */ = {isa = PBXBuildFile; fileRef = 3E06B046D6D34FA390BF5609 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */; };
+		4D1BB438B1D84E63B1775E38 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = E180DF76A8D64878B971D24C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */; };
+		4F12C95D52964DF584506BC9 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = D0E3BBF945A8494E872A8ACA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */; };
+		5463A1A14CD448AFB7B2141D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */ = {isa = PBXBuildFile; fileRef = 4C60F6F194B34BAFBAF86768 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */; };
+		5CC58BB2C28A4813B147B2D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 4A17ABB5C2E14EC388308F0E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */; };
+		62B95D4D2FA044B68512C1AE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 923EF09E37164B0FB3A539FA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */; };
+		6BADA398EE994B8789EF6887 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */ = {isa = PBXBuildFile; fileRef = E99A9BB2C2F64A8593C2C59E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */; };
+		700CEFC5961B418C886AD779 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */ = {isa = PBXBuildFile; fileRef = 2FD5A11BFF814335957492CE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */; };
+		7131F7F815A3435B902C1DBB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = 24475772FCFD4D359EC4230F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */; };
+		76FAD092CD1F436AA1C18C3D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = B287EE1A056F49AB826637A5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */; };
+		79E67E7F138A469B9EC0EA34 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */ = {isa = PBXBuildFile; fileRef = 479708B31E9F44E7894C0268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */; };
+		829B5559A27343C1BEE65E3A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */ = {isa = PBXBuildFile; fileRef = DDCA7DCB6A73425DB11B1268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */; };
+		9CD0F2272DB740D9A22A2957 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = AA3519A2379A42DC83205362 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */; };
+		A4C19AC648A348D29833D27A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 800E482B1DDF4282A88F34DD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */; };
+		A5FFB59F3BA6461F9CA39DFD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */ = {isa = PBXBuildFile; fileRef = 1D90B80A371C4BC78462C8F5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */; };
+		A7223EF0EA844E94A2FBB97F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */ = {isa = PBXBuildFile; fileRef = D590308CF250447EAFB3188D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */; };
+		A8AEFDCF083E4E27B2B387D6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */ = {isa = PBXBuildFile; fileRef = 7FF58821C2BE491A8D74AE24 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */; };
+		AB741368D21245BC8CCEABBF /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */ = {isa = PBXBuildFile; fileRef = 834BC83452804319B41F1A20 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */; };
+		AD37D2BD6F514297853927E7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */ = {isa = PBXBuildFile; fileRef = C17F3205522B46E6B964E330 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */; };
+		B349EEF3299B4C6D91356E8B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */ = {isa = PBXBuildFile; fileRef = 9C5B0A42124749349748983F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */; };
+		B58A2907DB8A47BFBA1B9D40 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */ = {isa = PBXBuildFile; fileRef = 03E3AAEAEDB547D9ABB4E5EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */; };
+		C60595E46F98407A9798591C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 6C0CF7B1B1FD42C395EA5750 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */; };
+		C8F28280D4564A999508D33D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */ = {isa = PBXBuildFile; fileRef = 8F10C5479E9D47BC9E386190 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */; };
+		CF9F0C140ABA4277BCBDA0A0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */ = {isa = PBXBuildFile; fileRef = CF2DAE1D6CBE4D47BCDA884D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */; };
+		D017BA2C25874EC5B654FD3A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */ = {isa = PBXBuildFile; fileRef = 8E573975910E42439CF7AE3F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */; };
+		D25A273912D7421A89C3E549 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = 911E3E9F4C3D420EA23C7423 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */; };
+		D596D484AFA2463CBFA5E9B0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */ = {isa = PBXBuildFile; fileRef = 1AEF09A3FC99402DAB9228AA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */; };
+		D9E8FBB0A9724B53AC507F65 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */ = {isa = PBXBuildFile; fileRef = 5E60AE1EBB2B41C5B9D09C75 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */; };
+		E262DE0BC8254C3CBBEAB14C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */ = {isa = PBXBuildFile; fileRef = 80602270856B437AB0667EDB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */; };
+		E391438EA4874FA590D7C912 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */ = {isa = PBXBuildFile; fileRef = 5EAD4079D264466687FBF773 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */; };
+		EF1B40E944C84B3697BA4F86 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */ = {isa = PBXBuildFile; fileRef = F6EC80E0BED2402592BCA7D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */; };
+		F0A56AF6F3D74879BDEAF1E7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */ = {isa = PBXBuildFile; fileRef = 73932571141245B2B30C8F00 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */; };
+		FBB6A676537D47F484AA230A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */ = {isa = PBXBuildFile; fileRef = D957D15E797F44FBBB7F9FB2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		13520F9BAD8C4B70A343ED46 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		1786A0C09CB748949194F2B1 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		3EE8C2B43E774BE0A50ACDE6 /* RelWithDebInfo */ = {
+		121DD5FE159147D084295432 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		4F230869DEFC4F38AE2E3C41 /* Release */ = {
+		12ED43098B8F4E70832205CB /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
+		7669406101C444C5B74DA0E9 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		ABF1C0B7B9D342C4BB0EECDE /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		6AD915FD2CB341B7A274683A /* PBXContainerItemProxy */ = {
+		47A9BC3D5720489CB74ADA94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 04399D5B68DB4495B906588F /* Project object */;
+			containerPortal = 7263113E27F74BB1B072BCE5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0120601DA0284D06A1B9FCB9;
+			remoteGlobalIDString = E0F6202E9A2B49C38BCEE89E;
 			remoteInfo = "Karabiner-Elements";
 		};
-		951ECCD84B3F40449957223A /* PBXContainerItemProxy */ = {
+		B562D242028B43C48391F6A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 04399D5B68DB4495B906588F /* Project object */;
+			containerPortal = 7263113E27F74BB1B072BCE5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3633B641F7164C3796299A1A;
+			remoteGlobalIDString = 95CC9BA572094C0B983E8977;
 			remoteInfo = ZERO_CHECK;
 		};
-		9DC084B969CD433D82538C46 /* PBXContainerItemProxy */ = {
+		BC0EA1B6048748E6AFB8D536 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 04399D5B68DB4495B906588F /* Project object */;
+			containerPortal = 7263113E27F74BB1B072BCE5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3633B641F7164C3796299A1A;
+			remoteGlobalIDString = 95CC9BA572094C0B983E8977;
 			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D6E73A8CE1D4DE39A35FBF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
-		1D8B9D482A724F2DAB17C2F1 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AlertWindowController.m; path = src/AlertWindowController.m; sourceTree = SOURCE_ROOT; };
-		1EAFB2263F714CE08ADE2C8D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewDataSource.m; path = src/SimpleModificationsTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		238B1C9EDAEB407680607920 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewDataSource.m; path = src/DevicesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		27666B547FD342ADA367663E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsMenuManager.m; path = src/SimpleModificationsMenuManager.m; sourceTree = SOURCE_ROOT; };
-		2885445A779A434581F3B864 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SystemPreferencesManager.m; path = src/SystemPreferencesManager.m; sourceTree = SOURCE_ROOT; };
-		29232D8411144521A7E281E6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableView.m; path = src/ProfilesTableView.m; sourceTree = SOURCE_ROOT; };
-		33CEFF91B4BD415F809B2F17 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewDataSource.m; path = src/FnFunctionKeysTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		4A4D0C529D9447029B98136E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewDataSource.m; path = src/ProfilesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		547B9D392DA0459A840C52A0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableCellView.m; path = src/ComplexModificationsRulesTableCellView.m; sourceTree = SOURCE_ROOT; };
-		580E685E29674AC59E8E4BFA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = LogFileTextViewController.m; path = src/LogFileTextViewController.m; sourceTree = SOURCE_ROOT; };
-		59387AD5383542139EB1DA1F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineViewDelegate.m; path = src/ComplexModificationsAssetsOutlineViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		598999A222ED43309F57F033 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = VirtualHIDKeyboardTypeBackgroundView.m; path = src/VirtualHIDKeyboardTypeBackgroundView.m; sourceTree = SOURCE_ROOT; };
-		5EF5545EF35C4FDA9BAADC48 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableCellView.m; path = src/ProfilesTableCellView.m; sourceTree = SOURCE_ROOT; };
-		697EAE263F5A421EB1050A8F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewDelegate.m; path = src/ComplexModificationsRulesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		7E8D6E03F7EA413F8FA121D8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTargetDeviceMenuManager.m; path = src/SimpleModificationsTargetDeviceMenuManager.m; sourceTree = SOURCE_ROOT; };
-		8062053E3A2C42F08A6F497D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineCellView.m; path = src/ComplexModificationsAssetsOutlineCellView.m; sourceTree = SOURCE_ROOT; };
-		80FBE5C4923F4B009181FBAA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = SOURCE_ROOT; };
-		81A032A592474D6A9E4938CC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableCellView.m; path = src/SimpleModificationsTableCellView.m; sourceTree = SOURCE_ROOT; };
-		8246EC08364D460AAA622E4F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		8679B31CFC90458189CAB380 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsParametersTabController.m; path = src/ComplexModificationsParametersTabController.m; sourceTree = SOURCE_ROOT; };
-		897AD39E48254C238C9036E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		8BB74EED126C4C8089C71EC7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		8D31920DF9EE4900ADAB1A26 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewDelegate.m; path = src/ProfilesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		8D8CACB5427143598699FA62 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewDelegate.m; path = src/DevicesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		8FC9F1C435EA4E188754B843 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewDelegate.m; path = src/FnFunctionKeysTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		91E6516B165F4C51B89DD2C2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewDataSource.m; path = src/ComplexModificationsRulesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		99341F439D9B4E9A9406680D /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = app.icns; path = ../share/Resources/app.icns; sourceTree = SOURCE_ROOT; };
-		9A8AA1DF75A54B648021A354 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SystemPreferencesModel.m; path = src/SystemPreferencesModel.m; sourceTree = SOURCE_ROOT; };
-		9EEDB649519343E39B2DEF49 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = kext_policy.png; path = Resources/kext_policy.png; sourceTree = SOURCE_ROOT; };
-		A7A6FBDE4FCA4069826A4CB5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_modifications.json; path = Resources/simple_modifications.json; sourceTree = SOURCE_ROOT; };
-		A864D8E9E91A42A5BC4F82FD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		BE3E92A9F84C462F83138B02 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewController.m; path = src/ComplexModificationsRulesTableViewController.m; sourceTree = SOURCE_ROOT; };
-		C23E9A92CD76452DA4E448E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableCellView.m; path = src/DevicesTableCellView.m; sourceTree = SOURCE_ROOT; };
-		C28602AF380D4EF5811EC88A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewController.m; path = src/ProfilesTableViewController.m; sourceTree = SOURCE_ROOT; };
-		C394086DFC614E75A72A15F0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = PreferencesWindowController.m; path = src/PreferencesWindowController.m; sourceTree = SOURCE_ROOT; };
-		C7993BCFFEB5414AA4BC5A64 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsFileImportWindowController.m; path = src/ComplexModificationsFileImportWindowController.m; sourceTree = SOURCE_ROOT; };
-		CF288933C044455A9A3810EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewController.m; path = src/FnFunctionKeysTableViewController.m; sourceTree = SOURCE_ROOT; };
-		D50A84C613ED4CF4904A8CF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineViewDataSource.m; path = src/ComplexModificationsAssetsOutlineViewDataSource.m; sourceTree = SOURCE_ROOT; };
-		D627BC73FE224072BB3C39C8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewDelegate.m; path = src/SimpleModificationsTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
-		D6E7CCEEC55F4FCEB8E2963F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
-		D9A04AAEF2D344CA87A5F18C /* Karabiner-Elements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Karabiner-Elements"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB3F64A0AFFD4E089AD3A876 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewController.m; path = src/SimpleModificationsTableViewController.m; sourceTree = SOURCE_ROOT; };
-		F59D299556C2499289FC7345 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewController.m; path = src/DevicesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		03E3AAEAEDB547D9ABB4E5EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SystemPreferencesModel.m; path = src/SystemPreferencesModel.m; sourceTree = SOURCE_ROOT; };
+		1AEF09A3FC99402DAB9228AA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableCellView.m; path = src/SimpleModificationsTableCellView.m; sourceTree = SOURCE_ROOT; };
+		1C2AA05E6BCC4DB0BACA0C18 /* Karabiner-Elements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Karabiner-Elements"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D90B80A371C4BC78462C8F5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewController.m; path = src/SimpleModificationsTableViewController.m; sourceTree = SOURCE_ROOT; };
+		1E4446CF3000483483CABA19 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableView.m; path = src/ProfilesTableView.m; sourceTree = SOURCE_ROOT; };
+		208951DA009045C6A20823E4 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = VirtualHIDKeyboardTypeBackgroundView.m; path = src/VirtualHIDKeyboardTypeBackgroundView.m; sourceTree = SOURCE_ROOT; };
+		24475772FCFD4D359EC4230F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewDataSource.m; path = src/ComplexModificationsRulesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		2FD5A11BFF814335957492CE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AlertWindowController.m; path = src/AlertWindowController.m; sourceTree = SOURCE_ROOT; };
+		3E06B046D6D34FA390BF5609 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsFileImportWindowController.m; path = src/ComplexModificationsFileImportWindowController.m; sourceTree = SOURCE_ROOT; };
+		479708B31E9F44E7894C0268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = PreferencesWindowController.m; path = src/PreferencesWindowController.m; sourceTree = SOURCE_ROOT; };
+		4A17ABB5C2E14EC388308F0E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewDelegate.m; path = src/SimpleModificationsTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		4C60F6F194B34BAFBAF86768 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		521B0CE11CBB4E63AE1601FB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_modifications.json; path = Resources/simple_modifications.json; sourceTree = SOURCE_ROOT; };
+		5E60AE1EBB2B41C5B9D09C75 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsMenuManager.m; path = src/SimpleModificationsMenuManager.m; sourceTree = SOURCE_ROOT; };
+		5EAD4079D264466687FBF773 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineCellView.m; path = src/ComplexModificationsAssetsOutlineCellView.m; sourceTree = SOURCE_ROOT; };
+		6C0CF7B1B1FD42C395EA5750 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewDelegate.m; path = src/FnFunctionKeysTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		73932571141245B2B30C8F00 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		7FF58821C2BE491A8D74AE24 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = kext_policy.png; path = Resources/kext_policy.png; sourceTree = SOURCE_ROOT; };
+		800E482B1DDF4282A88F34DD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		80602270856B437AB0667EDB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableCellView.m; path = src/ProfilesTableCellView.m; sourceTree = SOURCE_ROOT; };
+		834BC83452804319B41F1A20 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewController.m; path = src/ComplexModificationsRulesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		8E573975910E42439CF7AE3F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewDelegate.m; path = src/ProfilesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		8F10C5479E9D47BC9E386190 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewController.m; path = src/DevicesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		911E3E9F4C3D420EA23C7423 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		923EF09E37164B0FB3A539FA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineViewDataSource.m; path = src/ComplexModificationsAssetsOutlineViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		9C5B0A42124749349748983F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewController.m; path = src/FnFunctionKeysTableViewController.m; sourceTree = SOURCE_ROOT; };
+		AA3519A2379A42DC83205362 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewDelegate.m; path = src/DevicesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		ABB29D3C621F42869FC77C9C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B287EE1A056F49AB826637A5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableViewDataSource.m; path = src/DevicesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		B68FBD4B304F4BE9AA591245 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DevicesTableCellView.m; path = src/DevicesTableCellView.m; sourceTree = SOURCE_ROOT; };
+		C17F3205522B46E6B964E330 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
+		CCDCF413CC354FAEAB62C467 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsParametersTabController.m; path = src/ComplexModificationsParametersTabController.m; sourceTree = SOURCE_ROOT; };
+		CED5425F16DE42B79C748FA2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FnFunctionKeysTableViewDataSource.m; path = src/FnFunctionKeysTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		CF2DAE1D6CBE4D47BCDA884D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewController.m; path = src/ProfilesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		D0E3BBF945A8494E872A8ACA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableViewDelegate.m; path = src/ComplexModificationsRulesTableViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		D590308CF250447EAFB3188D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsRulesTableCellView.m; path = src/ComplexModificationsRulesTableCellView.m; sourceTree = SOURCE_ROOT; };
+		D957D15E797F44FBBB7F9FB2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTableViewDataSource.m; path = src/SimpleModificationsTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		DC5CE2285A5748B2ADE8785B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SimpleModificationsTargetDeviceMenuManager.m; path = src/SimpleModificationsTargetDeviceMenuManager.m; sourceTree = SOURCE_ROOT; };
+		DDCA7DCB6A73425DB11B1268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ComplexModificationsAssetsOutlineViewDelegate.m; path = src/ComplexModificationsAssetsOutlineViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		E180DF76A8D64878B971D24C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = ProfilesTableViewDataSource.m; path = src/ProfilesTableViewDataSource.m; sourceTree = SOURCE_ROOT; };
+		E22DAB39A5C4406E947328E8 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = app.icns; path = ../share/Resources/app.icns; sourceTree = SOURCE_ROOT; };
+		E99A9BB2C2F64A8593C2C59E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = LogFileTextViewController.m; path = src/LogFileTextViewController.m; sourceTree = SOURCE_ROOT; };
+		F6EC80E0BED2402592BCA7D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SystemPreferencesManager.m; path = src/SystemPreferencesManager.m; sourceTree = SOURCE_ROOT; };
+		FFB0B9B4616B4C11B428DD70 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		18221E7C769B421A985DBAC2 = {
+		27BAE98DC0F44718A5801F24 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				53863BA187B04D2AB70E0EF0 /* Karabiner-Elements */,
-				668CBF7DCC9C4D88AF6B9DC5 /* ALL_BUILD */,
-				BF57FB757D3F4E479DE1713E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		2104BC80A607454990B264A4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				897AD39E48254C238C9036E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */,
-				9EEDB649519343E39B2DEF49 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */,
-				D6E7CCEEC55F4FCEB8E2963F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */,
+				4C60F6F194B34BAFBAF86768 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */,
+				7FF58821C2BE491A8D74AE24 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */,
+				800E482B1DDF4282A88F34DD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		53863BA187B04D2AB70E0EF0 /* Karabiner-Elements */ = {
-			isa = PBXGroup;
-			children = (
-				95A8B79E4DE94DB9B454E432 /* Source Files */,
-				2104BC80A607454990B264A4 /* Resources */,
-				8246EC08364D460AAA622E4F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */,
-				80FBE5C4923F4B009181FBAA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */,
-				A7A6FBDE4FCA4069826A4CB5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */,
-				99341F439D9B4E9A9406680D /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
-			);
-			name = "Karabiner-Elements";
-			sourceTree = "<group>";
-		};
-		668CBF7DCC9C4D88AF6B9DC5 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				C2D06BD2A25F4649AF58DD39 /* CMake Rules */,
-				8BB74EED126C4C8089C71EC7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		95A8B79E4DE94DB9B454E432 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				1D8B9D482A724F2DAB17C2F1 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */,
-				A864D8E9E91A42A5BC4F82FD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */,
-				8062053E3A2C42F08A6F497D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */,
-				D50A84C613ED4CF4904A8CF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */,
-				59387AD5383542139EB1DA1F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */,
-				C7993BCFFEB5414AA4BC5A64 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */,
-				8679B31CFC90458189CAB380 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */,
-				547B9D392DA0459A840C52A0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */,
-				BE3E92A9F84C462F83138B02 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */,
-				91E6516B165F4C51B89DD2C2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */,
-				697EAE263F5A421EB1050A8F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */,
-				C23E9A92CD76452DA4E448E0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */,
-				F59D299556C2499289FC7345 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */,
-				238B1C9EDAEB407680607920 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */,
-				8D8CACB5427143598699FA62 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */,
-				CF288933C044455A9A3810EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */,
-				33CEFF91B4BD415F809B2F17 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */,
-				8FC9F1C435EA4E188754B843 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */,
-				580E685E29674AC59E8E4BFA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */,
-				C394086DFC614E75A72A15F0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */,
-				5EF5545EF35C4FDA9BAADC48 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */,
-				29232D8411144521A7E281E6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */,
-				C28602AF380D4EF5811EC88A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */,
-				4A4D0C529D9447029B98136E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */,
-				8D31920DF9EE4900ADAB1A26 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */,
-				27666B547FD342ADA367663E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */,
-				81A032A592474D6A9E4938CC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */,
-				DB3F64A0AFFD4E089AD3A876 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */,
-				1EAFB2263F714CE08ADE2C8D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */,
-				D627BC73FE224072BB3C39C8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */,
-				7E8D6E03F7EA413F8FA121D8 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */,
-				2885445A779A434581F3B864 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */,
-				9A8AA1DF75A54B648021A354 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */,
-				598999A222ED43309F57F033 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */,
-				1D6E73A8CE1D4DE39A35FBF0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		BF57FB757D3F4E479DE1713E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9A04AAEF2D344CA87A5F18C /* Karabiner-Elements */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C2D06BD2A25F4649AF58DD39 /* CMake Rules */ = {
+		39E15A27949D4F53A2AE06C9 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		81A19B20018D448A85CC14AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C2AA05E6BCC4DB0BACA0C18 /* Karabiner-Elements */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B38FE90DDD594D3A861B58F4 = {
+			isa = PBXGroup;
+			children = (
+				BAE26A0AB15D4062A33BCBDD /* Karabiner-Elements */,
+				BBCC930E2C7548EA8A3CC262 /* ALL_BUILD */,
+				81A19B20018D448A85CC14AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAE26A0AB15D4062A33BCBDD /* Karabiner-Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D93A8D98E4824717982598DE /* Source Files */,
+				27BAE98DC0F44718A5801F24 /* Resources */,
+				ABB29D3C621F42869FC77C9C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */,
+				73932571141245B2B30C8F00 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */,
+				521B0CE11CBB4E63AE1601FB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */,
+				E22DAB39A5C4406E947328E8 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
+			);
+			name = "Karabiner-Elements";
+			sourceTree = "<group>";
+		};
+		BBCC930E2C7548EA8A3CC262 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				39E15A27949D4F53A2AE06C9 /* CMake Rules */,
+				FFB0B9B4616B4C11B428DD70 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		D93A8D98E4824717982598DE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD5A11BFF814335957492CE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */,
+				911E3E9F4C3D420EA23C7423 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */,
+				5EAD4079D264466687FBF773 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */,
+				923EF09E37164B0FB3A539FA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */,
+				DDCA7DCB6A73425DB11B1268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */,
+				3E06B046D6D34FA390BF5609 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */,
+				CCDCF413CC354FAEAB62C467 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */,
+				D590308CF250447EAFB3188D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */,
+				834BC83452804319B41F1A20 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */,
+				24475772FCFD4D359EC4230F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */,
+				D0E3BBF945A8494E872A8ACA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */,
+				B68FBD4B304F4BE9AA591245 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */,
+				8F10C5479E9D47BC9E386190 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */,
+				B287EE1A056F49AB826637A5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */,
+				AA3519A2379A42DC83205362 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */,
+				9C5B0A42124749349748983F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */,
+				CED5425F16DE42B79C748FA2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */,
+				6C0CF7B1B1FD42C395EA5750 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */,
+				E99A9BB2C2F64A8593C2C59E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */,
+				479708B31E9F44E7894C0268 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */,
+				80602270856B437AB0667EDB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */,
+				1E4446CF3000483483CABA19 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */,
+				CF2DAE1D6CBE4D47BCDA884D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */,
+				E180DF76A8D64878B971D24C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */,
+				8E573975910E42439CF7AE3F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */,
+				5E60AE1EBB2B41C5B9D09C75 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */,
+				1AEF09A3FC99402DAB9228AA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */,
+				1D90B80A371C4BC78462C8F5 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */,
+				D957D15E797F44FBBB7F9FB2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */,
+				4A17ABB5C2E14EC388308F0E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */,
+				DC5CE2285A5748B2ADE8785B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */,
+				F6EC80E0BED2402592BCA7D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */,
+				03E3AAEAEDB547D9ABB4E5EC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */,
+				208951DA009045C6A20823E4 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */,
+				C17F3205522B46E6B964E330 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */,
+			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0120601DA0284D06A1B9FCB9 /* Karabiner-Elements */ = {
+		E0F6202E9A2B49C38BCEE89E /* Karabiner-Elements */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAA8457581B545A1A118ECEB /* Build configuration list for PBXNativeTarget "Karabiner-Elements" */;
+			buildConfigurationList = F0C315749C82451CBF3A0C84 /* Build configuration list for PBXNativeTarget "Karabiner-Elements" */;
 			buildPhases = (
-				1F5C761759C34F9893343760 /* Resources */,
-				D6986165B3724670B5352C53 /* Sources */,
+				9E98E4E593634A449FC7C81C /* Resources */,
+				A5E1FF8BFE724609A7331096 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8EA76B96502F44AF823E9DD8 /* PBXTargetDependency */,
+				18721C642CB74B0B86D83A4F /* PBXTargetDependency */,
 			);
 			name = "Karabiner-Elements";
 			productName = "Karabiner-Elements";
-			productReference = D9A04AAEF2D344CA87A5F18C /* Karabiner-Elements */;
+			productReference = 1C2AA05E6BCC4DB0BACA0C18 /* Karabiner-Elements */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		04399D5B68DB4495B906588F /* Project object */ = {
+		7263113E27F74BB1B072BCE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1010;
 			};
-			buildConfigurationList = 85B8D49C180C4BDAB12AFCF8 /* Build configuration list for PBXProject "Karabiner-Elements" */;
+			buildConfigurationList = E96D7B642206420AB6CC5792 /* Build configuration list for PBXProject "Karabiner-Elements" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				1786A0C09CB748949194F2B1 /* Debug */,
-				4F230869DEFC4F38AE2E3C41 /* Release */,
-				13520F9BAD8C4B70A343ED46 /* MinSizeRel */,
-				3EE8C2B43E774BE0A50ACDE6 /* RelWithDebInfo */,
+				7669406101C444C5B74DA0E9 /* Debug */,
+				12ED43098B8F4E70832205CB /* Release */,
+				ABF1C0B7B9D342C4BB0EECDE /* MinSizeRel */,
+				121DD5FE159147D084295432 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 18221E7C769B421A985DBAC2;
+			mainGroup = B38FE90DDD594D3A861B58F4;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				F62AF885CAAF4531B8D1AE35 /* ALL_BUILD */,
-				0120601DA0284D06A1B9FCB9 /* Karabiner-Elements */,
-				3633B641F7164C3796299A1A /* ZERO_CHECK */,
+				64A5BDA8E9E44268B0FE17CE /* ALL_BUILD */,
+				E0F6202E9A2B49C38BCEE89E /* Karabiner-Elements */,
+				95CC9BA572094C0B983E8977 /* ZERO_CHECK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		59F65C52FBA7442D8110721C /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		7C20D64836684D348BA15BA4 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		866C806B0AAC487DA9476A12 = {
+		045B841A3B09481F95616964 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +346,29 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		E645AAB113804DC9AC5C01D3 = {
+		39CA1C2E630D41DEB9141C58 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		40C154EA9C994540B4F7763F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8995F6F4773B46D7BA4FC4C2 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,213 +386,85 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F5C761759C34F9893343760 /* Resources */ = {
+		9E98E4E593634A449FC7C81C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52357BB530B049379BCAE431 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */,
-				2A282D6DA3D84E0EA2AF2AF1 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */,
-				4C3B73F919FE44429DC5DEDA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */,
-				03CF12538D9742759996A906 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */,
-				9DF31CF09CA34239B829CD93 /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
+				5463A1A14CD448AFB7B2141D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/Assets.xcassets */,
+				F0A56AF6F3D74879BDEAF1E7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/MainMenu.xib */,
+				A8AEFDCF083E4E27B2B387D6 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/kext_policy.png */,
+				2537C18555FC4A5F86427757 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/Resources/simple_modifications.json */,
+				2AEE800961604AA0A7C7A8BB /* /Users/btwise/Karabiner-Elements/src/apps/share/Resources/app.icns */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6986165B3724670B5352C53 /* Sources */ = {
+		A5E1FF8BFE724609A7331096 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D107A641AE2441F196F0ABE3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */,
-				29DC89F23E5443F58AA14D24 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */,
-				B3D4DACBD81847F3921C515C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */,
-				4D2776C4D7BB471B83F71CAC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */,
-				2335CC65C40144F9BEA4CC2F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */,
-				B82896EF2DA049FEB648F2D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */,
-				23C0692B81B241CE97570E17 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */,
-				4F59BE962EA64FB5AD56725A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */,
-				E920AD5F4EF44B74A2029355 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */,
-				F8E4C44FEFD5435AB672A240 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */,
-				11CA8FF7E2014A71A60D4C5F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */,
-				F88CFA5DB3E14532A786BF9D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */,
-				2867C0188A944357A3B643D7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */,
-				5ED7E50EED2540DEBFB9092D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */,
-				C0B286CCF9B14D5EB2934274 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */,
-				02B4D0765DF2408AB80D965E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */,
-				A331FF319BF248068E41233C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */,
-				6EE35D1D16094B9F9D416981 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */,
-				28B9ACA8FF764B2B917DAA60 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */,
-				0F6EF970450246CEBCA5F013 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */,
-				DD940069E0EA497E8C1B285A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */,
-				DB46BD7C4B5A4DDB8C526B16 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */,
-				C006C1C4BAA84708996B8209 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */,
-				355914ADF5B842DBAB977180 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */,
-				E74518694B174386A5DD84EA /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */,
-				6238A219B4E1403FB817D26B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */,
-				27B909747E54446B909377DB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */,
-				02069F2E08BD4F48A47D1BCE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */,
-				8EA9CD37FC2246DBA4551902 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */,
-				F2C3537A359148BBB91EE97D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */,
-				3F95473A2DB843E383C6A7F9 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */,
-				9DE9DD769C094BDE946087A3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */,
-				4B31D76A92DA4882AE221660 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */,
-				25E6EAE269A447E397651675 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */,
-				23FB8487AF2F4201B93D79BC /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */,
+				700CEFC5961B418C886AD779 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AlertWindowController.m */,
+				D25A273912D7421A89C3E549 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/AppDelegate.m */,
+				E391438EA4874FA590D7C912 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineCellView.m */,
+				62B95D4D2FA044B68512C1AE /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDataSource.m */,
+				829B5559A27343C1BEE65E3A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsAssetsOutlineViewDelegate.m */,
+				4CB93A7567E94EE690858D03 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsFileImportWindowController.m */,
+				3718BEF22E58475D8701158E /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsParametersTabController.m */,
+				A7223EF0EA844E94A2FBB97F /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableCellView.m */,
+				AB741368D21245BC8CCEABBF /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewController.m */,
+				7131F7F815A3435B902C1DBB /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDataSource.m */,
+				4F12C95D52964DF584506BC9 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ComplexModificationsRulesTableViewDelegate.m */,
+				1BDEEF5A4E6A4988B8A0D87A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableCellView.m */,
+				C8F28280D4564A999508D33D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewController.m */,
+				76FAD092CD1F436AA1C18C3D /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDataSource.m */,
+				9CD0F2272DB740D9A22A2957 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/DevicesTableViewDelegate.m */,
+				B349EEF3299B4C6D91356E8B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewController.m */,
+				1B8064AE93BA45259D9E7923 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDataSource.m */,
+				C60595E46F98407A9798591C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/FnFunctionKeysTableViewDelegate.m */,
+				6BADA398EE994B8789EF6887 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/LogFileTextViewController.m */,
+				79E67E7F138A469B9EC0EA34 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/PreferencesWindowController.m */,
+				E262DE0BC8254C3CBBEAB14C /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableCellView.m */,
+				21A2B3F7A1504046B6158E51 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableView.m */,
+				CF9F0C140ABA4277BCBDA0A0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewController.m */,
+				4D1BB438B1D84E63B1775E38 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDataSource.m */,
+				D017BA2C25874EC5B654FD3A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/ProfilesTableViewDelegate.m */,
+				D9E8FBB0A9724B53AC507F65 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsMenuManager.m */,
+				D596D484AFA2463CBFA5E9B0 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableCellView.m */,
+				A5FFB59F3BA6461F9CA39DFD /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewController.m */,
+				FBB6A676537D47F484AA230A /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDataSource.m */,
+				5CC58BB2C28A4813B147B2D2 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTableViewDelegate.m */,
+				4BD7EFC923D0497EAEEB74B3 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SimpleModificationsTargetDeviceMenuManager.m */,
+				EF1B40E944C84B3697BA4F86 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesManager.m */,
+				B58A2907DB8A47BFBA1B9D40 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/SystemPreferencesModel.m */,
+				444A269AEAAC4DB69486A21B /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/VirtualHIDKeyboardTypeBackgroundView.m */,
+				AD37D2BD6F514297853927E7 /* /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/src/main.m */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7AC0AF3B263C44FC95D7B6BA /* PBXTargetDependency */ = {
+		18721C642CB74B0B86D83A4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0120601DA0284D06A1B9FCB9 /* Karabiner-Elements */;
-			targetProxy = 6AD915FD2CB341B7A274683A /* PBXContainerItemProxy */;
+			target = 95CC9BA572094C0B983E8977 /* ZERO_CHECK */;
+			targetProxy = B562D242028B43C48391F6A4 /* PBXContainerItemProxy */;
 		};
-		8A75A94736A0490484460C83 /* PBXTargetDependency */ = {
+		512292EB0083420B87D619C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3633B641F7164C3796299A1A /* ZERO_CHECK */;
-			targetProxy = 951ECCD84B3F40449957223A /* PBXContainerItemProxy */;
+			target = 95CC9BA572094C0B983E8977 /* ZERO_CHECK */;
+			targetProxy = BC0EA1B6048748E6AFB8D536 /* PBXContainerItemProxy */;
 		};
-		8EA76B96502F44AF823E9DD8 /* PBXTargetDependency */ = {
+		6BCBEAAA5E544C08847FBF27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3633B641F7164C3796299A1A /* ZERO_CHECK */;
-			targetProxy = 9DC084B969CD433D82538C46 /* PBXContainerItemProxy */;
+			target = E0F6202E9A2B49C38BCEE89E /* Karabiner-Elements */;
+			targetProxy = 47A9BC3D5720489CB74ADA94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01D5B7792EBB4367B3C892C8 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		0AFE277E8A194FB69E5790A0 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		134A319BA08C4DCBB781D673 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
-			};
-			name = Release;
-		};
-		1AC34A7EB2D74DD5B7F2A5B2 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../share");
-				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist";
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build";
-				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build";
-				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Karabiner-Elements";
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		346CC277C8DE44C0BDB5611C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		3DD4F7B239F243C1AAF11080 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		4C6B2FE636834BFF927AA112 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
-			};
-			name = RelWithDebInfo;
-		};
-		52A1E40B7536401ABA4FF4A3 /* Debug */ = {
+		052597CADEE844609BE8AFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -620,37 +492,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		582AFFCC29814C80A46E83CE /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		6BAA524C01E04735BF419AA4 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
-			};
-			name = MinSizeRel;
-		};
-		7017BEAB2C014AC19379BEF6 /* Debug */ = {
+		0D0605EB987342BFBC702AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -670,7 +512,57 @@ exit 0";
 			};
 			name = Debug;
 		};
-		73F2431B6A084BBCB22C94F4 /* Debug */ = {
+		5064D68B8FAF4167BA63735D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5FB36D02AFE84734A6901317 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		7BE20BB62F2C40D584FC7290 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7E5F70E7FF324649B057E592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -690,7 +582,35 @@ exit 0";
 			};
 			name = Debug;
 		};
-		9BC6037954F044F281CAAFB8 /* Release */ = {
+		889C943E6DDC41E1B2B9297E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/CMakeFiles/Karabiner-Elements.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-Elements";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8F47D41DEBCF4AB29F70BB1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -718,7 +638,87 @@ exit 0";
 			};
 			name = Release;
 		};
-		BBE32CD6B64A4F709E83AF0B /* MinSizeRel */ = {
+		A43C834B399A4F8EA26AAFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
+			};
+			name = Release;
+		};
+		ABCB40F7E0E04B528FBDE5E6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		B01094FCF4694F6DA85BEA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B46B3C2066E14E869FA06DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C7FB26B7E59E4409A3EFC50E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D15FF337AA5A430C90A79853 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -746,7 +746,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		BE261A0A06D84A45A079D79D /* MinSizeRel */ = {
+		E137E44317764DD990D2B5AB /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -758,20 +758,20 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = MinSizeRel;
+			name = RelWithDebInfo;
 		};
-		D76800E6B0D74C8D8BB63CE0 /* Debug */ = {
+		F50DD4E9DC934D59B3DDDB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
 				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/build";
 			};
 			name = Debug;
@@ -779,51 +779,51 @@ exit 0";
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81E3CC82A78B466191CFB296 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		9B91F5B4A9F34C98A336F47D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7017BEAB2C014AC19379BEF6 /* Debug */,
-				346CC277C8DE44C0BDB5611C /* Release */,
-				582AFFCC29814C80A46E83CE /* MinSizeRel */,
-				0AFE277E8A194FB69E5790A0 /* RelWithDebInfo */,
+				0D0605EB987342BFBC702AB2 /* Debug */,
+				B01094FCF4694F6DA85BEA62 /* Release */,
+				5064D68B8FAF4167BA63735D /* MinSizeRel */,
+				E137E44317764DD990D2B5AB /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		85B8D49C180C4BDAB12AFCF8 /* Build configuration list for PBXProject "Karabiner-Elements" */ = {
+		CF28B220A82D4386AE39E72F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D76800E6B0D74C8D8BB63CE0 /* Debug */,
-				134A319BA08C4DCBB781D673 /* Release */,
-				6BAA524C01E04735BF419AA4 /* MinSizeRel */,
-				4C6B2FE636834BFF927AA112 /* RelWithDebInfo */,
+				7E5F70E7FF324649B057E592 /* Debug */,
+				B46B3C2066E14E869FA06DB1 /* Release */,
+				7BE20BB62F2C40D584FC7290 /* MinSizeRel */,
+				C7FB26B7E59E4409A3EFC50E /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		AB8A91CC7640451EBD724869 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		E96D7B642206420AB6CC5792 /* Build configuration list for PBXProject "Karabiner-Elements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73F2431B6A084BBCB22C94F4 /* Debug */,
-				3DD4F7B239F243C1AAF11080 /* Release */,
-				BE261A0A06D84A45A079D79D /* MinSizeRel */,
-				01D5B7792EBB4367B3C892C8 /* RelWithDebInfo */,
+				F50DD4E9DC934D59B3DDDB10 /* Debug */,
+				A43C834B399A4F8EA26AAFAA /* Release */,
+				5FB36D02AFE84734A6901317 /* MinSizeRel */,
+				ABCB40F7E0E04B528FBDE5E6 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CAA8457581B545A1A118ECEB /* Build configuration list for PBXNativeTarget "Karabiner-Elements" */ = {
+		F0C315749C82451CBF3A0C84 /* Build configuration list for PBXNativeTarget "Karabiner-Elements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52A1E40B7536401ABA4FF4A3 /* Debug */,
-				9BC6037954F044F281CAAFB8 /* Release */,
-				BBE32CD6B64A4F709E83AF0B /* MinSizeRel */,
-				1AC34A7EB2D74DD5B7F2A5B2 /* RelWithDebInfo */,
+				052597CADEE844609BE8AFC9 /* Debug */,
+				8F47D41DEBCF4AB29F70BB1B /* Release */,
+				D15FF337AA5A430C90A79853 /* MinSizeRel */,
+				889C943E6DDC41E1B2B9297E /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 04399D5B68DB4495B906588F /* Project object */;
+	rootObject = 7263113E27F74BB1B072BCE5 /* Project object */;
 }

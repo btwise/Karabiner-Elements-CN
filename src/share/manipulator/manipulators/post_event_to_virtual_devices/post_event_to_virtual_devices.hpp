@@ -52,7 +52,7 @@ public:
       {
         std::optional<modifier_flag> m;
         if (auto key_code = front_input_event.get_event().get_key_code()) {
-          m = types::make_modifier_flag(*key_code);
+          m = make_modifier_flag(*key_code);
         }
 
         if (m) {
@@ -98,9 +98,9 @@ public:
       switch (front_input_event.get_event().get_type()) {
         case event_queue::event::type::key_code:
           if (auto key_code = front_input_event.get_event().get_key_code()) {
-            if (auto hid_usage_page = types::make_hid_usage_page(*key_code)) {
-              if (auto hid_usage = types::make_hid_usage(*key_code)) {
-                if (types::make_modifier_flag(*key_code) == std::nullopt) {
+            if (auto hid_usage_page = make_hid_usage_page(*key_code)) {
+              if (auto hid_usage = make_hid_usage(*key_code)) {
+                if (make_modifier_flag(*key_code) == std::nullopt) {
                   switch (front_input_event.get_event_type()) {
                     case event_type::key_down:
                       key_event_dispatcher_.dispatch_key_down_event(front_input_event.get_device_id(),
@@ -128,8 +128,8 @@ public:
 
         case event_queue::event::type::consumer_key_code:
           if (auto consumer_key_code = front_input_event.get_event().get_consumer_key_code()) {
-            if (auto hid_usage_page = types::make_hid_usage_page(*consumer_key_code)) {
-              if (auto hid_usage = types::make_hid_usage(*consumer_key_code)) {
+            if (auto hid_usage_page = make_hid_usage_page(*consumer_key_code)) {
+              if (auto hid_usage = make_hid_usage(*consumer_key_code)) {
                 switch (front_input_event.get_event_type()) {
                   case event_type::key_down:
                     key_event_dispatcher_.dispatch_key_down_event(front_input_event.get_device_id(),

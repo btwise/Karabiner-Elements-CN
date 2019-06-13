@@ -58,9 +58,9 @@ public:
 
       if (modifier_flag_manager.is_pressed(m)) {
         if (!pressed) {
-          if (auto key_code = types::make_key_code(m)) {
-            if (auto hid_usage_page = types::make_hid_usage_page(*key_code)) {
-              if (auto hid_usage = types::make_hid_usage(*key_code)) {
+          if (auto key_code = make_key_code(m)) {
+            if (auto hid_usage_page = make_hid_usage_page(*key_code)) {
+              if (auto hid_usage = make_hid_usage(*key_code)) {
                 enqueue_key_event(*hid_usage_page, *hid_usage, event_type::key_down, queue, time_stamp);
               }
             }
@@ -70,9 +70,9 @@ public:
 
       } else {
         if (pressed) {
-          if (auto key_code = types::make_key_code(m)) {
-            if (auto hid_usage_page = types::make_hid_usage_page(*key_code)) {
-              if (auto hid_usage = types::make_hid_usage(*key_code)) {
+          if (auto key_code = make_key_code(m)) {
+            if (auto hid_usage_page = make_hid_usage_page(*key_code)) {
+              if (auto hid_usage = make_hid_usage(*key_code)) {
                 enqueue_key_event(*hid_usage_page, *hid_usage, event_type::key_up, queue, time_stamp);
               }
             }

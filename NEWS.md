@@ -1,11 +1,12 @@
 # Changelog
 
-## Beta
+## Version 12.5.0
 
 - Fixed a key stuck issue which occurs when the key is released,
   and at the exact same moment Karabiner-Elements opens the device.
 - Fixed a issue which Karabiner-Elements mistakes a remote user for a current console user
   if another user is logged in from Screen Sharing while console is used.
+- Improved `XXX is ignored temporarily until YYY is pressed again` behavior.
 - Add `Delay before open device` configuration into `Karabiner-Elements Preferences > Devices > Advanced` tab.
 - Move `Disable the built-in keyboard while one of the following selected devices is connected` configuration
   into `Karabiner-Elements Preferences > Devices > Advanced` tab.

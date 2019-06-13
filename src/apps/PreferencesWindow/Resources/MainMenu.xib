@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -198,7 +198,7 @@
                                     <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="显示所有" id="Kd2-mp-pUS">
+                            <menuItem title="显示全部" id="Kd2-mp-pUS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
@@ -266,7 +266,7 @@
                                                 <action selector="performFindPanelAction:" target="-1" id="cD7-Qs-BN4"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="查找和替换…" tag="12" keyEquivalent="f" id="YEy-JH-Tfz">
+                                        <menuItem title="查找并替换…" tag="12" keyEquivalent="f" id="YEy-JH-Tfz">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="WD3-Gg-5AJ"/>
@@ -338,7 +338,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="gPx-C9-uUO"/>
-                                        <menuItem title="智能复制/粘贴" id="9yt-4B-nSM">
+                                        <menuItem title="智能 复制/粘贴" id="9yt-4B-nSM">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleSmartInsertDelete:" target="-1" id="3IJ-Se-DZD"/>
@@ -446,9 +446,8 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="488" y="49"/>
         </menu>
-        <window title="Karabiner-Elements首选项" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Karabiner-Elements 首选项" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="335" y="390" width="1000" height="550"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1600" height="877"/>
@@ -553,7 +552,7 @@
                                                                 </prototypeCellViews>
                                                             </tableColumn>
                                                             <tableColumn identifier="SimpleModificationsToColumn" width="400" minWidth="40" maxWidth="1000" id="Cvf-cr-EpW">
-                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="到哪个键">
+                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="改为什么键">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -761,7 +760,7 @@
                                                                 </prototypeCellViews>
                                                             </tableColumn>
                                                             <tableColumn identifier="FnFunctionKeysToColumn" width="812" minWidth="40" maxWidth="10000" id="ZHK-yh-2iU">
-                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="到什么键">
+                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="变为哪个键">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -1026,7 +1025,7 @@
                                                         <rect key="frame" x="10" y="33" width="914" height="433"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <box title="基本" translatesAutoresizingMaskIntoConstraints="NO" id="E8I-6o-sAw">
+                                                            <box title="basic" translatesAutoresizingMaskIntoConstraints="NO" id="E8I-6o-sAw">
                                                                 <rect key="frame" x="14" y="257" width="886" height="156"/>
                                                                 <view key="contentView" id="AOh-cS-AAf">
                                                                     <rect key="frame" x="3" y="3" width="880" height="138"/>
@@ -1067,7 +1066,7 @@
                                                                         </stepper>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6h-dy-l1f">
                                                                             <rect key="frame" x="347" y="109" width="96" height="17"/>
-                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值是1000)" id="Fo2-yn-bIz">
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值为1000)" id="Fo2-yn-bIz">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1108,7 +1107,7 @@
                                                                         </stepper>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-El-zvD">
                                                                             <rect key="frame" x="347" y="77" width="91" height="17"/>
-                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值是500)" id="KMT-ou-xXl">
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值为500)" id="KMT-ou-xXl">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1149,7 +1148,7 @@
                                                                         </stepper>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00L-qW-CRt">
                                                                             <rect key="frame" x="347" y="45" width="91" height="17"/>
-                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值是500)" id="5Le-Ae-euU">
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值为500)" id="5Le-Ae-euU">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1190,7 +1189,7 @@
                                                                         </stepper>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-Av-YNg">
                                                                             <rect key="frame" x="347" y="13" width="83" height="17"/>
-                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值是50)" id="Xyd-lc-DzX">
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(默认值为50)" id="Xyd-lc-DzX">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1241,7 +1240,6 @@
                                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J7z-El-zvD" secondAttribute="trailing" constant="20" symbolic="YES" id="yfc-2f-EYo"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                                             </box>
                                                             <box title="鼠标移动滚动" translatesAutoresizingMaskIntoConstraints="NO" id="H3I-n0-klk" userLabel="mouse_motion_to_scroll">
                                                                 <rect key="frame" x="14" y="181" width="886" height="60"/>
@@ -1634,8 +1632,8 @@
                                                                             </connections>
                                                                         </stepper>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRv-VC-jZ7">
-                                                                            <rect key="frame" x="238" y="61" width="127" height="17"/>
-                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="毫秒 (默认值是1000)" id="f9h-oy-ovD">
+                                                                            <rect key="frame" x="238" y="61" width="123" height="17"/>
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="毫秒(默认值为1000)" id="f9h-oy-ovD">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1650,10 +1648,10 @@
                                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="ic_warning_18pt" id="ePT-HK-gd3"/>
                                                                         </imageView>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjj-nG-lKd">
-                                                                            <rect key="frame" x="48" y="7" width="506" height="34"/>
+                                                                            <rect key="frame" x="48" y="7" width="576" height="34"/>
                                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="pcV-zf-cXs">
                                                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                                                                <string key="title">设置不足的延迟会导致设备因KaOSiner-Elements因macOS问题而退出后无法使用。
+                                                                                <string key="title">设置不足的延迟(例如，0)会导致设备因KaOSiner-Elements因macOS问题而退出后将无法使用。
 (如果您遇到问题，可以通过拔下设备并重新插入来解决问题。)</string>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1910,15 +1908,15 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYf-pc-b7A">
-                                                        <rect key="frame" x="15" y="8" width="52" height="17"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="XY速度:" id="g95-BD-GPk">
+                                                        <rect key="frame" x="15" y="8" width="65" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="XY轴速度:" id="g95-BD-GPk">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-vI-sKs">
-                                                        <rect key="frame" x="75" y="6" width="60" height="22"/>
+                                                        <rect key="frame" x="88" y="6" width="60" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="jAf-Oa-Ayd"/>
                                                         </constraints>
@@ -1936,14 +1934,14 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                                         </connections>
                                                     </textField>
                                                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UbT-6B-k1l">
-                                                        <rect key="frame" x="132" y="3" width="19" height="27"/>
+                                                        <rect key="frame" x="145" y="3" width="19" height="27"/>
                                                         <stepperCell key="cell" continuous="YES" alignment="left" increment="10" maxValue="1000" id="L20-JJ-GFw"/>
                                                         <connections>
                                                             <action selector="changeVirtualHIDKeyboardMouseKeyXYScale:" target="5ke-qB-Wr5" id="Fm1-TR-lUc"/>
                                                         </connections>
                                                     </stepper>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pB-P1-R2a">
-                                                        <rect key="frame" x="151" y="8" width="15" height="17"/>
+                                                        <rect key="frame" x="164" y="8" width="15" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="%" id="4Fh-Vl-zMY">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2254,8 +2252,8 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                                         </connections>
                                                     </button>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8u-qB-WbK">
-                                                        <rect key="frame" x="357" y="10" width="40" height="17"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(源码)" id="pmQ-71-PVZ">
+                                                        <rect key="frame" x="357" y="10" width="67" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(汉化源码)" id="pmQ-71-PVZ">
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -2352,8 +2350,8 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                                         </connections>
                                                     </button>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="TNd-jk-kpr">
-                                                        <rect key="frame" x="15" y="6" width="292" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="在菜单栏中显示配置文件名称(默认值：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="dqN-LK-Qdn">
+                                                        <rect key="frame" x="15" y="6" width="284" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="在菜单栏中显示配置文件名称(默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="dqN-LK-Qdn">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -2374,11 +2372,11 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                             </view>
                                             <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                         </box>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UA9-Ls-pWi">
-                                            <rect key="frame" x="400" y="431" width="114" height="17"/>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-MO-4eN">
+                                            <rect key="frame" x="396" y="430" width="124" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="汉化编译:草原企鹅" id="HPO-05-Rws">
-                                                <font key="font" metaFont="system"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="汉化编译：草原企鹅" id="NnY-uV-ghh">
+                                                <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2454,7 +2452,7 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KcB-Mj-XJC">
                                             <rect key="frame" x="15" y="27" width="47" height="12"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="当前时间: " id="Vyq-qv-rb5">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="现在时间: " id="Vyq-qv-rb5">
                                                 <font key="font" size="9" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -2488,7 +2486,7 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                     <constraint firstItem="W8s-8N-CIx" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="12" id="zWU-Lj-dB2"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="525" y="-230"/>
+            <point key="canvasLocation" x="302" y="254"/>
         </window>
         <window title="添加规则" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="" animationBehavior="default" id="FqN-OP-TO2" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
@@ -2502,8 +2500,8 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jox-CI-bt9">
-                        <rect key="frame" x="287" y="357" width="326" height="32"/>
-                        <buttonCell key="cell" type="push" title="从Internet导入更多规则（打开Web浏览器）" bezelStyle="rounded" image="ic_cloud_download_18pt" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="02O-a2-wtg">
+                        <rect key="frame" x="296" y="357" width="309" height="32"/>
+                        <buttonCell key="cell" type="push" title="从Internet导入更多规则(打开Web浏览器)" bezelStyle="rounded" image="ic_cloud_download_18pt" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="02O-a2-wtg">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
@@ -2515,7 +2513,7 @@ macOS会记住所选的键盘布局，其中包含设备的供应商ID，产品I
                         <rect key="frame" x="17" y="61" width="866" height="288"/>
                         <clipView key="contentView" id="F9L-6l-7CJ">
                             <rect key="frame" x="1" y="1" width="864" height="286"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="26" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="nlS-o3-ZB6" id="eIx-lp-xHQ">
                                     <rect key="frame" x="0.0" y="0.0" width="864" height="286"/>
@@ -2689,7 +2687,7 @@ Gw
                     <constraint firstItem="iWA-ft-hGI" firstAttribute="top" secondItem="jfS-u6-wyb" secondAttribute="bottom" constant="20" id="wPT-dt-23q"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-124" y="-316"/>
+            <point key="canvasLocation" x="-20" y="-264"/>
         </window>
         <window title="导入复杂的修改文件" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="" animationBehavior="default" id="ZY4-nd-9zB" userLabel="Import Complex Modifications File Panel" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
@@ -2702,17 +2700,16 @@ Gw
                 <rect key="frame" x="0.0" y="0.0" width="900" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQI-GI-B16">
-                        <rect key="frame" x="253" y="164" width="31" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="导入" id="T6Y-KG-HRf">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-uL-arh">
+                        <rect key="frame" x="15" y="163" width="97" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="从网站导入文件" id="YZo-5z-FvX">
                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-YE-FiJ">
-                        <rect key="frame" x="121" y="162" width="604" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-YE-FiJ">
+                        <rect key="frame" x="113" y="163" width="604" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="SHe-uE-Vaq"/>
                         </constraints>
@@ -2723,13 +2720,13 @@ Gw
                         </textFieldCell>
                     </textField>
                     <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="9Nf-aG-15a">
-                        <rect key="frame" x="646" y="164" width="16" height="16"/>
+                        <rect key="frame" x="725" y="164" width="16" height="16"/>
                     </progressIndicator>
                     <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3J-XY-x60">
                         <rect key="frame" x="80" y="58" width="740" height="85"/>
                         <clipView key="contentView" drawsBackground="NO" id="uNg-oR-13T">
                             <rect key="frame" x="1" y="1" width="738" height="83"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" id="iV7-bm-Yxd">
                                     <rect key="frame" x="0.0" y="0.0" width="738" height="83"/>
@@ -2787,14 +2784,6 @@ Gw
                             <constraint firstAttribute="trailing" secondItem="qHV-O1-rJe" secondAttribute="trailing" constant="5" id="w6D-B6-c52"/>
                         </constraints>
                     </customView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-uL-arh">
-                        <rect key="frame" x="99" y="162" width="18" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="从" id="YZo-5z-FvX">
-                            <font key="font" size="13" name=".PingFangSC-Regular"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="X3k-uL-arh" firstAttribute="top" secondItem="YVO-Df-Mre" secondAttribute="top" constant="20" id="47s-jh-RVv"/>
@@ -2811,7 +2800,7 @@ Gw
                     <constraint firstAttribute="trailing" secondItem="A3J-XY-x60" secondAttribute="trailing" constant="80" id="uOj-TA-PK9"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="1" y="680"/>
+            <point key="canvasLocation" x="46" y="640"/>
         </window>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="" animationBehavior="default" id="WRr-7z-BZH" userLabel="Alert Panel" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
@@ -2953,7 +2942,7 @@ Gw
             </view>
             <point key="canvasLocation" x="75.5" y="888"/>
         </window>
-        <window title="ManipulateCapsLockLED Confirmation Panel" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="" animationBehavior="default" id="Q4d-fj-0zt" customClass="NSPanel">
+        <window title="操纵大写锁定LED确认面板" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="" animationBehavior="default" id="Q4d-fj-0zt" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="132" width="600" height="300"/>

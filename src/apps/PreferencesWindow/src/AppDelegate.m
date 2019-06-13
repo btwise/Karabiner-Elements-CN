@@ -78,7 +78,7 @@
 
   NSAlert* alert = [NSAlert new];
 
-  alert.messageText = @"错误";
+  alert.messageText = @"w错误";
   alert.informativeText = @"未知的URL";
   [alert addButtonWithTitle:@"好"];
 

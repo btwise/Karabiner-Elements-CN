@@ -7,27 +7,28 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/share/console_user_server_client.hpp \
   /Users/btwise/Karabiner-Elements/src/share/logger.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/apple_hid_usage_tables.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/stream_utility.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/absolute_time_duration.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/absolute_time_point.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/consumer_key_code.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_value.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/apple_hid_usage_tables.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/stream_utility.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage_page.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/device_id.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/device_identifiers.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/product_id.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/vendor_id.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/device_state.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/event_type.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/grabbable_state.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/hid_country_code.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/types/hid_usage_page.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/types/hid_value.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/key_code.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/types/modifier_flag.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/key_down_up_valued_event.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/pointing_button.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/led_state.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/location_id.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/types/modifier_flag.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/mouse_key.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/operation_type.hpp \
   /Users/btwise/Karabiner-Elements/src/share/types/pointing_motion.hpp \
@@ -66,7 +67,6 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/share/event_queue/utility.hpp \
   /Users/btwise/Karabiner-Elements/src/share/pressed_keys_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/share/hid_keyboard_caps_lock_led_state_manager.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/orphan_key_up_events_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/core/grabber/include/grabber/device_grabber_details/fn_function_keys_manipulator_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/share/manipulator/manipulator_factory.hpp \
   /Users/btwise/Karabiner-Elements/src/share/manipulator/conditions/device.hpp \
@@ -124,6 +124,7 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/share/manipulator/manipulators/post_event_to_virtual_devices/mouse_key_handler.hpp \
   /Users/btwise/Karabiner-Elements/src/share/monitor/configuration_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/share/monitor/event_tap_monitor.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/probable_stuck_events_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/core/grabber/include/grabber/session_monitor_receiver.hpp \
   /Users/btwise/Karabiner-Elements/src/core/grabber/include/grabber/grabber_alerts_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/share/karabiner_version.h \

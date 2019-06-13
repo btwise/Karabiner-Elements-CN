@@ -40,7 +40,7 @@
   }
 
   if (result.length == 0) {
-    result = @"没有制造商名称";
+    result = @"No manufacturer name";
   }
 
   return result;
@@ -55,7 +55,7 @@
   }
 
   if (result.length == 0) {
-    result = @"没有产品名称";
+    result = @"No product name";
   }
 
   return result;

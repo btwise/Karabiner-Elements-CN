@@ -131,7 +131,7 @@
       NSAlert* alert = [NSAlert new];
 
       alert.messageText = @"确认";
-      alert.informativeText = @"您确定要删除此导入的文件吗？";
+      alert.informativeText = @"您确定要删除此导入的文件吗？?";
       [alert addButtonWithTitle:@"删除"];
       [alert addButtonWithTitle:@"取消"];
 

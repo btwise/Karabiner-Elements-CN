@@ -114,19 +114,19 @@ public:
 
       case type::key_code:
         if (auto v = get_key_code()) {
-          json["key_code"] = types::make_key_code_name(*v);
+          json["key_code"] = make_key_code_name(*v);
         }
         break;
 
       case type::consumer_key_code:
         if (auto v = get_consumer_key_code()) {
-          json["consumer_key_code"] = types::make_consumer_key_code_name(*v);
+          json["consumer_key_code"] = make_consumer_key_code_name(*v);
         }
         break;
 
       case type::pointing_button:
         if (auto v = get_pointing_button()) {
-          json["pointing_button"] = types::make_pointing_button_name(*v);
+          json["pointing_button"] = make_pointing_button_name(*v);
         }
         break;
 

@@ -14,7 +14,7 @@
 - (void)setup {
   NSString* jsonFilePath = [[NSBundle mainBundle] pathForResource:@"simple_modifications" ofType:@"json"];
   if (!jsonFilePath) {
-    NSLog(@"simple_modifications.json 未找到.");
+    NSLog(@"simple_modifications.json is not found.");
     return;
   }
 
@@ -30,7 +30,7 @@
     // ----------------------------------------
 
     {
-      NSMenuItem* item = [[NSMenuItem alloc] initWithTitle:@"---------------------------------------- (使用默认键)"
+      NSMenuItem* item = [[NSMenuItem alloc] initWithTitle:@"---------------------------------------- (use default key)"
                                                     action:NULL
                                              keyEquivalent:@""];
       item.representedObject = [KarabinerKitJsonUtility createJsonString:@{}];

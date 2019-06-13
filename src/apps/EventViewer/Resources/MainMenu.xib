@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -57,7 +57,7 @@
                                     <action selector="paste:" target="-1" id="O9q-Pn-CWT"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="粘贴并匹配样式" keyEquivalent="V" id="UZX-cw-ZX2">
+                            <menuItem title="粘贴和匹配样式" keyEquivalent="V" id="UZX-cw-ZX2">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="pasteAsPlainText:" target="-1" id="mgy-jQ-D9w"/>
@@ -84,7 +84,7 @@
                                                 <action selector="performFindPanelAction:" target="-1" id="1L9-6H-gna"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="查找并替换…" tag="12" keyEquivalent="f" id="1Fk-5E-T0k">
+                                        <menuItem title="查找和替换…" tag="12" keyEquivalent="f" id="1Fk-5E-T0k">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="performTextFinderAction:" target="-1" id="s5m-K2-2qY"/>
@@ -100,12 +100,12 @@
                                                 <action selector="performFindPanelAction:" target="-1" id="Duq-Us-IAY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="用所选进行查找" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
+                                        <menuItem title="使用选择查找" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="709-rw-C5q"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="跳转到所选" keyEquivalent="j" id="NLF-pa-Yzy">
+                                        <menuItem title="跳转到选择" keyEquivalent="j" id="NLF-pa-Yzy">
                                             <connections>
                                                 <action selector="centerSelectionInVisibleArea:" target="-1" id="cts-NK-Mfr"/>
                                             </connections>
@@ -160,7 +160,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="59C-IC-omI"/>
-                                        <menuItem title="智能复制/粘贴" id="GFs-GC-evz">
+                                        <menuItem title="智能 复制/粘贴" id="GFs-GC-evz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleSmartInsertDelete:" target="-1" id="fcq-PH-7wv"/>
@@ -184,13 +184,13 @@
                                                 <action selector="toggleAutomaticLinkDetection:" target="-1" id="zK4-Ze-abt"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="数据检查器" id="5Ks-0p-YXl">
+                                        <menuItem title="数据检测器" id="5Ks-0p-YXl">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticDataDetection:" target="-1" id="6FJ-2i-3i5"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="文本替换" id="ish-hF-0B6">
+                                        <menuItem title="文字替换" id="ish-hF-0B6">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticTextReplacement:" target="-1" id="JFS-25-jxz"/>
@@ -247,7 +247,6 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-33" y="114"/>
         </menu>
         <window title="EventViewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
@@ -268,7 +267,7 @@
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box borderType="line" title="键盘&amp;鼠标事件" translatesAutoresizingMaskIntoConstraints="NO" id="614">
+                                        <box borderType="line" title="键盘 &amp; 鼠标事件" translatesAutoresizingMaskIntoConstraints="NO" id="614">
                                             <rect key="frame" x="14" y="198" width="806" height="285"/>
                                             <view key="contentView" id="pJS-41-sBt">
                                                 <rect key="frame" x="3" y="3" width="800" height="267"/>
@@ -276,7 +275,7 @@
                                                 <subviews>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="541">
                                                         <rect key="frame" x="11" y="229" width="120" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="复制到粘贴板" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
+                                                        <buttonCell key="cell" type="push" title="复制到剪贴板" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -503,7 +502,7 @@
                                     <outlet property="initialFirstResponder" destination="925" id="930"/>
                                 </connections>
                             </tabViewItem>
-                            <tabViewItem label="活跃的应用" identifier="" id="JP7-qs-Qlf">
+                            <tabViewItem label="活动的应用" identifier="" id="JP7-qs-Qlf">
                                 <view key="view" id="OUd-40-tIR">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -656,7 +655,7 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="EventViewer-首选项" identifier="" id="xC1-NR-t4e">
+                            <tabViewItem label="EventViewer首选项" identifier="" id="xC1-NR-t4e">
                                 <view key="view" id="FqR-MI-IIO">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,8 +708,8 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="cCs-zq-ovo">
-                                                        <rect key="frame" x="15" y="8" width="288" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="以十六进制格式显示键代码。 (默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
+                                                        <rect key="frame" x="15" y="8" width="301" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="以十六进制格式显示密钥代码。 (默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -755,7 +754,7 @@
             <connections>
                 <outlet property="initialFirstResponder" destination="925" id="929"/>
             </connections>
-            <point key="canvasLocation" x="944" y="206"/>
+            <point key="canvasLocation" x="532" y="435"/>
         </window>
         <customObject id="494" userLabel="App Delegate" customClass="AppDelegate">
             <connections>
