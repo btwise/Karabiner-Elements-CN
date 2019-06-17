@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <installer-gui-script minSpecVersion="1">
-  <title>Karabiner-Elements 12.5.0</title>
+  <title>Karabiner-Elements 12.5.1</title>
   <volume-check>
     <allowed-os-versions>
       <os-version min="10.12" />
@@ -21,5 +21,5 @@
   <choice id="org.pqrs.Karabiner-Elements" visible="false">
     <pkg-ref id="org.pqrs.Karabiner-Elements" />
   </choice>
-  <pkg-ref id="org.pqrs.Karabiner-Elements" version="12.5.0">Installer.pkg</pkg-ref>
+  <pkg-ref id="org.pqrs.Karabiner-Elements" version="12.5.1">Installer.pkg</pkg-ref>
 </installer-gui-script>
