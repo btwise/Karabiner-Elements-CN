@@ -113,6 +113,8 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_file_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_frontmost_application_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_hid_value_monitor.hpp \
+  /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_kextd_state_monitor.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/monitor/kextd_state_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_log_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_system_preferences_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/lib/libkrbn/include/libkrbn/impl/libkrbn_version_monitor.hpp \

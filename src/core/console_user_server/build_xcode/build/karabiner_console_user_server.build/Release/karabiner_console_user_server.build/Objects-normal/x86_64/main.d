@@ -51,7 +51,7 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/share/core_configuration/details/profile/simple_modifications.hpp \
   /Users/btwise/Karabiner-Elements/src/share/core_configuration/details/profile/parameters.hpp \
   /Users/btwise/Karabiner-Elements/src/share/core_configuration/details/profile/virtual_hid_keyboard.hpp \
-  /Users/btwise/Karabiner-Elements/src/share/monitor/grabber_alerts_monitor.hpp \
+  /Users/btwise/Karabiner-Elements/src/share/monitor/kextd_state_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/share/monitor/version_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/core/console_user_server/include/console_user_server/receiver.hpp \
   /Users/btwise/Karabiner-Elements/src/share/console_user_server_client.hpp \

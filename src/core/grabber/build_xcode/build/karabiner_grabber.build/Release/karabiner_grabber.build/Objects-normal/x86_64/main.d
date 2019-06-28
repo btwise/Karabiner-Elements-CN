@@ -126,6 +126,5 @@ dependencies: \
   /Users/btwise/Karabiner-Elements/src/share/monitor/event_tap_monitor.hpp \
   /Users/btwise/Karabiner-Elements/src/share/probable_stuck_events_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/core/grabber/include/grabber/session_monitor_receiver.hpp \
-  /Users/btwise/Karabiner-Elements/src/core/grabber/include/grabber/grabber_alerts_manager.hpp \
   /Users/btwise/Karabiner-Elements/src/share/karabiner_version.h \
   /Users/btwise/Karabiner-Elements/src/share/process_utility.hpp

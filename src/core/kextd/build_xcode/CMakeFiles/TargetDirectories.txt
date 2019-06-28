@@ -1,0 +1,3 @@
+/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/CMakeFiles/karabiner_kextd.dir
+/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/CMakeFiles/ALL_BUILD.dir
+/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/CMakeFiles/ZERO_CHECK.dir
