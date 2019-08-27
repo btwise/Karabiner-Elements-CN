@@ -73,6 +73,12 @@ public:
         }
       }
 
+      // Set options
+
+      // A margin (32 byte) is required to receive data which size == buffer_size.
+      size_t buffer_margin = 32;
+      socket_->set_option(asio::socket_base::receive_buffer_size(buffer_size + buffer_margin));
+
       // Bind
 
       {
@@ -102,7 +108,7 @@ public:
 
       // Receive
 
-      buffer_.resize(buffer_size);
+      buffer_.resize(buffer_size + buffer_margin);
       async_receive();
     });
   }
@@ -143,13 +149,19 @@ private:
     socket_->async_receive(asio::buffer(buffer_),
                            [this](auto&& error_code, auto&& bytes_transferred) {
                              if (!error_code) {
-                               auto v = std::make_shared<std::vector<uint8_t>>(bytes_transferred);
-                               std::copy(std::begin(buffer_),
-                                         std::begin(buffer_) + bytes_transferred,
-                                         std::begin(*v));
-                               enqueue_to_dispatcher([this, v] {
-                                 received(v);
-                               });
+                               if (bytes_transferred > 0) {
+                                 auto t = client_send_entry::type(buffer_[0]);
+                                 if (t == client_send_entry::type::user_data) {
+                                   auto v = std::make_shared<std::vector<uint8_t>>(bytes_transferred - 1);
+                                   std::copy(std::begin(buffer_) + 1,
+                                             std::begin(buffer_) + bytes_transferred,
+                                             std::begin(*v));
+
+                                   enqueue_to_dispatcher([this, v] {
+                                     received(v);
+                                   });
+                                 }
+                               }
                              }
 
                              // receive once if not closed
@@ -197,7 +209,8 @@ private:
         });
       });
 
-      server_check_client_->async_connect(path, std::nullopt);
+      size_t buffer_size = 32;
+      server_check_client_->async_connect(path, buffer_size, std::nullopt);
     }
   }
 

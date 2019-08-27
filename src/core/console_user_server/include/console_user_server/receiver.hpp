@@ -49,26 +49,31 @@ public:
 
       unlink(socket_file_path.c_str());
 
-      size_t buffer_size = 32 * 1024;
       server_ = std::make_unique<pqrs::local_datagram::server>(weak_dispatcher_,
                                                                socket_file_path,
-                                                               buffer_size);
+                                                               constants::get_local_datagram_buffer_size());
       server_->set_server_check_interval(std::chrono::milliseconds(3000));
       server_->set_reconnect_interval(std::chrono::milliseconds(1000));
 
       server_->bound.connect([this] {
+        logger::get_logger()->info("receiver: bound");
+
         enqueue_to_dispatcher([this] {
           bound();
         });
       });
 
       server_->bind_failed.connect([this](auto&& error_code) {
+        logger::get_logger()->info("receiver: failed to bind");
+
         enqueue_to_dispatcher([this, error_code] {
           bind_failed(error_code);
         });
       });
 
       server_->closed.connect([this] {
+        logger::get_logger()->info("receiver: closed");
+
         enqueue_to_dispatcher([this] {
           closed();
         });

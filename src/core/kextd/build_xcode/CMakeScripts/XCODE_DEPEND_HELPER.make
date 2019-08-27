@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.karabiner_kextd.Debug:
-/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/Debug/karabiner_kextd:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/Debug/karabiner_kextd
+/Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/Debug/karabiner_kextd:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/Debug/karabiner_kextd
 
 
 PostBuild.karabiner_kextd.Release:
-/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/Release/karabiner_kextd:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/Release/karabiner_kextd
+/Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/Release/karabiner_kextd:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/Release/karabiner_kextd
 
 
 PostBuild.karabiner_kextd.MinSizeRel:
-/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/MinSizeRel/karabiner_kextd:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/MinSizeRel/karabiner_kextd
+/Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/MinSizeRel/karabiner_kextd:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/MinSizeRel/karabiner_kextd
 
 
 PostBuild.karabiner_kextd.RelWithDebInfo:
-/Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/RelWithDebInfo/karabiner_kextd:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/kextd/build_xcode/RelWithDebInfo/karabiner_kextd
+/Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/RelWithDebInfo/karabiner_kextd:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/kextd/build_xcode/RelWithDebInfo/karabiner_kextd
 
 
 

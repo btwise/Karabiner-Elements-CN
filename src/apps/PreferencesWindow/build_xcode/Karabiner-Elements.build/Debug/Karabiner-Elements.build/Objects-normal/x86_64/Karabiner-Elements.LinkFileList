@@ -1,4 +1,3 @@
-/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/AlertWindowController.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/AppDelegate.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/ComplexModificationsAssetsOutlineCellView.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/ComplexModificationsAssetsOutlineViewDataSource.o
@@ -16,6 +15,8 @@
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/FnFunctionKeysTableViewController.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/FnFunctionKeysTableViewDataSource.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/FnFunctionKeysTableViewDelegate.o
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/InputMonitoringAlertWindowController.o
+/Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/KextdAlertWindowController.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/LogFileTextViewController.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/PreferencesWindowController.o
 /Users/btwise/Karabiner-Elements/src/apps/PreferencesWindow/build_xcode/Karabiner-Elements.build/Debug/Karabiner-Elements.build/Objects-normal/x86_64/ProfilesTableCellView.o

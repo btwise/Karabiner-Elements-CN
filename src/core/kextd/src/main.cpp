@@ -3,14 +3,27 @@
 #include "karabiner_version.h"
 #include "kextd/components_manager.hpp"
 #include "logger.hpp"
-#include "monitor/version_monitor.hpp"
 #include "process_utility.hpp"
 #include <iostream>
+#include <pqrs/gcd.hpp>
 
 int main(int argc, const char* argv[]) {
+  //
+  // Initialize
+  //
+
+  auto scoped_dispatcher_manager = krbn::dispatcher_utility::initialize_dispatchers();
+
+  signal(SIGUSR1, SIG_IGN);
+  signal(SIGUSR2, SIG_IGN);
+
+  //
+  // Check euid
+  //
+
   if (geteuid() != 0) {
     std::cerr << "fatal: karabiner_kextd requires root privilege." << std::endl;
-    exit(1);
+    return 1;
   }
 
   //
@@ -38,41 +51,37 @@ int main(int argc, const char* argv[]) {
   }
 
   //
-  // Initialize
-  //
-
-  krbn::dispatcher_utility::initialize_dispatchers();
-
-  signal(SIGUSR1, SIG_IGN);
-  signal(SIGUSR2, SIG_IGN);
-
-  //
   // Run components_manager
   //
 
-  std::shared_ptr<krbn::kextd::components_manager> components_manager;
+  krbn::components_manager_killer::initialize_shared_components_manager_killer();
 
-  auto version_monitor = std::make_shared<krbn::version_monitor>(krbn::constants::get_version_file_path());
+  // We have to use raw pointer (not smart pointer) to delete it in `dispatch_async`.
+  krbn::kextd::components_manager* components_manager = nullptr;
 
-  version_monitor->changed.connect([&](auto&& version) {
-    dispatch_async(dispatch_get_main_queue(), ^{
-      components_manager = nullptr;
-      CFRunLoopStop(CFRunLoopGetCurrent());
+  if (auto killer = krbn::components_manager_killer::get_shared_components_manager_killer()) {
+    killer->kill_called.connect([&components_manager] {
+      dispatch_async(dispatch_get_main_queue(), ^{
+        {
+          // Mark as main queue to avoid a deadlock in `pqrs::gcd::dispatch_sync_on_main_queue` in destructor.
+          pqrs::gcd::scoped_running_on_main_queue_marker marker;
+
+          delete components_manager;
+        }
+
+        CFRunLoopStop(CFRunLoopGetCurrent());
+      });
     });
-  });
+  }
 
-  components_manager = std::make_shared<krbn::kextd::components_manager>();
-
-  version_monitor->async_start();
+  components_manager = new krbn::kextd::components_manager();
   components_manager->async_start();
 
   CFRunLoopRun();
 
-  version_monitor = nullptr;
+  krbn::components_manager_killer::terminate_shared_components_manager_killer();
 
   krbn::logger::get_logger()->info("karabiner_kextd is terminated.");
-
-  krbn::dispatcher_utility::terminate_dispatchers();
 
   return 0;
 }

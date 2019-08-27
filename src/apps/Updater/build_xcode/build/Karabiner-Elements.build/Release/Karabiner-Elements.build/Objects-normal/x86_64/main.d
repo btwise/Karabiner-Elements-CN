@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/btwise/Karabiner-Elements/src/apps/Updater/src/main.m
+  /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Updater/src/main.m

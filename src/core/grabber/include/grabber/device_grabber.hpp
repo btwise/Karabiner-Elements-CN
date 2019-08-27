@@ -2,6 +2,7 @@
 
 #include "apple_hid_usage_tables.hpp"
 #include "apple_notification_center.hpp"
+#include "components_manager_killer.hpp"
 #include "constants.hpp"
 #include "device_grabber_details/entry.hpp"
 #include "device_grabber_details/fn_function_keys_manipulator_manager.hpp"
@@ -183,6 +184,15 @@ public:
             update_virtual_hid_pointing();
 
             apple_notification_center::post_distributed_notification_to_all_sessions(constants::get_distributed_notification_device_grabbing_state_is_changed());
+          }
+        });
+
+        entry->get_hid_queue_value_monitor()->error_occurred.connect([](auto&& message, auto&& kr) {
+          if (kr.not_permitted()) {
+            logger::get_logger()->warn("hid_queue_value_monitor not_permitted error");
+            if (auto killer = components_manager_killer::get_shared_components_manager_killer()) {
+              killer->async_kill();
+            }
           }
         });
 
@@ -391,6 +401,23 @@ public:
       fn_function_keys_manipulator_manager_->update(profile_,
                                                     system_preferences_properties_);
       async_post_system_preferences_properties_changed_event();
+    });
+  }
+
+  void async_post_set_variable_event(const std::string& name, int value) {
+    enqueue_to_dispatcher([this, name, value] {
+      auto event = event_queue::event::make_set_variable_event(std::make_pair(name, value));
+
+      for (const auto& t : {event_type::key_down, event_type::key_up}) {
+        event_queue::entry entry(device_id(0),
+                                 event_queue::event_time_stamp(pqrs::osx::chrono::mach_absolute_time_point()),
+                                 event,
+                                 t,
+                                 event);
+        merged_input_event_queue_->push_back_entry(entry);
+      }
+
+      krbn_notification_center::get_instance().enqueue_input_event_arrived(*this);
     });
   }
 

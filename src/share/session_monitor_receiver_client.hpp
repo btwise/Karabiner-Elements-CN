@@ -35,9 +35,9 @@ public:
       }
 
       auto socket_file_path = constants::get_grabber_session_monitor_receiver_socket_file_path();
-
       client_ = std::make_unique<pqrs::local_datagram::client>(weak_dispatcher_,
-                                                               socket_file_path);
+                                                               socket_file_path,
+                                                               constants::get_local_datagram_buffer_size());
       client_->set_server_check_interval(std::chrono::milliseconds(3000));
       client_->set_reconnect_interval(std::chrono::milliseconds(1000));
 
@@ -103,12 +103,6 @@ private:
     client_ = nullptr;
 
     logger::get_logger()->info("session_monitor_receiver_client is stopped.");
-  }
-
-  void call_async_send(const uint8_t* _Nonnull p, size_t length) const {
-    if (client_) {
-      client_->async_send(p, length);
-    }
   }
 
   std::unique_ptr<pqrs::local_datagram::client> client_;

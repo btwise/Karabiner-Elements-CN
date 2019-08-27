@@ -14,7 +14,8 @@
 #undef ASIO_STANDALONE
 #endif
 
-#include "buffer.hpp"
+#include "client_send_entry.hpp"
+#include <deque>
 #include <nod/nod.hpp>
 #include <optional>
 #include <pqrs/dispatcher.hpp>
@@ -38,7 +39,7 @@ public:
   client(std::weak_ptr<dispatcher::dispatcher> weak_dispatcher) : dispatcher_client(weak_dispatcher),
                                                                   io_service_(),
                                                                   work_(std::make_unique<asio::io_service::work>(io_service_)),
-                                                                  socket_(std::make_unique<asio::local::datagram_protocol::socket>(io_service_)),
+                                                                  socket_(nullptr),
                                                                   connected_(false),
                                                                   server_check_timer_(*this) {
     io_service_thread_ = std::thread([this] {
@@ -58,10 +59,15 @@ public:
   }
 
   void async_connect(const std::string& path,
+                     size_t buffer_size,
                      std::optional<std::chrono::milliseconds> server_check_interval) {
-    async_close();
+    io_service_.post([this, path, buffer_size, server_check_interval] {
+      if (socket_) {
+        return;
+      }
 
-    io_service_.post([this, path, server_check_interval] {
+      socket_ = std::make_unique<asio::local::datagram_protocol::socket>(io_service_);
+
       connected_ = false;
 
       // Open
@@ -77,6 +83,11 @@ public:
           return;
         }
       }
+
+      // Set options
+
+      // A margin (1 byte) is required to append client_send_entry::type.
+      socket_->set_option(asio::socket_base::send_buffer_size(buffer_size + 1));
 
       // Connect
 
@@ -95,6 +106,9 @@ public:
                                  enqueue_to_dispatcher([this] {
                                    connected();
                                  });
+
+                                 // Flush send_entries_.
+                                 send();
                                }
                              });
     });
@@ -102,6 +116,10 @@ public:
 
   void async_close(void) {
     io_service_.post([this] {
+      if (!socket_) {
+        return;
+      }
+
       stop_server_check();
 
       // Close socket
@@ -111,7 +129,7 @@ public:
       socket_->cancel(error_code);
       socket_->close(error_code);
 
-      socket_ = std::make_unique<asio::local::datagram_protocol::socket>(io_service_);
+      socket_ = nullptr;
 
       // Signal
 
@@ -125,30 +143,12 @@ public:
     });
   }
 
-  void async_send(std::shared_ptr<buffer> buffer) {
-    io_service_.post([this, buffer] {
-      size_t sent = 0;
-      do {
-        asio::error_code error_code;
-        sent += socket_->send(asio::buffer(buffer->get_vector()),
-                              asio::socket_base::message_flags(0),
-                              error_code);
-        if (error_code) {
-          if (error_code == asio::error::no_buffer_space) {
-            // Wait until buffer is available.
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-          } else {
-            enqueue_to_dispatcher([this, error_code] {
-              error_occurred(error_code);
-            });
-
-            async_close();
-            break;
-          }
-        }
-      } while (sent < buffer->get_vector().size());
+  void async_send(std::shared_ptr<client_send_entry> entry) {
+    io_service_.post([this, entry] {
+      send_entries_.push_back(entry);
     });
+
+    send();
   }
 
 private:
@@ -172,13 +172,114 @@ private:
 
   // This method is executed in `io_service_thread_`.
   void check_server(void) {
-    auto b = std::make_shared<buffer>();
+    auto b = std::make_shared<client_send_entry>(client_send_entry::type::server_check);
     async_send(b);
+  }
+
+  void send(void) {
+    io_service_.post([this] {
+      if (!socket_) {
+        return;
+      }
+
+      if (!connected_) {
+        return;
+      }
+
+      while (!send_entries_.empty()) {
+        if (auto entry = send_entries_.front()) {
+          size_t sent = 0;
+          size_t no_buffer_space_error_count = 0;
+          do {
+            asio::error_code error_code;
+            sent += socket_->send(asio::buffer(entry->get_buffer()),
+                                  asio::socket_base::message_flags(0),
+                                  error_code);
+            if (error_code) {
+              if (error_code == asio::error::no_buffer_space) {
+                //
+                // Retrying the sending data or abort the buffer is required.
+                //
+                // - Keep the connection.
+                // - Keep or drop the entry.
+                //
+
+                // Retry if no_buffer_space error is continued too much times.
+                ++no_buffer_space_error_count;
+                if (no_buffer_space_error_count > 10) {
+                  // `send` always returns no_buffer_space error on macOS
+                  // when entry->get_buffer().size() > server_buffer_size.
+                  //
+                  // Thus, we have to cancel sending data in the such case.
+                  // (We consider we have to cancel when `sent` == 0.)
+
+                  if (sent == 0) {
+                    // Abort
+
+                    enqueue_to_dispatcher([this, error_code] {
+                      error_occurred(error_code);
+                    });
+                    break;
+
+                  } else {
+                    // Retry
+                    send();
+                    return;
+                  }
+                }
+
+                // Wait until buffer is available.
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+              } else if (error_code == asio::error::message_size) {
+                //
+                // Problem of the sending data.
+                //
+                // - Keep the connection.
+                // - Drop the entry.
+                //
+
+                enqueue_to_dispatcher([this, error_code] {
+                  error_occurred(error_code);
+                });
+                break;
+
+              } else {
+                //
+                // Other errors (e.g., connection error)
+                //
+                // - Close the connection.
+                // - Keep the entry.
+                //
+
+                enqueue_to_dispatcher([this, error_code] {
+                  error_occurred(error_code);
+                });
+
+                async_close();
+                return;
+              }
+            } else {
+              no_buffer_space_error_count = 0;
+            }
+          } while (sent < entry->get_buffer().size());
+
+          if (auto&& processed = entry->get_processed()) {
+            enqueue_to_dispatcher([processed] {
+              processed();
+            });
+          }
+        }
+
+        send_entries_.pop_front();
+      }
+    });
   }
 
   asio::io_service io_service_;
   std::unique_ptr<asio::io_service::work> work_;
   std::unique_ptr<asio::local::datagram_protocol::socket> socket_;
+  std::deque<std::shared_ptr<client_send_entry>> send_entries_;
   std::thread io_service_thread_;
   bool connected_;
 

@@ -1,4 +1,4 @@
-jarro2783/cxxopts@v2.1.2 --cmake header -H sha256:95f524c6615a2067e935e02ef74b013b17efa339df0a3c9db3e91fc0afbaf269
+jarro2783/cxxopts@v2.2.0 --cmake header -H sha256:447dbfc2361fce9742c5d1c9cfb25731c977b405f9085a738fbd608626da8a4d
 mpark/variant@v1.4.0 --cmake header -H sha256:8f6b28ab3640b5d76d5b6664dda7257a4405ce59179220431b8fd196c79b2ecb
 pqrs-org/cpp-cf-dictionary
 pqrs-org/cpp-cf-number
@@ -13,8 +13,12 @@ pqrs-org/cpp-osx-frontmost_application_monitor
 pqrs-org/cpp-osx-input_source
 pqrs-org/cpp-osx-input_source_monitor
 pqrs-org/cpp-osx-input_source_selector
+pqrs-org/cpp-osx-iokit_hid_device_open_checker
 pqrs-org/cpp-osx-iokit_hid_manager
 pqrs-org/cpp-osx-iokit_hid_queue_value_monitor
+pqrs-org/cpp-osx-json_file_monitor
+pqrs-org/cpp-osx-launchctl
+pqrs-org/cpp-osx-os_kext_return
 pqrs-org/cpp-osx-session
 pqrs-org/cpp-osx-system_preferences_monitor
 pqrs-org/cpp-shell

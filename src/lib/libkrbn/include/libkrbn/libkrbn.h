@@ -1,6 +1,5 @@
 #pragma once
 
-#include <libkern/OSKextLib.h>
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -34,6 +33,8 @@ void libkrbn_unlock_single_application(void);
 
 void libkrbn_launchctl_manage_console_user_server(bool load);
 void libkrbn_launchctl_manage_session_monitor(void);
+void libkrbn_launchctl_manage_observer_agent(void);
+void libkrbn_launchctl_manage_grabber_agent(void);
 void libkrbn_launchctl_restart_console_user_server(void);
 
 void libkrbn_check_for_updates_in_background(void);
@@ -50,13 +51,15 @@ bool libkrbn_system_core_configuration_file_path_exists(void);
 
 void libkrbn_get_key_code_name(char* buffer, size_t length, uint32_t key_code);
 void libkrbn_get_consumer_key_code_name(char* buffer, size_t length, uint32_t consumer_key_code);
+bool libkrbn_is_modifier_flag(uint32_t key_code);
 
 // device_identifiers
 
 bool libkrbn_device_identifiers_is_apple(const libkrbn_device_identifiers* p);
 
-// ----------------------------------------
+//
 // libkrbn_core_configuration
+//
 
 typedef void libkrbn_core_configuration;
 void libkrbn_core_configuration_terminate(libkrbn_core_configuration** p);
@@ -160,8 +163,9 @@ void libkrbn_core_configuration_set_selected_profile_device_disable_built_in_key
                                                                                                 const libkrbn_device_identifiers* device_identifiers,
                                                                                                 bool value);
 
-// ----------------------------------------
+//
 // libkrbn_complex_modifications_assets_manager
+//
 
 void libkrbn_enable_complex_modifications_assets_manager(void);
 void libkrbn_disable_complex_modifications_assets_manager(void);
@@ -181,8 +185,9 @@ void libkrbn_complex_modifications_assets_manager_add_rule_to_core_configuration
 bool libkrbn_complex_modifications_assets_manager_user_file(size_t index);
 void libkrbn_complex_modifications_assets_manager_erase_file(size_t index);
 
-// ----------------------------------------
+//
 // libkrbn_configuration_monitor
+//
 
 // You have to call `libkrbn_core_configuration_terminate(&initialized_core_configuration)`.
 typedef void (*libkrbn_configuration_monitor_callback)(libkrbn_core_configuration* initialized_core_configuration,
@@ -191,8 +196,9 @@ void libkrbn_enable_configuration_monitor(libkrbn_configuration_monitor_callback
                                           void* refcon);
 void libkrbn_disable_configuration_monitor(void);
 
-// ----------------------------------------
+//
 // libkrbn_system_preferences_monitor
+//
 
 struct libkrbn_system_preferences_properties {
   bool use_fkeys_as_standard_function_keys;
@@ -204,8 +210,9 @@ void libkrbn_enable_system_preferences_monitor(libkrbn_system_preferences_monito
                                                void* refcon);
 void libkrbn_disable_system_preferences_monitor(void);
 
-// ----------------------------------------
+//
 // libkrbn_connected_devices
+//
 
 typedef void libkrbn_connected_devices;
 void libkrbn_connected_devices_terminate(libkrbn_connected_devices** p);
@@ -226,54 +233,61 @@ void libkrbn_enable_connected_devices_monitor(libkrbn_connected_devices_monitor_
                                               void* refcon);
 void libkrbn_disable_connected_devices_monitor(void);
 
-// ----------------------------------------
+//
 // libkrbn_version_monitor
+//
 
 typedef void (*libkrbn_version_monitor_callback)(void* refcon);
 void libkrbn_enable_version_monitor(libkrbn_version_monitor_callback callback,
                                     void* refcon);
 void libkrbn_disable_version_monitor(void);
 
-// ----------------------------------------
-// libkrbn_kextd_state_monitor
-
-typedef void (*libkrbn_kextd_state_monitor_kext_load_result_changed_callback)(
-    kern_return_t kr,
-    void* refcon);
-void libkrbn_enable_kextd_state_monitor(
-    libkrbn_kextd_state_monitor_kext_load_result_changed_callback callback,
-    void* refcon);
-void libkrbn_disable_kextd_state_monitor(void);
-
-// ----------------------------------------
+//
 // libkrbn_file_monitor
+//
 
 typedef void (*libkrbn_file_monitor_callback)(const char* file_path,
                                               void* refcon);
 
-// ----------------------------------------
+// libkrbn_kextd_state_json_file_monitor
+
+void libkrbn_enable_kextd_state_json_file_monitor(libkrbn_file_monitor_callback callback,
+                                                  void* refcon);
+void libkrbn_disable_kextd_state_json_file_monitor(void);
+
+// libkrbn_observer_state_json_file_monitor
+
+void libkrbn_enable_observer_state_json_file_monitor(libkrbn_file_monitor_callback callback,
+                                                     void* refcon);
+void libkrbn_disable_observer_state_json_file_monitor(void);
+
+// libkrbn_grabber_state_json_file_monitor
+
+void libkrbn_enable_grabber_state_json_file_monitor(libkrbn_file_monitor_callback callback,
+                                                    void* refcon);
+void libkrbn_disable_grabber_state_json_file_monitor(void);
+
 // libkrbn_device_details_json_file_monitor
 
 void libkrbn_enable_device_details_json_file_monitor(libkrbn_file_monitor_callback callback,
                                                      void* refcon);
 void libkrbn_disable_device_details_json_file_monitor(void);
 
-// ----------------------------------------
 // libkrbn_manipulator_environment_json_file_monitor
 
 void libkrbn_enable_manipulator_environment_json_file_monitor(libkrbn_file_monitor_callback callback,
                                                               void* refcon);
 void libkrbn_disable_manipulator_environment_json_file_monitor(void);
 
-// ----------------------------------------
 // libkrbn_notification_message_json_file_monitor
 
 void libkrbn_enable_notification_message_json_file_monitor(libkrbn_file_monitor_callback callback,
                                                            void* refcon);
 void libkrbn_disable_notification_message_json_file_monitor(void);
 
-// ----------------------------------------
+//
 // libkrbn_frontmost_application_monitor
+//
 
 typedef void (*libkrbn_frontmost_application_monitor_callback)(const char* bundle_identifier,
                                                                const char* file_path,
@@ -282,8 +296,9 @@ void libkrbn_enable_frontmost_application_monitor(libkrbn_frontmost_application_
                                                   void* refcon);
 void libkrbn_disable_frontmost_application_monitor(void);
 
-// ----------------------------------------
+//
 // libkrbn_log_monitor
+//
 
 typedef void libkrbn_log_lines;
 typedef void (*libkrbn_log_monitor_callback)(libkrbn_log_lines* log_lines, void* refcon);
@@ -296,8 +311,9 @@ const char* libkrbn_log_lines_get_line(libkrbn_log_lines* p, size_t index);
 bool libkrbn_log_lines_is_warn_line(const char* line);
 bool libkrbn_log_lines_is_error_line(const char* line);
 
-// ----------------------------------------
+//
 // libkrbn_hid_value_monitor
+//
 
 enum libkrbn_hid_value_type {
   libkrbn_hid_value_type_key_code,
@@ -310,7 +326,8 @@ enum libkrbn_hid_value_event_type {
   libkrbn_hid_value_event_type_single,
 };
 
-typedef void (*libkrbn_hid_value_monitor_callback)(enum libkrbn_hid_value_type type,
+typedef void (*libkrbn_hid_value_monitor_callback)(uint64_t device_id,
+                                                   enum libkrbn_hid_value_type type,
                                                    uint32_t value,
                                                    enum libkrbn_hid_value_event_type event_type,
                                                    void* refcon);
@@ -318,6 +335,14 @@ void libkrbn_enable_hid_value_monitor(libkrbn_hid_value_monitor_callback callbac
                                       void* refcon);
 void libkrbn_disable_hid_value_monitor(void);
 bool libkrbn_hid_value_monitor_observed(void);
+
+//
+// libkrbn_grabber_client
+//
+
+void libkrbn_enable_grabber_client(void);
+void libkrbn_disable_grabber_client(void);
+void libkrbn_grabber_client_async_set_variable(const char* name, int value);
 
 #ifdef __cplusplus
 }

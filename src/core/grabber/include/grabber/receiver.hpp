@@ -25,14 +25,15 @@ public:
 
     unlink(socket_file_path.c_str());
 
-    size_t buffer_size = 32 * 1024;
     server_ = std::make_unique<pqrs::local_datagram::server>(weak_dispatcher_,
                                                              socket_file_path,
-                                                             buffer_size);
+                                                             constants::get_local_datagram_buffer_size());
     server_->set_server_check_interval(std::chrono::milliseconds(3000));
     server_->set_reconnect_interval(std::chrono::milliseconds(1000));
 
     server_->bound.connect([socket_file_path] {
+      logger::get_logger()->info("receiver: bound");
+
       if (auto uid = pqrs::osx::session::find_console_user_id()) {
         chown(socket_file_path.c_str(), *uid, 0);
       }
@@ -40,7 +41,11 @@ public:
     });
 
     server_->bind_failed.connect([](auto&& error_code) {
-      logger::get_logger()->error("receiver bind_failed");
+      logger::get_logger()->error("receiver: bind_failed");
+    });
+
+    server_->closed.connect([] {
+      logger::get_logger()->info("receiver: closed");
     });
 
     server_->received.connect([this](auto&& buffer) {
@@ -133,6 +138,14 @@ public:
                                              .get<pqrs::osx::input_source::properties>();
               if (device_grabber_) {
                 device_grabber_->async_post_input_source_changed_event(input_source_properties_);
+              }
+              break;
+
+            case operation_type::set_variables:
+              if (device_grabber_) {
+                for (const auto& [k, v] : json.at("variables").items()) {
+                  device_grabber_->async_post_set_variable_event(k, v.get<int>());
+                }
               }
               break;
 

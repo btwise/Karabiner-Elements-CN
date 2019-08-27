@@ -9,6 +9,7 @@
 #include "impl/client.hpp"
 #include <nod/nod.hpp>
 #include <pqrs/dispatcher.hpp>
+#include <unordered_map>
 
 namespace pqrs {
 namespace local_datagram {
@@ -23,10 +24,47 @@ public:
 
   // Methods
 
+  client(const client&) = delete;
+
   client(std::weak_ptr<dispatcher::dispatcher> weak_dispatcher,
-         const std::string& path) : dispatcher_client(weak_dispatcher),
-                                    path_(path),
-                                    reconnect_timer_(*this) {
+         const std::string& path,
+         size_t buffer_size) : dispatcher_client(weak_dispatcher),
+                               path_(path),
+                               buffer_size_(buffer_size),
+                               reconnect_timer_(*this) {
+    impl_client_ = std::make_shared<impl::client>(weak_dispatcher_);
+
+    impl_client_->connected.connect([this] {
+      enqueue_to_dispatcher([this] {
+        connected();
+      });
+    });
+
+    impl_client_->connect_failed.connect([this](auto&& error_code) {
+      enqueue_to_dispatcher([this, error_code] {
+        connect_failed(error_code);
+      });
+
+      if (impl_client_) {
+        impl_client_->async_close();
+      }
+
+      start_reconnect_timer();
+    });
+
+    impl_client_->closed.connect([this] {
+      enqueue_to_dispatcher([this] {
+        closed();
+      });
+
+      start_reconnect_timer();
+    });
+
+    impl_client_->error_occurred.connect([this](auto&& error_code) {
+      enqueue_to_dispatcher([this, error_code] {
+        error_occurred(error_code);
+      });
+    });
   }
 
   virtual ~client(void) {
@@ -57,22 +95,22 @@ public:
     });
   }
 
-  void async_send(const std::vector<uint8_t>& v) {
-    auto ptr = std::make_shared<impl::buffer>(v);
-    enqueue_to_dispatcher([this, ptr] {
-      if (impl_client_) {
-        impl_client_->async_send(ptr);
-      }
-    });
+  void async_send(const std::vector<uint8_t>& v,
+                  const std::function<void(void)>& processed = nullptr) {
+    auto entry = std::make_shared<impl::client_send_entry>(impl::client_send_entry::type::user_data,
+                                                           v,
+                                                           processed);
+    async_send(entry);
   }
 
-  void async_send(const uint8_t* _Nonnull p, size_t length) {
-    auto ptr = std::make_shared<impl::buffer>(p, length);
-    enqueue_to_dispatcher([this, ptr] {
-      if (impl_client_) {
-        impl_client_->async_send(ptr);
-      }
-    });
+  void async_send(const uint8_t* p,
+                  size_t length,
+                  const std::function<void(void)>& processed = nullptr) {
+    auto entry = std::make_shared<impl::client_send_entry>(impl::client_send_entry::type::user_data,
+                                                           p,
+                                                           length,
+                                                           processed);
+    async_send(entry);
   }
 
 private:
@@ -87,51 +125,14 @@ private:
   // This method is executed in the dispatcher thread.
   void connect(void) {
     if (impl_client_) {
-      return;
+      impl_client_->async_connect(path_,
+                                  buffer_size_,
+                                  server_check_interval_);
     }
-
-    impl_client_ = std::make_shared<impl::client>(weak_dispatcher_);
-
-    impl_client_->connected.connect([this] {
-      enqueue_to_dispatcher([this] {
-        connected();
-      });
-    });
-
-    impl_client_->connect_failed.connect([this](auto&& error_code) {
-      enqueue_to_dispatcher([this, error_code] {
-        connect_failed(error_code);
-      });
-
-      close();
-      start_reconnect_timer();
-    });
-
-    impl_client_->closed.connect([this] {
-      enqueue_to_dispatcher([this] {
-        closed();
-      });
-
-      close();
-      start_reconnect_timer();
-    });
-
-    impl_client_->error_occurred.connect([this](auto&& error_code) {
-      enqueue_to_dispatcher([this, error_code] {
-        error_occurred(error_code);
-      });
-    });
-
-    impl_client_->async_connect(path_,
-                                server_check_interval_);
   }
 
   // This method is executed in the dispatcher thread.
   void close(void) {
-    if (!impl_client_) {
-      return;
-    }
-
     impl_client_ = nullptr;
   }
 
@@ -156,7 +157,27 @@ private:
     }
   }
 
+  void async_send(std::shared_ptr<impl::client_send_entry> entry) {
+    enqueue_to_dispatcher([this, entry] {
+      if (impl_client_) {
+        impl_client_->async_send(entry);
+      } else {
+        //
+        // Call `processed`
+        //
+
+        auto&& processed = entry->get_processed();
+        if (processed) {
+          enqueue_to_dispatcher([processed] {
+            processed();
+          });
+        }
+      }
+    });
+  }
+
   std::string path_;
+  size_t buffer_size_;
   std::optional<std::chrono::milliseconds> server_check_interval_;
   std::optional<std::chrono::milliseconds> reconnect_interval_;
   std::shared_ptr<impl::client> impl_client_;

@@ -1,7 +1,8 @@
 #import "AppDelegate.h"
-#import "AlertWindowController.h"
 #import "ComplexModificationsFileImportWindowController.h"
+#import "InputMonitoringAlertWindowController.h"
 #import "KarabinerKit/KarabinerKit.h"
+#import "KextdAlertWindowController.h"
 #import "PreferencesWindowController.h"
 #import "SimpleModificationsTableViewController.h"
 #import "SystemPreferencesManager.h"
@@ -11,7 +12,8 @@
 
 @property(weak) IBOutlet SimpleModificationsTableViewController* simpleModificationsTableViewController;
 @property(weak) IBOutlet ComplexModificationsFileImportWindowController* complexModificationsFileImportWindowController;
-@property(weak) IBOutlet AlertWindowController* alertWindowController;
+@property(weak) IBOutlet KextdAlertWindowController* kextdAlertWindowController;
+@property(weak) IBOutlet InputMonitoringAlertWindowController* inputMonitoringAlertWindowController;
 @property(weak) IBOutlet NSWindow* preferencesWindow;
 @property(weak) IBOutlet PreferencesWindowController* preferencesWindowController;
 @property(weak) IBOutlet SystemPreferencesManager* systemPreferencesManager;
@@ -38,7 +40,8 @@
 
   [self.preferencesWindowController setup];
 
-  [self.alertWindowController setup];
+  [self.kextdAlertWindowController setup];
+  [self.inputMonitoringAlertWindowController setup];
 }
 
 // Note:
@@ -78,7 +81,7 @@
 
   NSAlert* alert = [NSAlert new];
 
-  alert.messageText = @"w错误";
+  alert.messageText = @"错误";
   alert.informativeText = @"未知的URL";
   [alert addButtonWithTitle:@"好"];
 

@@ -7,71 +7,74 @@
 #include <string>
 
 namespace krbn {
-class launchctl_utility final {
-public:
-  static void manage_session_monitor(void) {
-    uid_t uid = geteuid();
-    auto domain_target = (std::stringstream() << "gui/" << uid).str();
-    auto service_target = (std::stringstream() << "gui/" << uid << "/org.pqrs.karabiner.karabiner_session_monitor").str();
-    auto service_path = "/Library/LaunchAgents/org.pqrs.karabiner.karabiner_session_monitor.plist";
+namespace launchctl_utility {
+inline void manage_observer_agent(void) {
+  auto domain_target = pqrs::osx::launchctl::make_gui_domain_target();
+  auto service_name = constants::get_observer_agent_launchctl_service_name();
+  auto service_path = constants::get_observer_agent_launchctl_service_path();
 
-    {
-      auto command = std::string("/bin/launchctl enable ") + service_target;
-      system(command.c_str());
-    }
-    {
-      auto command = std::string("/bin/launchctl bootstrap ") + domain_target + " " + service_path;
-      system(command.c_str());
-    }
-    {
-      auto command = std::string("/bin/launchctl enable ") + service_target;
-      system(command.c_str());
-    }
+  pqrs::osx::launchctl::enable(domain_target,
+                               service_name,
+                               service_path);
+  pqrs::osx::launchctl::kickstart(domain_target,
+                                  service_name,
+                                  false);
+}
+
+inline void manage_grabber_agent(void) {
+  auto domain_target = pqrs::osx::launchctl::make_gui_domain_target();
+  auto service_name = constants::get_grabber_agent_launchctl_service_name();
+  auto service_path = constants::get_grabber_agent_launchctl_service_path();
+
+  pqrs::osx::launchctl::enable(domain_target,
+                               service_name,
+                               service_path);
+  pqrs::osx::launchctl::kickstart(domain_target,
+                                  service_name,
+                                  false);
+}
+
+inline void manage_session_monitor(void) {
+  auto domain_target = pqrs::osx::launchctl::make_gui_domain_target();
+  auto service_name = constants::get_session_monitor_launchctl_service_name();
+  auto service_path = constants::get_session_monitor_launchctl_service_path();
+
+  pqrs::osx::launchctl::enable(domain_target,
+                               service_name,
+                               service_path);
+  pqrs::osx::launchctl::kickstart(domain_target,
+                                  service_name,
+                                  false);
+}
+
+inline void manage_console_user_server(bool load) {
+  auto domain_target = pqrs::osx::launchctl::make_gui_domain_target();
+  auto service_name = constants::get_console_user_server_launchctl_service_name();
+  auto service_path = constants::get_console_user_server_launchctl_service_path();
+
+  if (load) {
+    pqrs::osx::launchctl::enable(domain_target,
+                                 service_name,
+                                 service_path);
+    pqrs::osx::launchctl::kickstart(domain_target,
+                                    service_name,
+                                    false);
+  } else {
+    pqrs::osx::launchctl::disable(domain_target,
+                                  service_name,
+                                  service_path);
+
+    apple_notification_center::post_distributed_notification(constants::get_distributed_notification_console_user_server_is_disabled());
   }
+}
 
-  static void manage_console_user_server(bool load) {
-    uid_t uid = geteuid();
-    auto domain_target = (std::stringstream() << "gui/" << uid).str();
-    auto service_target = (std::stringstream() << "gui/" << uid << "/org.pqrs.karabiner.karabiner_console_user_server").str();
-    auto service_path = "/Library/LaunchAgents/org.pqrs.karabiner.karabiner_console_user_server.plist";
+inline void restart_console_user_server(void) {
+  auto domain_target = pqrs::osx::launchctl::make_gui_domain_target();
+  auto service_name = constants::get_console_user_server_launchctl_service_name();
 
-    if (load) {
-      // If service_path is already bootstrapped and disabled, launchctl bootstrap will fail until it is enabled again.
-      // So we should enable it first, and then bootstrap and enable it.
-
-      {
-        auto command = std::string("/bin/launchctl enable ") + service_target;
-        system(command.c_str());
-      }
-      {
-        auto command = std::string("/bin/launchctl bootstrap ") + domain_target + " " + service_path;
-        system(command.c_str());
-      }
-      {
-        auto command = std::string("/bin/launchctl enable ") + service_target;
-        system(command.c_str());
-      }
-
-    } else {
-      {
-        auto command = std::string("/bin/launchctl bootout ") + domain_target + " " + service_path;
-        system(command.c_str());
-      }
-      {
-        auto command = std::string("/bin/launchctl disable ") + service_target;
-        system(command.c_str());
-      }
-
-      apple_notification_center::post_distributed_notification(constants::get_distributed_notification_console_user_server_is_disabled());
-    }
-  }
-
-  static void restart_console_user_server(void) {
-    uid_t uid = geteuid();
-    auto service_target = (std::stringstream() << "gui/" << uid << "/org.pqrs.karabiner.karabiner_console_user_server").str();
-
-    auto command = std::string("/bin/launchctl kickstart -k ") + service_target;
-    system(command.c_str());
-  }
-};
+  pqrs::osx::launchctl::kickstart(domain_target,
+                                  service_name,
+                                  true);
+}
+} // namespace launchctl_utility
 } // namespace krbn

@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.Karabiner-Menu.Debug:
-/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/Debug/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/Debug/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
+/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/Debug/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/Debug/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
 
 
 PostBuild.Karabiner-Menu.Release:
-/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/Release/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/Release/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
+/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/Release/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/Release/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
 
 
 PostBuild.Karabiner-Menu.MinSizeRel:
-/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/MinSizeRel/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/MinSizeRel/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
+/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/MinSizeRel/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/MinSizeRel/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
 
 
 PostBuild.Karabiner-Menu.RelWithDebInfo:
-/Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/RelWithDebInfo/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
-	/bin/rm -f /Users/btwise/Karabiner-Elements/src/apps/Menu/build_xcode/RelWithDebInfo/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
+/Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/RelWithDebInfo/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu:
+	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/Menu/build_xcode/RelWithDebInfo/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu
 
 
 
