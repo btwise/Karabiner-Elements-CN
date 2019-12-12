@@ -5,6 +5,6 @@ all:
 clean: clean_builds
 
 run:
-	open ./build_xcode/build/Release/Karabiner-MultitouchExtension.app
+	./build_xcode/build/Release/Karabiner-MultitouchExtension.app/Contents/MacOS/Karabiner-MultitouchExtension --show-ui
 
 include ../../Makefile.rules

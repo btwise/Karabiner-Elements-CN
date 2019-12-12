@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.karabiner_session_monitor.Debug:
-/Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/Debug/karabiner_session_monitor:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/Debug/karabiner_session_monitor
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/Debug/karabiner_session_monitor:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/Debug/karabiner_session_monitor
 
 
 PostBuild.karabiner_session_monitor.Release:
-/Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/Release/karabiner_session_monitor:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/Release/karabiner_session_monitor
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/Release/karabiner_session_monitor:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/Release/karabiner_session_monitor
 
 
 PostBuild.karabiner_session_monitor.MinSizeRel:
-/Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/MinSizeRel/karabiner_session_monitor:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/MinSizeRel/karabiner_session_monitor
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/MinSizeRel/karabiner_session_monitor:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/MinSizeRel/karabiner_session_monitor
 
 
 PostBuild.karabiner_session_monitor.RelWithDebInfo:
-/Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/RelWithDebInfo/karabiner_session_monitor:
-	/bin/rm -f /Users/btwise/我的仓库/Karabiner-Elements/src/core/session_monitor/build_xcode/RelWithDebInfo/karabiner_session_monitor
+/Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/RelWithDebInfo/karabiner_session_monitor:
+	/bin/rm -f /Users/btwise/Karabiner-Elements/src/core/session_monitor/build_xcode/RelWithDebInfo/karabiner_session_monitor
 
 
 

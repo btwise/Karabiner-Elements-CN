@@ -44,6 +44,7 @@ void libkrbn_check_for_updates_with_beta_version(void);
 void libkrbn_launch_event_viewer(void);
 void libkrbn_launch_menu(void);
 void libkrbn_launch_preferences(void);
+void libkrbn_launch_multitouch_extension(void);
 
 bool libkrbn_system_core_configuration_file_path_exists(void);
 
@@ -340,9 +341,16 @@ bool libkrbn_hid_value_monitor_observed(void);
 // libkrbn_grabber_client
 //
 
-void libkrbn_enable_grabber_client(void);
+typedef void (*libkrbn_grabber_client_connected_callback)(void);
+typedef void (*libkrbn_grabber_client_connect_failed_callback)(void);
+typedef void (*libkrbn_grabber_client_closed_callback)(void);
+
+void libkrbn_enable_grabber_client(libkrbn_grabber_client_connected_callback connected_callback,
+                                   libkrbn_grabber_client_connect_failed_callback connect_failed_callback,
+                                   libkrbn_grabber_client_closed_callback closed_callback);
 void libkrbn_disable_grabber_client(void);
 void libkrbn_grabber_client_async_set_variable(const char* name, int value);
+void libkrbn_grabber_client_sync_set_variable(const char* name, int value);
 
 #ifdef __cplusplus
 }

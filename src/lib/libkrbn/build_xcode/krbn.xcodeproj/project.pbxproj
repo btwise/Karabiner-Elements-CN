@@ -7,225 +7,214 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		45AD25FD7A9E422CB194F037 /* ZERO_CHECK */ = {
+		8E699184B3F84F27861457D7 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = B5A9D334351A49A8A8CE8691 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 02391CF9725D4F2C996D984B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				E63E8239C8914140AC7BC149 /* CMake Rules */,
+				F25E3492B52C4FD394953753 /* CMake Rules */,
+			);
+			dependencies = (
+				64B5CB5DC3964829AEF635D2 /* PBXTargetDependency */,
+				4DB34068CB6F4CC48684C4C1 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		CAFCC92F6B6241EC8580B0B5 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA7AEF0934304F9FAAF540C0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4380865268F54099A8A9504D /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		8AD0A700EFBE4AF9A47FC5FD /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FF3F3A33E25A4DC5ACD1B6F8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				5C2FA83D6B294B22BF7E4486 /* CMake Rules */,
-			);
-			dependencies = (
-				DD0C09F01A064345840D4D60 /* PBXTargetDependency */,
-				1ED2C027C33443E887A850A2 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4CC4A7C42E264DC9A16B64B5 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */ = {isa = PBXBuildFile; fileRef = 7630C5AE62DE4FF0AAA85758 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */; };
-		4EAA541EEC5E47938B94EC5A /* /Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */ = {isa = PBXBuildFile; fileRef = 155FA0A635824CBE8E2156FA /* /Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */; };
-		5FAF9DB195F54364BC6C2856 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */ = {isa = PBXBuildFile; fileRef = BB4704F3EEB34C73859BAE4C /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */; };
-		73E84B311383431FBDC5C452 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */ = {isa = PBXBuildFile; fileRef = E530F5AB32604669BF89DE2B /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */; };
-		9F25EA5911FE49DBA7A2BC2E /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */ = {isa = PBXBuildFile; fileRef = A1605FAEB19C4F2A9CC62B75 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */; };
-		A60B48022448411EAC218F70 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9BBD2D7F9ECC4A1BBFD3F1B7 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */; };
+		83B000B4CCE34CC6BAAC85A9 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4B03C2C5DE47429B910104F3 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */; };
+		913E77EC2471459F988971BA /* /Users/btwise/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */ = {isa = PBXBuildFile; fileRef = 5937423751DA4062A5F96010 /* /Users/btwise/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */; };
+		C07DFA0F6C9A47FAB0341963 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */ = {isa = PBXBuildFile; fileRef = B1465B3D777242A1ABDF4F85 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */; };
+		CBDA11514BD9440FB30A0CD4 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */ = {isa = PBXBuildFile; fileRef = BC13E8768EAF4E63957A078F /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */; };
+		F3A4D89C4B344D71B6BD6796 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */ = {isa = PBXBuildFile; fileRef = 7D5B825A528F4692B100BDE5 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */; };
+		FBBED47DD70C4BB189805143 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */ = {isa = PBXBuildFile; fileRef = 9D67B0962DFB432EAAC11172 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		6208B310C109459F8DADA8A2 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		A001B77C10954D6CB4B33C9C /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		B52E0CBA0BC84584BC245D34 /* MinSizeRel */ = {
+		38EC0EAB77D648FEB0D0C5B0 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		DB1A179D5DDB4BA88F1BE4A0 /* Debug */ = {
+		54FD58303539431A913F7850 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		8818CA407F814AEE90FBD792 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
+		B532677FECDB4FB5806AF568 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		38335859056C4726AACEC003 /* PBXContainerItemProxy */ = {
+		0EDD643CA7114F6D857A36FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 53BE8DD3077845119D0216E3 /* Project object */;
+			containerPortal = DA124D3CEB7044B68A412F95 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45AD25FD7A9E422CB194F037;
+			remoteGlobalIDString = CAFCC92F6B6241EC8580B0B5;
 			remoteInfo = ZERO_CHECK;
 		};
-		39BA0ED782E84E14A95C1CF3 /* PBXContainerItemProxy */ = {
+		184DBB76C1FE4C4E8C82BA34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 53BE8DD3077845119D0216E3 /* Project object */;
+			containerPortal = DA124D3CEB7044B68A412F95 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45AD25FD7A9E422CB194F037;
+			remoteGlobalIDString = CAFCC92F6B6241EC8580B0B5;
 			remoteInfo = ZERO_CHECK;
 		};
-		7B31B93A6937418FBAEC6656 /* PBXContainerItemProxy */ = {
+		838914D43F224F49B356C5CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 53BE8DD3077845119D0216E3 /* Project object */;
+			containerPortal = DA124D3CEB7044B68A412F95 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB43B060547345D7A0A83910;
+			remoteGlobalIDString = 0CAC7F84F5134B32B30587F6;
 			remoteInfo = krbn;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		155FA0A635824CBE8E2156FA /* /Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = objc.m; path = ../../vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m; sourceTree = SOURCE_ROOT; };
-		7630C5AE62DE4FF0AAA85758 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_connected_devices.cpp; path = src/libkrbn_connected_devices.cpp; sourceTree = SOURCE_ROOT; };
-		829B24FC1E29495782D70124 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		9BBD2D7F9ECC4A1BBFD3F1B7 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A1605FAEB19C4F2A9CC62B75 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_log_lines.cpp; path = src/libkrbn_log_lines.cpp; sourceTree = SOURCE_ROOT; };
-		BB4704F3EEB34C73859BAE4C /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn.cpp; path = src/libkrbn.cpp; sourceTree = SOURCE_ROOT; };
-		E530F5AB32604669BF89DE2B /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_configuration.cpp; path = src/libkrbn_configuration.cpp; sourceTree = SOURCE_ROOT; };
-		F52C27AF692A49659036849E /* krbn */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkrbn.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		071B288F92E54FC2A6FA3135 /* krbn */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkrbn.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30197F37EEF74091B60E9F0A /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4B03C2C5DE47429B910104F3 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5937423751DA4062A5F96010 /* /Users/btwise/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = objc.m; path = ../../vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m; sourceTree = SOURCE_ROOT; };
+		7D5B825A528F4692B100BDE5 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_connected_devices.cpp; path = src/libkrbn_connected_devices.cpp; sourceTree = SOURCE_ROOT; };
+		9D67B0962DFB432EAAC11172 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_log_lines.cpp; path = src/libkrbn_log_lines.cpp; sourceTree = SOURCE_ROOT; };
+		B1465B3D777242A1ABDF4F85 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn.cpp; path = src/libkrbn.cpp; sourceTree = SOURCE_ROOT; };
+		BC13E8768EAF4E63957A078F /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libkrbn_configuration.cpp; path = src/libkrbn_configuration.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		37EFAEE4B7694206A1AB3F96 /* Source Files */ = {
+		623132780F9B4E0BAA356E78 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB4704F3EEB34C73859BAE4C /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */,
-				E530F5AB32604669BF89DE2B /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */,
-				7630C5AE62DE4FF0AAA85758 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */,
-				A1605FAEB19C4F2A9CC62B75 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */,
-				155FA0A635824CBE8E2156FA /* /Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */,
+				B1465B3D777242A1ABDF4F85 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */,
+				BC13E8768EAF4E63957A078F /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */,
+				7D5B825A528F4692B100BDE5 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */,
+				9D67B0962DFB432EAAC11172 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */,
+				5937423751DA4062A5F96010 /* /Users/btwise/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		471C649C29624F3691DE1A46 = {
-			isa = PBXGroup;
-			children = (
-				E80ABD26BD164440BB9B8D41 /* krbn */,
-				CB3610521AFE45349FF18FFA /* ALL_BUILD */,
-				B8968FC5C4404F7AAE28EC71 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B16BAC5A8812419590A13B6E /* CMake Rules */ = {
+		80A1217550324CED885A9ED0 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		B8968FC5C4404F7AAE28EC71 /* Products */ = {
+		8357140DADC2443797510B7B = {
 			isa = PBXGroup;
 			children = (
-				F52C27AF692A49659036849E /* krbn */,
+				A3A0B6F0AAA04EED995B5A6A /* krbn */,
+				9F1816B86A6448248E8C191E /* ALL_BUILD */,
+				A7C6988A8E98447E8CE23E64 /* Products */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
-		CB3610521AFE45349FF18FFA /* ALL_BUILD */ = {
+		9F1816B86A6448248E8C191E /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				B16BAC5A8812419590A13B6E /* CMake Rules */,
-				829B24FC1E29495782D70124 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */,
+				80A1217550324CED885A9ED0 /* CMake Rules */,
+				30197F37EEF74091B60E9F0A /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		E80ABD26BD164440BB9B8D41 /* krbn */ = {
+		A3A0B6F0AAA04EED995B5A6A /* krbn */ = {
 			isa = PBXGroup;
 			children = (
-				37EFAEE4B7694206A1AB3F96 /* Source Files */,
-				9BBD2D7F9ECC4A1BBFD3F1B7 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */,
+				623132780F9B4E0BAA356E78 /* Source Files */,
+				4B03C2C5DE47429B910104F3 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/CMakeLists.txt */,
 			);
 			name = krbn;
+			sourceTree = "<group>";
+		};
+		A7C6988A8E98447E8CE23E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071B288F92E54FC2A6FA3135 /* krbn */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB43B060547345D7A0A83910 /* krbn */ = {
+		0CAC7F84F5134B32B30587F6 /* krbn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C9E4030AB4447C0A3F22840 /* Build configuration list for PBXNativeTarget "krbn" */;
+			buildConfigurationList = EEB1F08B4E6641F7BE8DF817 /* Build configuration list for PBXNativeTarget "krbn" */;
 			buildPhases = (
-				CB78D08044C1469FBA6DBC64 /* Sources */,
+				A4DD586B46574531BD47293C /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3E61405258974DEBACAB602B /* PBXTargetDependency */,
+				D82CDC1A379446278BF70C9D /* PBXTargetDependency */,
 			);
 			name = krbn;
 			productName = krbn;
-			productReference = F52C27AF692A49659036849E /* krbn */;
+			productReference = 071B288F92E54FC2A6FA3135 /* krbn */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		53BE8DD3077845119D0216E3 /* Project object */ = {
+		DA124D3CEB7044B68A412F95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 			};
-			buildConfigurationList = 2DEE42AC9E3943D7BB63C7C0 /* Build configuration list for PBXProject "krbn" */;
+			buildConfigurationList = 66393A862D89475691A38EE3 /* Build configuration list for PBXProject "krbn" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				DB1A179D5DDB4BA88F1BE4A0 /* Debug */,
-				6208B310C109459F8DADA8A2 /* Release */,
-				B52E0CBA0BC84584BC245D34 /* MinSizeRel */,
-				A001B77C10954D6CB4B33C9C /* RelWithDebInfo */,
+				8818CA407F814AEE90FBD792 /* Debug */,
+				54FD58303539431A913F7850 /* Release */,
+				38EC0EAB77D648FEB0D0C5B0 /* MinSizeRel */,
+				B532677FECDB4FB5806AF568 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 471C649C29624F3691DE1A46;
+			mainGroup = 8357140DADC2443797510B7B;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				8AD0A700EFBE4AF9A47FC5FD /* ALL_BUILD */,
-				45AD25FD7A9E422CB194F037 /* ZERO_CHECK */,
-				EB43B060547345D7A0A83910 /* krbn */,
+				8E699184B3F84F27861457D7 /* ALL_BUILD */,
+				CAFCC92F6B6241EC8580B0B5 /* ZERO_CHECK */,
+				0CAC7F84F5134B32B30587F6 /* krbn */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C2FA83D6B294B22BF7E4486 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode -f /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
-			showEnvVarsInLog = 0;
-		};
-		9D85CEBB177044FFBB0325DB = {
+		028B7694B5AE46B29365EBCD = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,7 +229,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		D5C4A3219C2C403DB2DA117B = {
+		081BC5125D6449A8B827971C = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +244,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		E63E8239C8914140AC7BC149 /* CMake Rules */ = {
+		4380865268F54099A8A9504D /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,46 +252,84 @@ exit 0";
 			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode -f /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode -f /Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F25E3492B52C4FD394953753 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode -f /Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB78D08044C1469FBA6DBC64 /* Sources */ = {
+		A4DD586B46574531BD47293C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FAF9DB195F54364BC6C2856 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */,
-				73E84B311383431FBDC5C452 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */,
-				4CC4A7C42E264DC9A16B64B5 /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */,
-				9F25EA5911FE49DBA7A2BC2E /* /Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */,
-				4EAA541EEC5E47938B94EC5A /* /Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */,
+				C07DFA0F6C9A47FAB0341963 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn.cpp */,
+				CBDA11514BD9440FB30A0CD4 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_configuration.cpp */,
+				F3A4D89C4B344D71B6BD6796 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_connected_devices.cpp */,
+				FBBED47DD70C4BB189805143 /* /Users/btwise/Karabiner-Elements/src/lib/libkrbn/src/libkrbn_log_lines.cpp */,
+				913E77EC2471459F988971BA /* /Users/btwise/Karabiner-Elements/src/vendor/cget/src/pqrs/osx/frontmost_application_monitor/impl/objc.m */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1ED2C027C33443E887A850A2 /* PBXTargetDependency */ = {
+		4DB34068CB6F4CC48684C4C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB43B060547345D7A0A83910 /* krbn */;
-			targetProxy = 7B31B93A6937418FBAEC6656 /* PBXContainerItemProxy */;
+			target = 0CAC7F84F5134B32B30587F6 /* krbn */;
+			targetProxy = 838914D43F224F49B356C5CB /* PBXContainerItemProxy */;
 		};
-		3E61405258974DEBACAB602B /* PBXTargetDependency */ = {
+		64B5CB5DC3964829AEF635D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45AD25FD7A9E422CB194F037 /* ZERO_CHECK */;
-			targetProxy = 39BA0ED782E84E14A95C1CF3 /* PBXContainerItemProxy */;
+			target = CAFCC92F6B6241EC8580B0B5 /* ZERO_CHECK */;
+			targetProxy = 0EDD643CA7114F6D857A36FB /* PBXContainerItemProxy */;
 		};
-		DD0C09F01A064345840D4D60 /* PBXTargetDependency */ = {
+		D82CDC1A379446278BF70C9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45AD25FD7A9E422CB194F037 /* ZERO_CHECK */;
-			targetProxy = 38335859056C4726AACEC003 /* PBXContainerItemProxy */;
+			target = CAFCC92F6B6241EC8580B0B5 /* ZERO_CHECK */;
+			targetProxy = 184DBB76C1FE4C4E8C82BA34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E82E8345A8343188294E148 /* Debug */ = {
+		17C6A97BC15E411996DF7C66 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./impl/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = krbn;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2E8F3320149C4DF0BDB5129C /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -316,50 +343,13 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		153446AE66C0417E89947C9F /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./impl/include");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules '-std=gnu++1z'  ";
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = krbn;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		1B6C921EA982447298B4A3E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
-			};
-			name = Debug;
-		};
-		1D9F9F08729C4E38B438271F /* RelWithDebInfo */ = {
+		447A7F453C924209B37DFD04 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -373,53 +363,13 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		301762E66A694943BEFD514B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		3124CD9AF56B415C9E14B262 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		341A9F8C416A429CA56FF3EC /* RelWithDebInfo */ = {
+		46EA8D3B5A9E4B4695B176A4 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -428,9 +378,9 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./impl/include");
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./impl/include");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
@@ -439,84 +389,14 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = krbn;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		45FF811730EA46609006BC3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		779DFBBF88D34133B731E4B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		923629B0A221473F9537DD88 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		96EC7BE25D254E2A950FF84D /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
-			};
-			name = MinSizeRel;
-		};
-		BC3412DD202E40568765F999 /* Release */ = {
+		4F036419D967414685A4396D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -530,33 +410,33 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		546FDC8B3B6F48AB8F1CF137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Release;
 		};
-		C09F28E97E2D430B91531DF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
-			};
-			name = Release;
-		};
-		CD9EA06409654F53A1C8D517 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Users/btwise/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
-			};
-			name = RelWithDebInfo;
-		};
-		D8CC4289EB0649398D3990F2 /* Debug */ = {
+		6CF56C2ADCD64A40A8F9727B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -565,9 +445,9 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./impl/include");
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./impl/include");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = "   -Wall -Werror     -fobjc-arc -fmodules  ";
@@ -576,14 +456,14 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = krbn;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Debug;
 		};
-		DA7EB979A3894A0D90D0C79B /* Release */ = {
+		71ECBC966B0243B1BABE833E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -592,9 +472,9 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/share","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/./impl/include");
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./include","/Users/btwise/Karabiner-Elements/src/lib/libkrbn/./impl/include");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
@@ -603,61 +483,181 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = krbn;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/btwise/我的仓库/Karabiner-Elements/src/lib/libkrbn/build_xcode";
-				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/我的仓库/Karabiner-Elements/src/vendor","/Users/btwise/我的仓库/Karabiner-Elements/src/vendor/cget/include");
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Release;
 		};
+		84F5E44A69EA4D6EBC3EBBFF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B9991720D04F4744A7D6DC33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BB73F23B0CD64966999D6D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
+			};
+			name = Debug;
+		};
+		C71D2D1698754454BD0B1CB8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		DCE478F3086742189432C27A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DE1D661233C84E0094A44265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
+			};
+			name = Release;
+		};
+		E78FBC69A5834CA399562399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E8CD8EBD56E443DCAC3AA865 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/lib/libkrbn/build_xcode/build";
+			};
+			name = MinSizeRel;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DEE42AC9E3943D7BB63C7C0 /* Build configuration list for PBXProject "krbn" */ = {
+		02391CF9725D4F2C996D984B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B6C921EA982447298B4A3E4 /* Debug */,
-				C09F28E97E2D430B91531DF4 /* Release */,
-				96EC7BE25D254E2A950FF84D /* MinSizeRel */,
-				CD9EA06409654F53A1C8D517 /* RelWithDebInfo */,
+				E78FBC69A5834CA399562399 /* Debug */,
+				546FDC8B3B6F48AB8F1CF137 /* Release */,
+				447A7F453C924209B37DFD04 /* MinSizeRel */,
+				DCE478F3086742189432C27A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4C9E4030AB4447C0A3F22840 /* Build configuration list for PBXNativeTarget "krbn" */ = {
+		66393A862D89475691A38EE3 /* Build configuration list for PBXProject "krbn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8CC4289EB0649398D3990F2 /* Debug */,
-				DA7EB979A3894A0D90D0C79B /* Release */,
-				153446AE66C0417E89947C9F /* MinSizeRel */,
-				341A9F8C416A429CA56FF3EC /* RelWithDebInfo */,
+				BB73F23B0CD64966999D6D10 /* Debug */,
+				DE1D661233C84E0094A44265 /* Release */,
+				E8CD8EBD56E443DCAC3AA865 /* MinSizeRel */,
+				C71D2D1698754454BD0B1CB8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B5A9D334351A49A8A8CE8691 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		EEB1F08B4E6641F7BE8DF817 /* Build configuration list for PBXNativeTarget "krbn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E82E8345A8343188294E148 /* Debug */,
-				BC3412DD202E40568765F999 /* Release */,
-				3124CD9AF56B415C9E14B262 /* MinSizeRel */,
-				301762E66A694943BEFD514B /* RelWithDebInfo */,
+				6CF56C2ADCD64A40A8F9727B /* Debug */,
+				71ECBC966B0243B1BABE833E /* Release */,
+				17C6A97BC15E411996DF7C66 /* MinSizeRel */,
+				46EA8D3B5A9E4B4695B176A4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FF3F3A33E25A4DC5ACD1B6F8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		FA7AEF0934304F9FAAF540C0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45FF811730EA46609006BC3F /* Debug */,
-				779DFBBF88D34133B731E4B9 /* Release */,
-				923629B0A221473F9537DD88 /* MinSizeRel */,
-				1D9F9F08729C4E38B438271F /* RelWithDebInfo */,
+				4F036419D967414685A4396D /* Debug */,
+				B9991720D04F4744A7D6DC33 /* Release */,
+				84F5E44A69EA4D6EBC3EBBFF /* MinSizeRel */,
+				2E8F3320149C4DF0BDB5129C /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 53BE8DD3077845119D0216E3 /* Project object */;
+	rootObject = DA124D3CEB7044B68A412F95 /* Project object */;
 }

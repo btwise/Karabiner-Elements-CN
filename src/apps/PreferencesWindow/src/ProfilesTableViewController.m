@@ -2,28 +2,38 @@
 #import "KarabinerKit/KarabinerKit.h"
 #import "NotificationKeys.h"
 #import "ProfilesTableCellView.h"
+#import <pqrs/weakify.h>
 
 @interface ProfilesTableViewController ()
 
 @property(weak) IBOutlet NSTableView* tableView;
-@property id configurationLoadedObserver;
+@property KarabinerKitSmartObserverContainer* observers;
 
 @end
 
 @implementation ProfilesTableViewController
 
 - (void)setup {
-  self.configurationLoadedObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kKarabinerKitConfigurationIsLoaded
-                                                                                       object:nil
-                                                                                        queue:[NSOperationQueue mainQueue]
-                                                                                   usingBlock:^(NSNotification* note) {
-                                                                                     [self.tableView reloadData];
-                                                                                   }];
-  [self.tableView reloadData];
-}
+  self.observers = [KarabinerKitSmartObserverContainer new];
+  @weakify(self);
 
-- (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self.configurationLoadedObserver];
+  {
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    id o = [center addObserverForName:kKarabinerKitConfigurationIsLoaded
+                               object:nil
+                                queue:[NSOperationQueue mainQueue]
+                           usingBlock:^(NSNotification* note) {
+                             @strongify(self);
+                             if (!self) {
+                               return;
+                             }
+
+                             [self.tableView reloadData];
+                           }];
+    [self.observers addObserver:o notificationCenter:center];
+  }
+
+  [self.tableView reloadData];
 }
 
 - (void)valueChanged:(id)sender {

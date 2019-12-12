@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/btwise/我的仓库/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeFiles/ZERO_CHECK
+	/Users/btwise/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeFiles/ZERO_CHECK
 
 
-/Users/btwise/我的仓库/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeFiles/ZERO_CHECK: 
+/Users/btwise/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/btwise/我的仓库/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeScripts/ReRunCMake.make
+	make -f /Users/btwise/Karabiner-Elements/src/apps/NotificationWindow/build_xcode/CMakeScripts/ReRunCMake.make

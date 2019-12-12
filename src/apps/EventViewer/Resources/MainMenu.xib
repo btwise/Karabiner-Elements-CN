@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -47,7 +47,7 @@
                                     <action selector="cut:" target="-1" id="1lG-Zn-Caz"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="复制" keyEquivalent="c" id="gLa-l0-Qr6">
+                            <menuItem title="拷贝" keyEquivalent="c" id="gLa-l0-Qr6">
                                 <connections>
                                     <action selector="copy:" target="-1" id="b5j-s5-bNa"/>
                                 </connections>
@@ -95,12 +95,12 @@
                                                 <action selector="performFindPanelAction:" target="-1" id="6d3-15-5iJ"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="查找上一个" tag="3" keyEquivalent="G" id="vTz-7I-5LK">
+                                        <menuItem title="查找是一个" tag="3" keyEquivalent="G" id="vTz-7I-5LK">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="Duq-Us-IAY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="使用选择查找" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
+                                        <menuItem title="使用选择进行查找" tag="7" keyEquivalent="e" id="FFX-cp-e5i">
                                             <connections>
                                                 <action selector="performFindPanelAction:" target="-1" id="709-rw-C5q"/>
                                             </connections>
@@ -122,7 +122,7 @@
                                                 <action selector="showGuessPanel:" target="-1" id="Hdw-KQ-K6m"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="立即检查文档" keyEquivalent=";" id="QXk-8g-npl">
+                                        <menuItem title="立即检查文件" keyEquivalent=";" id="QXk-8g-npl">
                                             <connections>
                                                 <action selector="checkSpelling:" target="-1" id="wRL-BG-OIc"/>
                                             </connections>
@@ -134,7 +134,7 @@
                                                 <action selector="toggleContinuousSpellChecking:" target="-1" id="65N-Xg-msd"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="用拼写检查语法" id="3Mu-qf-fqo">
+                                        <menuItem title="检查拼写语法" id="3Mu-qf-fqo">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleGrammarChecking:" target="-1" id="K9l-MP-PBu"/>
@@ -160,7 +160,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="59C-IC-omI"/>
-                                        <menuItem title="智能 复制/粘贴" id="GFs-GC-evz">
+                                        <menuItem title="智能复制/粘贴" id="GFs-GC-evz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleSmartInsertDelete:" target="-1" id="fcq-PH-7wv"/>
@@ -184,13 +184,13 @@
                                                 <action selector="toggleAutomaticLinkDetection:" target="-1" id="zK4-Ze-abt"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="数据检测器" id="5Ks-0p-YXl">
+                                        <menuItem title="数据检查器" id="5Ks-0p-YXl">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticDataDetection:" target="-1" id="6FJ-2i-3i5"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="文字替换" id="ish-hF-0B6">
+                                        <menuItem title="文本替换" id="ish-hF-0B6">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="toggleAutomaticTextReplacement:" target="-1" id="JFS-25-jxz"/>
@@ -247,12 +247,13 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="139" y="154"/>
         </menu>
-        <window title="EventViewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="aqua" animationBehavior="default" id="371">
+        <window title="EventViewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="122" width="874" height="550"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1600" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <value key="minSize" type="size" width="874" height="550"/>
             <view key="contentView" wantsLayer="YES" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="874" height="550"/>
@@ -267,15 +268,15 @@
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box borderType="line" title="键盘 &amp; 鼠标事件" translatesAutoresizingMaskIntoConstraints="NO" id="614">
+                                        <box borderType="line" title="键盘 &amp; 鼠标 事件" translatesAutoresizingMaskIntoConstraints="NO" id="614">
                                             <rect key="frame" x="14" y="198" width="806" height="285"/>
                                             <view key="contentView" id="pJS-41-sBt">
-                                                <rect key="frame" x="3" y="3" width="800" height="267"/>
+                                                <rect key="frame" x="3" y="3" width="800" height="268"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="541">
-                                                        <rect key="frame" x="11" y="229" width="120" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="复制到剪贴板" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
+                                                        <rect key="frame" x="11" y="230" width="120" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="复制到粘贴板" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="542">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -284,7 +285,7 @@
                                                         </connections>
                                                     </button>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="539">
-                                                        <rect key="frame" x="129" y="229" width="94" height="32"/>
+                                                        <rect key="frame" x="129" y="230" width="94" height="32"/>
                                                         <buttonCell key="cell" type="push" title="清除结果" bezelStyle="rounded" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="540">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -294,13 +295,13 @@
                                                         </connections>
                                                     </button>
                                                     <scrollView horizontalLineScroll="16" horizontalPageScroll="10" verticalLineScroll="16" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="561">
-                                                        <rect key="frame" x="17" y="10" width="766" height="216"/>
+                                                        <rect key="frame" x="17" y="10" width="766" height="217"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="OS0-60-iDz">
-                                                            <rect key="frame" x="1" y="0.0" width="764" height="215"/>
+                                                            <rect key="frame" x="1" y="0.0" width="749" height="216"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" enabled="NO" rowHeight="14" headerView="565" id="564">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="764" height="192"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="749" height="193"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -311,24 +312,24 @@
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="事件类型">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                             </tableHeaderCell>
                                                                             <textFieldCell key="dataCell" controlSize="small" lineBreakMode="truncatingTail" enabled="NO" refusesFirstResponder="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="568">
                                                                                 <font key="font" metaFont="smallSystem"/>
-                                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                         </tableColumn>
                                                                         <tableColumn identifier="code" editable="NO" width="50" minWidth="40" maxWidth="1000" id="566">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="代码">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                             </tableHeaderCell>
                                                                             <textFieldCell key="dataCell" controlSize="small" lineBreakMode="truncatingTail" enabled="NO" refusesFirstResponder="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="569">
                                                                                 <font key="font" metaFont="smallSystem"/>
-                                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                         </tableColumn>
                                                                         <tableColumn identifier="name" editable="NO" width="200" minWidth="10" maxWidth="3.4028234663852886e+38" id="581">
@@ -339,20 +340,20 @@
                                                                             </tableHeaderCell>
                                                                             <textFieldCell key="dataCell" controlSize="small" lineBreakMode="truncatingTail" enabled="NO" refusesFirstResponder="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="582">
                                                                                 <font key="font" metaFont="smallSystem"/>
-                                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                         </tableColumn>
-                                                                        <tableColumn identifier="misc" editable="NO" width="382" minWidth="10" maxWidth="3.4028234663852886e+38" id="585">
-                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="其它">
+                                                                        <tableColumn identifier="misc" editable="NO" width="367" minWidth="10" maxWidth="3.4028234663852886e+38" id="585">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" enabled="NO" borderStyle="border" alignment="left" title="其他">
                                                                                 <font key="font" metaFont="smallSystem"/>
                                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                             </tableHeaderCell>
                                                                             <textFieldCell key="dataCell" controlSize="small" lineBreakMode="truncatingTail" enabled="NO" refusesFirstResponder="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="586">
                                                                                 <font key="font" metaFont="smallSystem"/>
-                                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                                                         </tableColumn>
@@ -364,21 +365,21 @@
                                                             </subviews>
                                                             <nil key="backgroundColor"/>
                                                         </clipView>
-                                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="563">
+                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="563">
                                                             <rect key="frame" x="-100" y="-100" width="785" height="15"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
-                                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="562">
-                                                            <rect key="frame" x="749" y="23" width="16" height="192"/>
+                                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="562">
+                                                            <rect key="frame" x="750" y="23" width="15" height="193"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <tableHeaderView key="headerView" autoresizesSubviews="NO" focusRingType="none" id="565">
-                                                            <rect key="frame" x="0.0" y="0.0" width="764" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="749" height="23"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableHeaderView>
                                                     </scrollView>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-WO-Kah">
-                                                        <rect key="frame" x="708" y="229" width="81" height="32"/>
+                                                        <rect key="frame" x="708" y="230" width="81" height="32"/>
                                                         <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ShI-z6-Eh3">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
@@ -412,38 +413,37 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-Nj-Y8H">
-                                                        <rect key="frame" x="8" y="121" width="114" height="17"/>
-                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="文本输入测试字段:" id="Rse-px-eu0">
-                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                        <rect key="frame" x="8" y="122" width="114" height="16"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="文字输入测试字段:" id="Rse-px-eu0">
+                                                            <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
                                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-IW-1A7">
-                                                        <rect key="frame" x="10" y="10" width="642" height="111"/>
+                                                        <rect key="frame" x="10" y="10" width="642" height="112"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="Hx6-3h-z4E">
-                                                            <rect key="frame" x="1" y="1" width="640" height="109"/>
+                                                            <rect key="frame" x="1" y="1" width="625" height="110"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textView importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="A4A-YB-ifF">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="640" height="109"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="625" height="110"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    <size key="minSize" width="640" height="109"/>
+                                                                    <size key="minSize" width="625" height="110"/>
                                                                     <size key="maxSize" width="881" height="10000000"/>
                                                                     <attributedString key="textStorage">
                                                                         <fragment>
                                                                             <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                                                             <attributes>
-                                                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <color key="NSBackgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                                 <font key="NSFont" size="14" name="Helvetica"/>
                                                                                 <real key="NSKern" value="0.0"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                                                     <tabStops/>
                                                                                 </paragraphStyle>
-                                                                                <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <real key="NSStrokeWidth" value="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -452,12 +452,12 @@
                                                                 </textView>
                                                             </subviews>
                                                         </clipView>
-                                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="52f-3v-VlJ">
+                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="52f-3v-VlJ">
                                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
-                                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fRi-UI-8x2">
-                                                            <rect key="frame" x="625" y="1" width="16" height="109"/>
+                                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fRi-UI-8x2">
+                                                            <rect key="frame" x="626" y="1" width="15" height="110"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                     </scrollView>
@@ -485,7 +485,6 @@
                                                     <constraint firstAttribute="bottom" secondItem="Ko0-IW-1A7" secondAttribute="bottom" constant="10" id="r2d-fX-jse"/>
                                                 </constraints>
                                             </view>
-                                            <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                         </box>
                                     </subviews>
                                     <constraints>
@@ -502,42 +501,42 @@
                                     <outlet property="initialFirstResponder" destination="925" id="930"/>
                                 </connections>
                             </tabViewItem>
-                            <tabViewItem label="活动的应用" identifier="" id="JP7-qs-Qlf">
+                            <tabViewItem label="最前面的应用" identifier="" id="JP7-qs-Qlf">
                                 <view key="view" id="OUd-40-tIR">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZl-yu-fW5">
-                                            <rect key="frame" x="15" y="466" width="323" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看最前面的应用程序的包标识符和文件路径。" id="OUp-OJ-jvF">
+                                            <rect key="frame" x="15" y="467" width="336" height="16"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看最前面的应用程序的捆绑标识符和文件路径。" id="OUp-OJ-jvF">
                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmW-ja-RxN">
-                                            <rect key="frame" x="17" y="17" width="800" height="439"/>
+                                            <rect key="frame" x="17" y="17" width="800" height="440"/>
                                             <clipView key="contentView" drawsBackground="NO" id="Oc9-TS-hYQ">
-                                                <rect key="frame" x="1" y="1" width="798" height="437"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <rect key="frame" x="1" y="1" width="783" height="438"/>
+                                                <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="KEZ-Np-coZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="437"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="438"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="798" height="437"/>
+                                                        <size key="minSize" width="783" height="438"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
-                                                        <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="3iX-Nr-Dk5">
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="3iX-Nr-Dk5">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cHg-52-amM">
-                                                <rect key="frame" x="783" y="1" width="16" height="437"/>
+                                                <rect key="frame" x="783" y="1" width="16" height="438"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -559,36 +558,36 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-zu-dhb">
-                                            <rect key="frame" x="15" y="466" width="277" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看Karabiner-Elements的内部变量。" id="Rwn-Zi-dJH">
+                                            <rect key="frame" x="15" y="467" width="238" height="16"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以研究Karabiner元素的内部变量。" id="Rwn-Zi-dJH">
                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP7-yc-xcR">
-                                            <rect key="frame" x="17" y="17" width="800" height="439"/>
+                                            <rect key="frame" x="17" y="17" width="800" height="440"/>
                                             <clipView key="contentView" drawsBackground="NO" id="jio-Mp-Rne">
-                                                <rect key="frame" x="1" y="1" width="798" height="437"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <rect key="frame" x="1" y="1" width="783" height="438"/>
+                                                <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Glx-oy-lpN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="437"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="438"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="798" height="437"/>
+                                                        <size key="minSize" width="783" height="438"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
-                                                        <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="nnN-0i-1m7">
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="nnN-0i-1m7">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="x3H-49-ue5">
-                                                <rect key="frame" x="783" y="1" width="16" height="437"/>
+                                                <rect key="frame" x="783" y="1" width="16" height="438"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -610,36 +609,36 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-2x-a5P">
-                                            <rect key="frame" x="15" y="466" width="203" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看连接设备的详细信息。" id="QSM-Dx-67c">
+                                            <rect key="frame" x="15" y="467" width="217" height="16"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您可以查看所连接设备的详细信息。" id="QSM-Dx-67c">
                                                 <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="923-6B-3Sw">
-                                            <rect key="frame" x="17" y="10" width="800" height="446"/>
+                                            <rect key="frame" x="17" y="10" width="800" height="447"/>
                                             <clipView key="contentView" drawsBackground="NO" id="QSl-Tw-YGc">
-                                                <rect key="frame" x="1" y="1" width="798" height="444"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <rect key="frame" x="1" y="1" width="783" height="445"/>
+                                                <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="pzX-J3-r2O">
-                                                        <rect key="frame" x="0.0" y="0.0" width="798" height="444"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="783" height="445"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="798" height="444"/>
+                                                        <size key="minSize" width="783" height="445"/>
                                                         <size key="maxSize" width="800" height="10000000"/>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="8Tb-cM-IbT">
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="8Tb-cM-IbT">
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="iWX-eG-TVZ">
-                                                <rect key="frame" x="783" y="1" width="16" height="444"/>
+                                                <rect key="frame" x="783" y="1" width="16" height="445"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -655,20 +654,20 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="EventViewer首选项" identifier="" id="xC1-NR-t4e">
+                            <tabViewItem label="首选项" identifier="" id="xC1-NR-t4e">
                                 <view key="view" id="FqR-MI-IIO">
                                     <rect key="frame" x="10" y="33" width="834" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box borderType="line" title="窗口行为" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-gM-a7s">
+                                        <box borderType="line" title="Window behavior" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-gM-a7s">
                                             <rect key="frame" x="14" y="407" width="806" height="76"/>
                                             <view key="contentView" id="sxi-Co-MLe">
                                                 <rect key="frame" x="3" y="3" width="800" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="qpH-oY-yl0">
-                                                        <rect key="frame" x="15" y="32" width="352" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="强制EventViewer保持在其他窗口之上。 (默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WCA-8e-MOA">
+                                                        <rect key="frame" x="15" y="32" width="365" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="强制EventViewer停留在其他窗口的顶部（默认值：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WCA-8e-MOA">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -678,8 +677,8 @@
                                                         </connections>
                                                     </button>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="hsb-w2-bkZ">
-                                                        <rect key="frame" x="15" y="8" width="312" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="在所有空间中显示EventViewer。 (默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Be8-wB-67e">
+                                                        <rect key="frame" x="15" y="8" width="299" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="在所有空间中显示EventViewer（默认：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Be8-wB-67e">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -699,17 +698,16 @@
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hsb-w2-bkZ" secondAttribute="trailing" constant="20" symbolic="YES" id="zhi-G1-j5z"/>
                                                 </constraints>
                                             </view>
-                                            <font key="titleFont" size="11" name=".PingFangSC-Regular"/>
                                         </box>
-                                        <box borderType="line" title="其它" translatesAutoresizingMaskIntoConstraints="NO" id="lH0-6O-BWP">
-                                            <rect key="frame" x="14" y="349" width="806" height="52"/>
+                                        <box borderType="line" title="其他" translatesAutoresizingMaskIntoConstraints="NO" id="lH0-6O-BWP">
+                                            <rect key="frame" x="14" y="350" width="806" height="51"/>
                                             <view key="contentView" id="xoA-9x-cwN">
                                                 <rect key="frame" x="3" y="3" width="800" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="cCs-zq-ovo">
                                                         <rect key="frame" x="15" y="8" width="301" height="18"/>
-                                                        <buttonCell key="cell" type="check" title="以十六进制格式显示密钥代码。 (默认值：关闭)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
+                                                        <buttonCell key="cell" type="check" title="以十六进制格式显示密钥代码（默认值：关闭）" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xfY-PO-icV">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
@@ -754,7 +752,7 @@
             <connections>
                 <outlet property="initialFirstResponder" destination="925" id="929"/>
             </connections>
-            <point key="canvasLocation" x="532" y="435"/>
+            <point key="canvasLocation" x="291" y="501"/>
         </window>
         <customObject id="494" userLabel="App Delegate" customClass="AppDelegate">
             <connections>

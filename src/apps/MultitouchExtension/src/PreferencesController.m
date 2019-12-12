@@ -1,10 +1,9 @@
 #import "PreferencesController.h"
+#import "KarabinerKit/KarabinerKit.h"
 #import "PreferencesKeys.h"
 
 @interface PreferencesController ()
 
-@property NSMutableArray* oldSettings;
-@property(weak) IBOutlet NSButton* startAtLoginCheckbox;
 @property(weak) IBOutlet NSWindow* preferencesWindow;
 
 @end
@@ -15,21 +14,14 @@
   static dispatch_once_t once;
   dispatch_once(&once, ^{
     NSDictionary* dict = @{
-      @"hideIconInDock" : @NO,
-      @"relaunchAfterWakeUpFromSleep" : @YES,
-      @"relaunchWait" : @"3",
-      @"targetSettingIsEnabled1" : @NO,
-      @"targetSettingIsEnabled2" : @NO,
-      @"targetSettingIsEnabled3" : @NO,
-      @"targetSettingIsEnabled4" : @NO,
-      @"targetSetting1" : @"notsave.thumbsense",
-      @"targetSetting2" : @"notsave.enhanced_copyandpaste",
-      @"targetSetting3" : @"notsave.pointing_relative_to_scroll",
-      @"targetSetting4" : @"notsave.pointing_relative_to_scroll",
-      @"ignoredAreaTop" : @"0",
-      @"ignoredAreaBottom" : @"0",
-      @"ignoredAreaLeft" : @"0",
-      @"ignoredAreaRight" : @"0",
+      kStartAtLogin : @NO,
+      kHideIconInDock : @NO,
+      kRelaunchAfterWakeUpFromSleep : @YES,
+      kRelaunchWait : @"3",
+      kIgnoredAreaTop : @"0",
+      kIgnoredAreaBottom : @"0",
+      kIgnoredAreaLeft : @"0",
+      kIgnoredAreaRight : @"0",
       kDelayBeforeTurnOff : @"0",
       kDelayBeforeTurnOn : @"0",
     };
@@ -37,55 +29,26 @@
   });
 }
 
-- (instancetype)init {
-  self = [super init];
++ (NSRect)makeTargetArea {
+  NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
 
-  if (self) {
-    _oldSettings = [NSMutableArray new];
-  }
+  double top = [[defaults stringForKey:kIgnoredAreaTop] doubleValue] / 100;
+  double bottom = [[defaults stringForKey:kIgnoredAreaBottom] doubleValue] / 100;
+  double left = [[defaults stringForKey:kIgnoredAreaLeft] doubleValue] / 100;
+  double right = [[defaults stringForKey:kIgnoredAreaRight] doubleValue] / 100;
 
-  return self;
-}
-
-- (void)load {
-  [self.startAtLoginCheckbox setState:NSOnState];
-//  [self.startAtLoginCheckbox setState:NSOffState];
+  return NSMakeRect(left,
+                    bottom,
+                    (1.0 - left - right),
+                    (1.0 - top - bottom));
 }
 
 - (void)show {
   [self.preferencesWindow makeKeyAndOrderFront:nil];
 }
 
-- (IBAction)setStartAtLogin:(id)sender {
-  // startAtLogin
-}
-
-+ (BOOL)isSettingEnabled:(NSInteger)fingers {
-  return [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"targetSettingIsEnabled%d", (int)(fingers)]];
-}
-
-+ (NSString*)getSettingIdentifier:(NSInteger)fingers {
-  return [[NSUserDefaults standardUserDefaults] stringForKey:[NSString stringWithFormat:@"targetSetting%d", (int)(fingers)]];
-}
-
-- (IBAction)set:(id)sender {
-  // ------------------------------------------------------------
-  // disable old settings
-
-  for (NSString* identifier in self.oldSettings) {
-    NSLog(@"set-variables %@ = 0", identifier);
-  }
-
-  [self.oldSettings removeAllObjects];
-  for (int i = 1; i <= 4; ++i) {
-    if ([PreferencesController isSettingEnabled:i]) {
-      [self.oldSettings addObject:[PreferencesController getSettingIdentifier:i]];
-    }
-  }
-}
-
-- (void)windowWillClose:(NSNotification*)notification {
-  [self set:nil];
+- (IBAction)relaunch:(id)sender {
+  [KarabinerKit relaunch];
 }
 
 @end

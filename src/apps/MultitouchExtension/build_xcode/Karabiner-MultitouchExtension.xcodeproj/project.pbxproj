@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		03F07CE544E94BF797BDC959 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F486BE89AC4D42079BD293A7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E14CF9AF6AA440499528AFA8 /* CMake Rules */,
+			);
+			dependencies = (
+				F53D0791A2F64365AE30F071 /* PBXTargetDependency */,
+				41C61EC6CA4B48039E2BAE44 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		B02724638B574DAF90F13B9F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3DB6BA99FFC94FD78EBF528F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				6DFA8A9350B441439CAEDC34 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03881F42FFA9470BA83C667B /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/Assets.xcassets */ = {isa = PBXBuildFile; fileRef = F9C2ED93163B45168EAE4758 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/Assets.xcassets */; };
+		08797C8FFD4F44FB87D8DEA4 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.h */ = {isa = PBXBuildFile; fileRef = DCFDCFC304564D9C85B10A02 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.h */; };
+		0D238626563A43DD8D459716 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B04E954708DF4C7695B96898 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */; };
+		12D164F2565B47A7B552FD40 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.m */ = {isa = PBXBuildFile; fileRef = 633E855756984F6BBC580F13 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.m */; };
+		18C39B856C14488C9CA9E6C1 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesKeys.h */ = {isa = PBXBuildFile; fileRef = E301059D915E4500950C3786 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesKeys.h */; };
+		1B807804234D4160B61F7105 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.m */ = {isa = PBXBuildFile; fileRef = A398E46DBE4947F5A5C8A6A6 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.m */; };
+		2A65B2DA0CBF46AE86EB62DA /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/MainMenu.xib */ = {isa = PBXBuildFile; fileRef = 8FB826CC895246CD8F9EEF42 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/MainMenu.xib */; };
+		2A9D2F0F86E643E99A3D04E2 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.m */ = {isa = PBXBuildFile; fileRef = 433820F1A5624DEE9C1AA28E /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.m */; };
+		318AEEDE5A404B81A7661BFC /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.h */ = {isa = PBXBuildFile; fileRef = B3A07FE65F654F46B4E1236B /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.h */; };
+		409677CEEA7D48EAB564C971 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.m */ = {isa = PBXBuildFile; fileRef = 2C194A68E70B4743B618163A /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.m */; };
+		484F8CD7B898430D8569BA19 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.h */ = {isa = PBXBuildFile; fileRef = CE1B98EE29C44D9FB700AB54 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.h */; };
+		6BB7A9671CB14AFB8502B8C8 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.m */ = {isa = PBXBuildFile; fileRef = 0F5B31B971244ACF9288E085 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.m */; };
+		7CDF276E3CDB464CB7A14992 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.m */ = {isa = PBXBuildFile; fileRef = 99F1CFC793CE4417857757F4 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.m */; };
+		9356797A3A6848A0B57D7C70 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.h */ = {isa = PBXBuildFile; fileRef = 4DE373D37BC246919FA0E817 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.h */; };
+		A4396FA68AA841E495F06DD9 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/app.icns */ = {isa = PBXBuildFile; fileRef = 530306312FEC409F8BF025DA /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/app.icns */; };
+		C08A4CBFAFCA4AFA9A46A89E /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.h */ = {isa = PBXBuildFile; fileRef = 6122A485F9234BD38B75FC3C /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.h */; };
+		CB991BBDA4354F85BFB939D2 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/main.m */ = {isa = PBXBuildFile; fileRef = B02EE8E7E9F74E6F960AFD49 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/main.m */; };
+		CF4D5DD02FD44BF7B53F9362 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.h */ = {isa = PBXBuildFile; fileRef = C75F0FE6BBF94793B8DDCF50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.h */; };
+		D400BF42592F4424A2BEE5B8 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 86240BB278AF41AF81CEE9E7 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist */; };
+		D6F50FFACFE045329F8F0072 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.m */ = {isa = PBXBuildFile; fileRef = 7EFC74925F894FEF8DD98F50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.m */; };
+		F3BDD37522484ACF833750DF /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.h */ = {isa = PBXBuildFile; fileRef = D53A521534604713B5B0B103 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.h */; };
+		FAFCFA9C9A94413DB7AD05FC /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchPrivate.h */ = {isa = PBXBuildFile; fileRef = 152B4E369BB74F05B838EA22 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchPrivate.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3880FAF0B01C443BA866A9E0 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		4A15B64F79434D78B9217B34 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		74C4029C19374B029A6AF47B /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EE2E5AA91A5A45BEB087511C /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		103122B8541B46849CCCEFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C913A96E8E249508782BC25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6B17B940DD49B590B07524;
+			remoteInfo = "Karabiner-MultitouchExtension";
+		};
+		1F7EE10DD32B4B0CA536CBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C913A96E8E249508782BC25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02724638B574DAF90F13B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		C4716CBCDF4A4296A41D6E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C913A96E8E249508782BC25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02724638B574DAF90F13B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F5B31B971244ACF9288E085 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FingerCount.m; path = src/FingerCount.m; sourceTree = SOURCE_ROOT; };
+		152B4E369BB74F05B838EA22 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchPrivate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MultitouchPrivate.h; path = src/MultitouchPrivate.h; sourceTree = SOURCE_ROOT; };
+		2AA245F7CC4B488AA135CA73 /* Karabiner-MultitouchExtension */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "Karabiner-MultitouchExtension"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C194A68E70B4743B618163A /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = PreferencesController.m; path = src/PreferencesController.m; sourceTree = SOURCE_ROOT; };
+		433820F1A5624DEE9C1AA28E /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FingerStatusManager.m; path = src/FingerStatusManager.m; sourceTree = SOURCE_ROOT; };
+		4DE373D37BC246919FA0E817 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FingerCount.h; path = src/FingerCount.h; sourceTree = SOURCE_ROOT; };
+		530306312FEC409F8BF025DA /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/app.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = app.icns; path = Resources/app.icns; sourceTree = SOURCE_ROOT; };
+		6122A485F9234BD38B75FC3C /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PreferencesController.h; path = src/PreferencesController.h; sourceTree = SOURCE_ROOT; };
+		633E855756984F6BBC580F13 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = FingerStatusEntry.m; path = src/FingerStatusEntry.m; sourceTree = SOURCE_ROOT; };
+		7EFC74925F894FEF8DD98F50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		86240BB278AF41AF81CEE9E7 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		878FC09DFE6B4826BB1C9898 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8FB826CC895246CD8F9EEF42 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		99F1CFC793CE4417857757F4 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = MultitouchDeviceManager.m; path = src/MultitouchDeviceManager.m; sourceTree = SOURCE_ROOT; };
+		A398E46DBE4947F5A5C8A6A6 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = IgnoredAreaView.m; path = src/IgnoredAreaView.m; sourceTree = SOURCE_ROOT; };
+		B02EE8E7E9F74E6F960AFD49 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = main.m; path = src/main.m; sourceTree = SOURCE_ROOT; };
+		B04E954708DF4C7695B96898 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B3A07FE65F654F46B4E1236B /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FingerStatusManager.h; path = src/FingerStatusManager.h; sourceTree = SOURCE_ROOT; };
+		C75F0FE6BBF94793B8DDCF50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MultitouchDeviceManager.h; path = src/MultitouchDeviceManager.h; sourceTree = SOURCE_ROOT; };
+		CE1B98EE29C44D9FB700AB54 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IgnoredAreaView.h; path = src/IgnoredAreaView.h; sourceTree = SOURCE_ROOT; };
+		D53A521534604713B5B0B103 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FingerStatusEntry.h; path = src/FingerStatusEntry.h; sourceTree = SOURCE_ROOT; };
+		DCFDCFC304564D9C85B10A02 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AppDelegate.h; path = src/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		E301059D915E4500950C3786 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesKeys.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PreferencesKeys.h; path = src/PreferencesKeys.h; sourceTree = SOURCE_ROOT; };
+		F9C2ED93163B45168EAE4758 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1E7B297DB163423291A3CB86 /* Karabiner-MultitouchExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DC6E8E0C3FA14CC5AEA083C9 /* Header Files */,
+				80CF7B6C4D0349F89A03F4C0 /* Source Files */,
+				67E1BC53192C46688110744F /* Resources */,
+				B04E954708DF4C7695B96898 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */,
+				8FB826CC895246CD8F9EEF42 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/MainMenu.xib */,
+				530306312FEC409F8BF025DA /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/app.icns */,
+			);
+			name = "Karabiner-MultitouchExtension";
+			sourceTree = "<group>";
+		};
+		67E1BC53192C46688110744F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9C2ED93163B45168EAE4758 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/Assets.xcassets */,
+				86240BB278AF41AF81CEE9E7 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80CF7B6C4D0349F89A03F4C0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EFC74925F894FEF8DD98F50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.m */,
+				0F5B31B971244ACF9288E085 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.m */,
+				633E855756984F6BBC580F13 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.m */,
+				433820F1A5624DEE9C1AA28E /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.m */,
+				A398E46DBE4947F5A5C8A6A6 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.m */,
+				99F1CFC793CE4417857757F4 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.m */,
+				2C194A68E70B4743B618163A /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.m */,
+				B02EE8E7E9F74E6F960AFD49 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/main.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8FA6437865324C2DA61B8711 = {
+			isa = PBXGroup;
+			children = (
+				1E7B297DB163423291A3CB86 /* Karabiner-MultitouchExtension */,
+				FCA645E4DD7F495A8AF27EA1 /* ALL_BUILD */,
+				E5E1C4085083437FB3CD65C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF1BA202278465EAB8D6FEB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DC6E8E0C3FA14CC5AEA083C9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDCFC304564D9C85B10A02 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.h */,
+				4DE373D37BC246919FA0E817 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.h */,
+				D53A521534604713B5B0B103 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.h */,
+				B3A07FE65F654F46B4E1236B /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.h */,
+				CE1B98EE29C44D9FB700AB54 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.h */,
+				C75F0FE6BBF94793B8DDCF50 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.h */,
+				152B4E369BB74F05B838EA22 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchPrivate.h */,
+				6122A485F9234BD38B75FC3C /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.h */,
+				E301059D915E4500950C3786 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesKeys.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E5E1C4085083437FB3CD65C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA245F7CC4B488AA135CA73 /* Karabiner-MultitouchExtension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCA645E4DD7F495A8AF27EA1 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1BA202278465EAB8D6FEB /* CMake Rules */,
+				878FC09DFE6B4826BB1C9898 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6B17B940DD49B590B07524 /* Karabiner-MultitouchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401CFE55297F40EDB7E6F881 /* Build configuration list for PBXNativeTarget "Karabiner-MultitouchExtension" */;
+			buildPhases = (
+				5CFE97E6CB9A4B25875EB3CC /* Resources */,
+				B50B8AF52F2E48299F46954F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F779E6A99CAD4A49A336199A /* PBXTargetDependency */,
+			);
+			name = "Karabiner-MultitouchExtension";
+			productName = "Karabiner-MultitouchExtension";
+			productReference = 2AA245F7CC4B488AA135CA73 /* Karabiner-MultitouchExtension */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C913A96E8E249508782BC25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 82B20C94BC0E4D2483A964D5 /* Build configuration list for PBXProject "Karabiner-MultitouchExtension" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EE2E5AA91A5A45BEB087511C /* Debug */,
+				74C4029C19374B029A6AF47B /* Release */,
+				4A15B64F79434D78B9217B34 /* MinSizeRel */,
+				3880FAF0B01C443BA866A9E0 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8FA6437865324C2DA61B8711;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				03F07CE544E94BF797BDC959 /* ALL_BUILD */,
+				8C6B17B940DD49B590B07524 /* Karabiner-MultitouchExtension */,
+				B02724638B574DAF90F13B9F /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F3F33FD17DA440A98485338 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6DFA8A9350B441439CAEDC34 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B65CD44BD6114E97818D7A16 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E14CF9AF6AA440499528AFA8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode -f /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CFE97E6CB9A4B25875EB3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03881F42FFA9470BA83C667B /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/Assets.xcassets */,
+				2A65B2DA0CBF46AE86EB62DA /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/MainMenu.xib */,
+				A4396FA68AA841E495F06DD9 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/Resources/app.icns */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50B8AF52F2E48299F46954F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F50FFACFE045329F8F0072 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/AppDelegate.m */,
+				6BB7A9671CB14AFB8502B8C8 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerCount.m */,
+				12D164F2565B47A7B552FD40 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusEntry.m */,
+				2A9D2F0F86E643E99A3D04E2 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/FingerStatusManager.m */,
+				1B807804234D4160B61F7105 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/IgnoredAreaView.m */,
+				7CDF276E3CDB464CB7A14992 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/MultitouchDeviceManager.m */,
+				409677CEEA7D48EAB564C971 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/PreferencesController.m */,
+				CB991BBDA4354F85BFB939D2 /* /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/src/main.m */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41C61EC6CA4B48039E2BAE44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02724638B574DAF90F13B9F /* ZERO_CHECK */;
+			targetProxy = 1F7EE10DD32B4B0CA536CBD1 /* PBXContainerItemProxy */;
+		};
+		F53D0791A2F64365AE30F071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6B17B940DD49B590B07524 /* Karabiner-MultitouchExtension */;
+			targetProxy = 103122B8541B46849CCCEFDB /* PBXContainerItemProxy */;
+		};
+		F779E6A99CAD4A49A336199A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02724638B574DAF90F13B9F /* ZERO_CHECK */;
+			targetProxy = C4716CBCDF4A4296A41D6E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12D1BE12C6FB4CDFABA70720 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		137C86B29CC24906A754853C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		19C6EB9EA450446EBDD8EE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/build";
+			};
+			name = Debug;
+		};
+		1FF053C8386847D4B9687C6D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4A35B88462A74374B1A2C486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "   -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -F/System/Library/PrivateFrameworks -framework MultitouchSupport -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-MultitouchExtension";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5780F52CC50E4A38B8CB1E7A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		81C109B1136F4F68874BE051 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "       -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -F/System/Library/PrivateFrameworks -framework MultitouchSupport -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-MultitouchExtension";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		96669EF09A0C411A80F642EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A0472947222241FFBAB0E832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/build";
+			};
+			name = Release;
+		};
+		ADC0B04885D44F04942F2115 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B688A24A12F9435B87AE627A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -F/System/Library/PrivateFrameworks -framework MultitouchSupport -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-MultitouchExtension";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B6F0ABE258A14AD5BA853AC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		C6AC3D769C5D4D26B093D296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D54ABABB916F41FAA494AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D5B4CB7541CA4912BA13D19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EA2C58209B4C4C6786CA5000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",FMT_HEADER_ONLY);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/share","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/include","/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../share");
+				INFOPLIST_FILE = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir/Info.plist";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				LIBRARY_SEARCH_PATHS = " /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../../lib/libkrbn/build_xcode/build /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/../lib/KarabinerKit/build_xcode/build";
+				OTHER_CFLAGS = "    -DNDEBUG -Wall -Werror     -fobjc-arc -fmodules  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lKarabinerKit -lkrbn -F/System/Library/PrivateFrameworks -framework MultitouchSupport -framework SystemConfiguration -lc++";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Karabiner-MultitouchExtension";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/btwise/Karabiner-Elements/src/vendor","/Users/btwise/Karabiner-Elements/src/vendor/cget/include");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB6BA99FFC94FD78EBF528F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96669EF09A0C411A80F642EE /* Debug */,
+				C6AC3D769C5D4D26B093D296 /* Release */,
+				5780F52CC50E4A38B8CB1E7A /* MinSizeRel */,
+				ADC0B04885D44F04942F2115 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		401CFE55297F40EDB7E6F881 /* Build configuration list for PBXNativeTarget "Karabiner-MultitouchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A35B88462A74374B1A2C486 /* Debug */,
+				EA2C58209B4C4C6786CA5000 /* Release */,
+				B688A24A12F9435B87AE627A /* MinSizeRel */,
+				81C109B1136F4F68874BE051 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82B20C94BC0E4D2483A964D5 /* Build configuration list for PBXProject "Karabiner-MultitouchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C6EB9EA450446EBDD8EE26 /* Debug */,
+				A0472947222241FFBAB0E832 /* Release */,
+				B6F0ABE258A14AD5BA853AC2 /* MinSizeRel */,
+				137C86B29CC24906A754853C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F486BE89AC4D42079BD293A7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54ABABB916F41FAA494AB77 /* Debug */,
+				D5B4CB7541CA4912BA13D19A /* Release */,
+				1FF053C8386847D4B9687C6D /* MinSizeRel */,
+				12D1BE12C6FB4CDFABA70720 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C913A96E8E249508782BC25 /* Project object */;
+}

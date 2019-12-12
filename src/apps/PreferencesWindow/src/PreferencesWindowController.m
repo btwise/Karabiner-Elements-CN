@@ -44,8 +44,7 @@
 @property(weak) IBOutlet SimpleModificationsMenuManager* simpleModificationsMenuManager;
 @property(weak) IBOutlet SimpleModificationsTableViewController* simpleModificationsTableViewController;
 @property(weak) IBOutlet SystemPreferencesManager* systemPreferencesManager;
-@property id configurationLoadedObserver;
-@property id preferencesUpdatedObserver;
+@property KarabinerKitSmartObserverContainer* observers;
 
 @end
 
@@ -67,27 +66,41 @@
   [self setupMiscTabControls];
   [self.logFileTextViewController monitor];
 
+  self.observers = [KarabinerKitSmartObserverContainer new];
   @weakify(self);
-  self.configurationLoadedObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kKarabinerKitConfigurationIsLoaded
-                                                                                       object:nil
-                                                                                        queue:[NSOperationQueue mainQueue]
-                                                                                   usingBlock:^(NSNotification* note) {
-                                                                                     @strongify(self);
-                                                                                     if (!self) return;
 
-                                                                                     [self setupDevicesParameters:nil];
-                                                                                     [self setupVirtualHIDKeyboardConfiguration:nil];
-                                                                                     [self setupMiscTabControls];
-                                                                                   }];
-  self.preferencesUpdatedObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kSystemPreferencesValuesAreUpdated
-                                                                                      object:nil
-                                                                                       queue:[NSOperationQueue mainQueue]
-                                                                                  usingBlock:^(NSNotification* note) {
-                                                                                    @strongify(self);
-                                                                                    if (!self) return;
+  {
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    id o = [center addObserverForName:kKarabinerKitConfigurationIsLoaded
+                               object:nil
+                                queue:[NSOperationQueue mainQueue]
+                           usingBlock:^(NSNotification* note) {
+                             @strongify(self);
+                             if (!self) {
+                               return;
+                             }
 
-                                                                                    [self updateSystemPreferencesUIValues];
-                                                                                  }];
+                             [self setupDevicesParameters:nil];
+                             [self setupVirtualHIDKeyboardConfiguration:nil];
+                             [self setupMiscTabControls];
+                           }];
+    [self.observers addObserver:o notificationCenter:center];
+  }
+  {
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    id o = [center addObserverForName:kSystemPreferencesValuesAreUpdated
+                               object:nil
+                                queue:[NSOperationQueue mainQueue]
+                           usingBlock:^(NSNotification* note) {
+                             @strongify(self);
+                             if (!self) {
+                               return;
+                             }
+
+                             [self updateSystemPreferencesUIValues];
+                           }];
+    [self.observers addObserver:o notificationCenter:center];
+  }
 
   // ----------------------------------------
   // Update UI values
@@ -106,11 +119,6 @@
   libkrbn_launchctl_manage_observer_agent();
   libkrbn_launchctl_manage_grabber_agent();
   libkrbn_launchctl_manage_console_user_server(true);
-}
-
-- (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self.configurationLoadedObserver];
-  [[NSNotificationCenter defaultCenter] removeObserver:self.preferencesUpdatedObserver];
 }
 
 - (void)show {
@@ -292,8 +300,16 @@
   [[[NSAppleScript alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil] executeAndReturnError:nil];
 }
 
-- (IBAction)openURL:(id)sender {
-  [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[sender title]]];
+- (IBAction)launchMultitouchExtension:(id)sender {
+  libkrbn_launch_multitouch_extension();
+}
+
+- (IBAction)openOfficialWebsite:(id)sender {
+  [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://pqrs.org/osx/karabiner/"]];
+}
+
+- (IBAction)openGitHub:(id)sender {
+  [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/pqrs-org/Karabiner-Elements"]];
 }
 
 - (IBAction)restart:(id)sender {

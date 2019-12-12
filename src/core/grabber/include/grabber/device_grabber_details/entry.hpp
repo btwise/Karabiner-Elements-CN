@@ -157,18 +157,17 @@ public:
   }
 
   bool is_grabbed(absolute_time_point time_stamp) {
-    if (grabbed_time_stamp_ <= ungrabbed_time_stamp_) {
-      // The current state of device is `ungrabbed`.
+    if (grabbed_) {
+      if (grabbed_time_stamp_ <= time_stamp) {
+        return true;
+      }
+    } else {
+      //
+      // (grabbed_time_stamp_ <= ungrabbed_time_stamp_) when (grabbed_ == false)
+      //
 
       if (grabbed_time_stamp_ <= time_stamp &&
           time_stamp <= ungrabbed_time_stamp_) {
-        return true;
-      }
-
-    } else {
-      // The current state of device is `grabbed`.
-
-      if (grabbed_time_stamp_ <= time_stamp) {
         return true;
       }
     }

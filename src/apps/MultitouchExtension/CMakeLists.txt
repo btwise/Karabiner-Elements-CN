@@ -20,21 +20,30 @@ add_executable(
   MACOSX_BUNDLE
   src/AppDelegate.h
   src/AppDelegate.m
-  src/FingerStatus.h
-  src/FingerStatus.m
+  src/FingerCount.h
+  src/FingerCount.m
+  src/FingerStatusEntry.h
+  src/FingerStatusEntry.m
+  src/FingerStatusManager.h
+  src/FingerStatusManager.m
   src/IgnoredAreaView.h
   src/IgnoredAreaView.m
+  src/main.m
+  src/MultitouchDeviceManager.h
+  src/MultitouchDeviceManager.m
+  src/MultitouchPrivate.h
   src/PreferencesController.h
   src/PreferencesController.m
   src/PreferencesKeys.h
-  src/main.m
   Resources/MainMenu.xib
-  ../share/Resources/app.icns
+  Resources/app.icns
+  Resources/Assets.xcassets
 )
 
 set_source_files_properties(
   Resources/MainMenu.xib
-  ../share/Resources/app.icns
+  Resources/app.icns
+  Resources/Assets.xcassets
   PROPERTIES
   MACOSX_PACKAGE_LOCATION
   Resources

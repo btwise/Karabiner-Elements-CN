@@ -1,0 +1,3 @@
+/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/Karabiner-MultitouchExtension.dir
+/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/ALL_BUILD.dir
+/Users/btwise/Karabiner-Elements/src/apps/MultitouchExtension/build_xcode/CMakeFiles/ZERO_CHECK.dir

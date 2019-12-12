@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18G87</string>
+	<string>18G2022</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>12.6.3</string>
+	<string>12.8.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -38,21 +38,21 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>12.6.3</string>
+	<string>12.8.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>10E1001</string>
+	<string>11C29</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>18E219</string>
+	<string>19B90</string>
 	<key>DTSDKName</key>
-	<string>macosx10.14</string>
+	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1021</string>
+	<string>1130</string>
 	<key>DTXcodeBuild</key>
-	<string>10E1001</string>
+	<string>11C29</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.12</string>
 	<key>NSMainNibFile</key>

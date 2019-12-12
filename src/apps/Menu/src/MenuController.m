@@ -1,13 +1,14 @@
 #import "MenuController.h"
 #import "KarabinerKit/KarabinerKit.h"
 #import "libkrbn/libkrbn.h"
+#import <pqrs/weakify.h>
 
 @interface MenuController ()
 
 @property(weak) IBOutlet NSMenu* menu;
 @property NSStatusItem* statusItem;
 @property NSImage* menuIcon;
-@property id configurationLoadedObserver;
+@property KarabinerKitSmartObserverContainer* observers;
 
 @end
 
@@ -32,22 +33,30 @@
   [self setStatusItemImage];
   [self setStatusItemTitle];
 
-  self.configurationLoadedObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kKarabinerKitConfigurationIsLoaded
-                                                                                       object:nil
-                                                                                        queue:[NSOperationQueue mainQueue]
-                                                                                   usingBlock:^(NSNotification* note) {
-                                                                                     KarabinerKitCoreConfigurationModel* coreConfigurationModel = [KarabinerKitConfigurationManager sharedManager].coreConfigurationModel;
-                                                                                     if (!coreConfigurationModel.globalConfigurationShowInMenuBar &&
-                                                                                         !coreConfigurationModel.globalConfigurationShowProfileNameInMenuBar) {
-                                                                                       [NSApp terminate:nil];
-                                                                                     }
-                                                                                     [self setStatusItemImage];
-                                                                                     [self setStatusItemTitle];
-                                                                                   }];
-}
+  self.observers = [KarabinerKitSmartObserverContainer new];
+  @weakify(self);
 
-- (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self.configurationLoadedObserver];
+  {
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    id o = [center addObserverForName:kKarabinerKitConfigurationIsLoaded
+                               object:nil
+                                queue:[NSOperationQueue mainQueue]
+                           usingBlock:^(NSNotification* note) {
+                             @strongify(self);
+                             if (!self) {
+                               return;
+                             }
+
+                             KarabinerKitCoreConfigurationModel* coreConfigurationModel = [KarabinerKitConfigurationManager sharedManager].coreConfigurationModel;
+                             if (!coreConfigurationModel.globalConfigurationShowInMenuBar &&
+                                 !coreConfigurationModel.globalConfigurationShowProfileNameInMenuBar) {
+                               [NSApp terminate:nil];
+                             }
+                             [self setStatusItemImage];
+                             [self setStatusItemTitle];
+                           }];
+    [self.observers addObserver:o notificationCenter:center];
+  }
 }
 
 - (void)setStatusItemImage {

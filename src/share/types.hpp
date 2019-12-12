@@ -9,9 +9,6 @@
 #include "types/event_type.hpp"
 #include "types/grabbable_state.hpp"
 #include "types/hid_country_code.hpp"
-#include "types/hid_usage.hpp"
-#include "types/hid_usage_page.hpp"
-#include "types/hid_value.hpp"
 #include "types/key_code.hpp"
 #include "types/key_down_up_valued_event.hpp"
 #include "types/led_state.hpp"
@@ -29,3 +26,5 @@
 #include <pqrs/osx/input_source/extra/nlohmann_json.hpp>
 #include <pqrs/osx/input_source_selector.hpp>
 #include <pqrs/osx/input_source_selector/extra/nlohmann_json.hpp>
+#include <pqrs/osx/iokit_hid_value.hpp>
+#include <pqrs/osx/iokit_hid_value/extra/nlohmann_json.hpp>

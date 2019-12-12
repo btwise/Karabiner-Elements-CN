@@ -2,6 +2,7 @@
 #import "ComplexModificationsAssetsOutlineCellView.h"
 #import "KarabinerKit/KarabinerKit.h"
 #import "NotificationKeys.h"
+#import <pqrs/weakify.h>
 
 @interface ComplexModificationsRulesTableViewController ()
 
@@ -13,25 +14,33 @@
 @property(weak) IBOutlet NSTabViewItem* rulesTabViewItem;
 @property(weak) IBOutlet NSTableView* tableView;
 @property(weak) IBOutlet NSWindow* window;
-@property id configurationLoadedObserver;
+@property KarabinerKitSmartObserverContainer* observers;
 
 @end
 
 @implementation ComplexModificationsRulesTableViewController
 
 - (void)setup {
-  self.configurationLoadedObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kKarabinerKitConfigurationIsLoaded
-                                                                                       object:nil
-                                                                                        queue:[NSOperationQueue mainQueue]
-                                                                                   usingBlock:^(NSNotification* note) {
-                                                                                     [self.tableView reloadData];
-                                                                                   }];
+  self.observers = [KarabinerKitSmartObserverContainer new];
+  @weakify(self);
+
+  {
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    id o = [center addObserverForName:kKarabinerKitConfigurationIsLoaded
+                               object:nil
+                                queue:[NSOperationQueue mainQueue]
+                           usingBlock:^(NSNotification* note) {
+                             @strongify(self);
+                             if (!self) {
+                               return;
+                             }
+
+                             [self.tableView reloadData];
+                           }];
+    [self.observers addObserver:o notificationCenter:center];
+  }
 
   [self updateUpDownButtons];
-}
-
-- (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self.configurationLoadedObserver];
 }
 
 - (IBAction)openRulesSite:(id)sender {
@@ -131,7 +140,7 @@
       NSAlert* alert = [NSAlert new];
 
       alert.messageText = @"确认";
-      alert.informativeText = @"您确定要删除此导入的文件吗？?";
+      alert.informativeText = @"您确定要删除此导入的文件吗？";
       [alert addButtonWithTitle:@"删除"];
       [alert addButtonWithTitle:@"取消"];
 

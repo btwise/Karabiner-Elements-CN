@@ -41,18 +41,23 @@ static void staticCallback(const char* bundle_identifier,
       return;
     }
 
+    NSDictionary* attributes = @{
+      NSForegroundColorAttributeName : NSColor.textColor,
+      NSFontAttributeName : [NSFont fontWithName:@"Menlo" size:11],
+    };
+
     // Update self.text
 
     if (![@"org.pqrs.Karabiner.EventViewer" isEqualToString:bundleIdentifier] &&
         ![@"org.pqrs.Karabiner-EventViewer" isEqualToString:bundleIdentifier]) {
       // Clear if text is huge.
       if (self.text.length > 4 * 1024) {
-        [self.text setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
+        [self.text setAttributedString:[[NSAttributedString alloc] initWithString:@""
+                                                                       attributes:attributes]];
       }
 
-      NSString* bundleIdentifierLine = [NSString stringWithFormat:@"捆绑标识符:  %@\n", bundleIdentifier];
+      NSString* bundleIdentifierLine = [NSString stringWithFormat:@"捆绑包标识符:  %@\n", bundleIdentifier];
       NSString* filePathLine = [NSString stringWithFormat:@"文件路径:          %@\n\n", filePath];
-      NSDictionary* attributes = @{NSFontAttributeName : [NSFont fontWithName:@"Menlo" size:11]};
 
       [self.text appendAttributedString:[[NSAttributedString alloc] initWithString:bundleIdentifierLine
                                                                         attributes:attributes]];
@@ -65,8 +70,9 @@ static void staticCallback(const char* bundle_identifier,
     NSTextStorage* textStorage = self.textView.textStorage;
     [textStorage beginEditing];
     if (self.text.length == 0) {
-      NSString* placeholder = @"请切换到您想要了解捆绑标识符的应用程序.";
-      [textStorage setAttributedString:[[NSAttributedString alloc] initWithString:placeholder]];
+      NSString* placeholder = @"请切换到您想知道捆绑标识符的应用。";
+      [textStorage setAttributedString:[[NSAttributedString alloc] initWithString:placeholder
+                                                                       attributes:attributes]];
     } else {
       [textStorage setAttributedString:self.text];
     }

@@ -54,7 +54,7 @@ static void hid_value_observer_callback(uint64_t device_id,
 
     switch (type) {
       case libkrbn_hid_value_type_key_code:
-        keyType = @"键盘按键";
+        keyType = @"key";
         libkrbn_get_key_code_name(buffer, sizeof(buffer), value);
         name = [NSString stringWithUTF8String:buffer];
 
@@ -89,10 +89,10 @@ static void hid_value_observer_callback(uint64_t device_id,
     NSString* eventType = @"";
     switch (event_type) {
       case libkrbn_hid_value_event_type_key_down:
-        eventType = [NSString stringWithFormat:@"%@_按下", keyType];
+        eventType = [NSString stringWithFormat:@"%@_向上", keyType];
         break;
       case libkrbn_hid_value_event_type_key_up:
-        eventType = [NSString stringWithFormat:@"%@_松开", keyType];
+        eventType = [NSString stringWithFormat:@"%@_向下", keyType];
         break;
       case libkrbn_hid_value_event_type_single:
         eventType = @"";
@@ -232,7 +232,7 @@ enum {
 
 - (NSString*)buttonToString:(NSEvent*)event {
   NSInteger number = [event buttonNumber];
-  return [NSString stringWithFormat:@"鼠标按键%d", (int)(number + 1)];
+  return [NSString stringWithFormat:@"按钮%d", (int)(number + 1)];
 }
 
 - (void)pushKeyEvent:(NSString*)code
@@ -250,7 +250,7 @@ enum {
   [self push:eventType
         code:[NSString stringWithFormat:@"%d", (int)([event buttonNumber])]
         name:[self buttonToString:event]
-        misc:[NSString stringWithFormat:@"{x:%d,y:%d} 单击计数:%d %@",
+        misc:[NSString stringWithFormat:@"{x:%d,y:%d} 单机计数:%d %@",
                                         (int)([event locationInWindow].x), (int)([event locationInWindow].y),
                                         (int)([event clickCount]),
                                         [flags length] > 0 ? [NSString stringWithFormat:@"flags:%@", flags] : @""]];
@@ -268,13 +268,13 @@ enum {
     case NSEventTypeLeftMouseDown:
     case NSEventTypeRightMouseDown:
     case NSEventTypeOtherMouseDown:
-      [self pushMouseEvent:event eventType:@"鼠标按键_按下"];
+      [self pushMouseEvent:event eventType:@"按钮按下"];
       break;
 
     case NSEventTypeLeftMouseUp:
     case NSEventTypeRightMouseUp:
     case NSEventTypeOtherMouseUp:
-      [self pushMouseEvent:event eventType:@"鼠标按键_松开"];
+      [self pushMouseEvent:event eventType:@"按键松开"];
       break;
 
     case NSEventTypeLeftMouseDragged:
@@ -284,7 +284,7 @@ enum {
       break;
 
     case NSEventTypeScrollWheel:
-      [self pushScrollWheelEvent:event eventType:@"鼠标滚轮"];
+      [self pushScrollWheelEvent:event eventType:@"滚轮"];
       break;
 
     default:
@@ -319,13 +319,13 @@ enum {
   for (NSUInteger i = 0; i < [self.queue count]; ++i) {
     NSDictionary* dict = self.queue[([self.queue count] - 1 - i)];
 
-    NSString* eventType = [NSString stringWithFormat:@"eventType:%@", dict[@"eventType"]];
+    NSString* eventType = [NSString stringWithFormat:@"type:%@", dict[@"eventType"]];
     NSString* code = [NSString stringWithFormat:@"code:%@", dict[@"code"]];
     NSString* name = [NSString stringWithFormat:@"name:%@", dict[@"name"]];
     NSString* misc = [NSString stringWithFormat:@"misc:%@", dict[@"misc"]];
 
     [string appendFormat:@"%@ %@ %@ %@\n",
-                         [eventType stringByPaddingToLength:25
+                         [eventType stringByPaddingToLength:20
                                                  withString:@" "
                                             startingAtIndex:0],
                          [code stringByPaddingToLength:15

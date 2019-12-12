@@ -119,6 +119,10 @@ void libkrbn_launch_preferences(void) {
   krbn::application_launcher::launch_preferences();
 }
 
+void libkrbn_launch_multitouch_extension(void) {
+  krbn::application_launcher::launch_multitouch_extension(false);
+}
+
 bool libkrbn_system_core_configuration_file_path_exists(void) {
   return pqrs::filesystem::exists(krbn::constants::get_system_core_configuration_file_path());
 }
@@ -480,9 +484,13 @@ bool libkrbn_hid_value_monitor_observed(void) {
 // grabber_client
 //
 
-void libkrbn_enable_grabber_client(void) {
+void libkrbn_enable_grabber_client(libkrbn_grabber_client_connected_callback connected_callback,
+                                   libkrbn_grabber_client_connect_failed_callback connect_failed_callback,
+                                   libkrbn_grabber_client_closed_callback closed_callback) {
   if (libkrbn_components_manager_) {
-    libkrbn_components_manager_->enable_grabber_client();
+    libkrbn_components_manager_->enable_grabber_client(connected_callback,
+                                                       connect_failed_callback,
+                                                       closed_callback);
   }
 }
 
@@ -496,6 +504,14 @@ void libkrbn_grabber_client_async_set_variable(const char* name, int value) {
   if (libkrbn_components_manager_) {
     if (name) {
       libkrbn_components_manager_->grabber_client_async_set_variable(name, value);
+    }
+  }
+}
+
+void libkrbn_grabber_client_sync_set_variable(const char* name, int value) {
+  if (libkrbn_components_manager_) {
+    if (name) {
+      libkrbn_components_manager_->grabber_client_sync_set_variable(name, value);
     }
   }
 }

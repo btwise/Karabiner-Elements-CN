@@ -25,7 +25,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification {
   [KarabinerKit setup];
-  [KarabinerKit exitIfAnotherProcessIsRunning:"eventviewer.pid"];
 
   [self setKeyResponder];
   [self setWindowProperty:self];
@@ -46,9 +45,9 @@
 
     if (!observed) {
       NSAlert* alert = [NSAlert new];
-      alert.messageText = @"警告";
+      alert.messageText = @"Warning";
       alert.informativeText = @"EventViewer无法观察键盘设备.\n"
-                              @"如果您使用的是其他键盘自定义程序，请在运行EventViewer之前暂时将其停止.";
+                              @"如果您使用的是其他键盘定制程序，请在运行EventViewer之前暂时将其停止.";
       [alert addButtonWithTitle:@"好"];
 
       [alert beginSheetModalForWindow:self.window

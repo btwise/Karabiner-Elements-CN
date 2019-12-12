@@ -1,6 +1,5 @@
 #pragma once
 
-#include "apple_hid_usage_tables.hpp"
 #include "apple_notification_center.hpp"
 #include "components_manager_killer.hpp"
 #include "constants.hpp"
@@ -10,6 +9,7 @@
 #include "device_grabber_details/simple_modifications_manipulator_manager.hpp"
 #include "event_tap_utility.hpp"
 #include "hid_keyboard_caps_lock_led_state_manager.hpp"
+#include "hid_queue_values_converter.hpp"
 #include "iokit_utility.hpp"
 #include "json_writer.hpp"
 #include "krbn_notification_center.hpp"
@@ -143,7 +143,8 @@ public:
           auto it = entries_.find(device_id);
           if (it != std::end(entries_)) {
             auto event_queue = event_queue::utility::make_queue(device_id,
-                                                                iokit_utility::make_hid_values(values_ptr));
+                                                                hid_queue_values_converter_.make_hid_values(device_id,
+                                                                                                            values_ptr));
             event_queue = event_queue::utility::insert_device_keys_and_pointing_buttons_are_released_event(event_queue,
                                                                                                            device_id,
                                                                                                            it->second->get_pressed_keys_manager());
@@ -236,6 +237,10 @@ public:
         }
       }
 
+      // hid_queue_values_converter_
+
+      hid_queue_values_converter_.erase_device(device_id);
+
       // probable_stuck_events_managers_
 
       probable_stuck_events_managers_.erase(device_id);
@@ -290,8 +295,11 @@ public:
     });
   }
 
-  void async_start(const std::string& user_core_configuration_file_path) {
-    enqueue_to_dispatcher([this, user_core_configuration_file_path] {
+  void async_start(const std::string& user_core_configuration_file_path,
+                   uid_t expected_user_core_configuration_file_owner) {
+    enqueue_to_dispatcher([this,
+                           user_core_configuration_file_path,
+                           expected_user_core_configuration_file_owner] {
       // We should call CGEventTapCreate after user is logged in.
       // So, we create event_tap_monitor here.
       event_tap_monitor_ = std::make_unique<event_tap_monitor>();
@@ -311,7 +319,8 @@ public:
 
       event_tap_monitor_->async_start();
 
-      configuration_monitor_ = std::make_unique<configuration_monitor>(user_core_configuration_file_path);
+      configuration_monitor_ = std::make_unique<configuration_monitor>(user_core_configuration_file_path,
+                                                                       expected_user_core_configuration_file_owner);
 
       configuration_monitor_->core_configuration_updated.connect([this](auto&& weak_core_configuration) {
         if (auto core_configuration = weak_core_configuration.lock()) {
@@ -889,6 +898,7 @@ private:
   std::unordered_set<device_id> observed_devices_;
   std::unordered_map<device_id, std::shared_ptr<probable_stuck_events_manager>> probable_stuck_events_managers_;
   std::unordered_map<device_id, std::shared_ptr<device_grabber_details::entry>> entries_;
+  hid_queue_values_converter hid_queue_values_converter_;
 
   core_configuration::details::profile profile_;
   pqrs::osx::system_preferences::properties system_preferences_properties_;

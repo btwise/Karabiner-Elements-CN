@@ -228,8 +228,12 @@ public:
   // grabber_client_
   //
 
-  void enable_grabber_client(void) {
-    grabber_client_ = std::make_unique<libkrbn_grabber_client>();
+  void enable_grabber_client(libkrbn_grabber_client_connected_callback connected_callback,
+                             libkrbn_grabber_client_connect_failed_callback connect_failed_callback,
+                             libkrbn_grabber_client_closed_callback closed_callback) {
+    grabber_client_ = std::make_unique<libkrbn_grabber_client>(connected_callback,
+                                                               connect_failed_callback,
+                                                               closed_callback);
   }
 
   void disable_grabber_client(void) {
@@ -237,7 +241,15 @@ public:
   }
 
   void grabber_client_async_set_variable(const std::string& name, int value) {
-    grabber_client_->async_set_variable(name, value);
+    if (grabber_client_) {
+      grabber_client_->async_set_variable(name, value);
+    }
+  }
+
+  void grabber_client_sync_set_variable(const std::string& name, int value) {
+    if (grabber_client_) {
+      grabber_client_->sync_set_variable(name, value);
+    }
   }
 
 private:
